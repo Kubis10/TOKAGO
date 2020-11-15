@@ -96,9 +96,9 @@ for ($level = 1; $level <= 11; $level++) {
     echo "<th>Level ".$level."</th><th>Nick</th><th>Czas</th>";
     echo "</thead>";
     $lvl = "l".$level;
-      $query = $polaczenie->query("SELECT user, rank.l".$level."FROM uzytkownicy
-      INNER JOIN rank ON uzytkownicy.id = rank.id_gracza ORDER BY rank.l".$level." ASC LIMIT 10");
-      //$query = $polaczenie->query("SELECT user, rank.l".$level." FROM uzytkownicy, rank where rank.id_gracza = uzytkownicy.id ORDER BY rank.l".$level." ASC LIMIT 10");
+      //$query = $polaczenie->query("SELECT user, rank.l".$level."FROM uzytkownicy
+      //INNER JOIN rank ON uzytkownicy.id = rank.id_gracza ORDER BY rank.l".$level." ASC LIMIT 10");
+      $query = $polaczenie->query("SELECT user, rank.l".$level." FROM uzytkownicy, rank where rank.id_gracza = uzytkownicy.id ORDER BY rank.l".$level." ASC LIMIT 10");
       echo "<tbody>";
         $nums = 1;
         while($row = $query->fetch_assoc()){
