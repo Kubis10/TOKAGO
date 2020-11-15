@@ -18,7 +18,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>TOKAGO - Zaloguj się</title>
   <link rel="icon" type="image/png" href="photo/logo.png">
-  <link rel="stylesheet" href="css/main.css">
 	<style>
 	body{
       margin: 0;
@@ -87,8 +86,8 @@
 		<input type="text" name="login" placeholder="Nick"/>
 		<input type="password" name="haslo" placeholder="Hasło"/>
 		<input type="submit" value="Zaloguj się" />
-		<a href="rejestracja.php">Rejestracja - załóż darmowe konto!</a>
-		<a href="lostPassword.php">Zapomniałeś hasła? Zresetuj je tutaj</a>
+		<a href="rejestracja.php">Rejestracja - załóż darmowe konto!</a><br><br>
+		<a href="lostPassword.html">Zapomniałeś hasła? Zresetuj je tutaj</a>
 	</form>
 	
 <?php

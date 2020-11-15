@@ -19,7 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1582864b-0a6d-4142-906a-c13d27918912" name="Default Changelist" comment="baza" />
+    <list default="true" id="1582864b-0a6d-4142-906a-c13d27918912" name="Default Changelist" comment="baza">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2020_14_41__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2020_14_42__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2020_14_43__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2020_14_44__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/level8.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/data/level8.tmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forgotPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/forgotPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lostPassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/lostPassword.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zalform.php" beforeDir="false" afterPath="$PROJECT_DIR$/zalform.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,6 +104,7 @@
       <workItem from="1605441645703" duration="266000" />
       <workItem from="1605443357043" duration="64000" />
       <workItem from="1605443428601" duration="2259000" />
+      <workItem from="1605472621825" duration="981000" />
     </task>
     <task id="LOCAL-00001" summary="baza">
       <created>1605443404303</created>

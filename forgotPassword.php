@@ -8,7 +8,7 @@
     		echo "Error: ".$polaczenie->connect_errno;
     	}
 
-    if ($_SERVER['REQUESR_METHOD'] === 'POST'){
+    if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 
         $email = $polaczenie->real_escape_string($_POST['email']);
         $checkIfCorr = $polaczenie->query("SELECT email from uzytkownicy WHERE email='$email'");
