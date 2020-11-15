@@ -76,7 +76,7 @@ CREATE TABLE `uzytkownicy` (
   `email` text COLLATE utf8_polish_ci NOT NULL,
   `lvl` int(11) NOT NULL,
   `vip` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
 --
 -- Zrzut danych tabeli `uzytkownicy`
