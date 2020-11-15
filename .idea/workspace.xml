@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1582864b-0a6d-4142-906a-c13d27918912" name="Default Changelist" comment="baza">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ranks.php" beforeDir="false" afterPath="$PROJECT_DIR$/ranks.php" afterDir="false" />
-    </list>
+    <list default="true" id="1582864b-0a6d-4142-906a-c13d27918912" name="Default Changelist" comment="baza" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +93,7 @@
       <workItem from="1605441297014" duration="116000" />
       <workItem from="1605441645703" duration="266000" />
       <workItem from="1605443357043" duration="64000" />
-      <workItem from="1605443428601" duration="1941000" />
+      <workItem from="1605443428601" duration="2259000" />
     </task>
     <task id="LOCAL-00001" summary="baza">
       <created>1605443404303</created>
@@ -112,7 +109,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605443673553</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="baza">
+      <created>1605447752532</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605447752532</updated>
+    </task>
+    <task id="LOCAL-00004" summary="baza">
+      <created>1605447792305</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605447792305</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,10 +154,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604578467406" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1605447703528">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1605447797198">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605447703528" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605447797198" />
     <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605441654100">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
