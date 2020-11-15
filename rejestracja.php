@@ -114,8 +114,8 @@
 				
 				if ($wszystko_OK==true)
 				{
-					
-					if ($polaczenie->query("INSERT INTO uzytkownicy VALUES (NULL, '$nick', '$haslo_hash', '$email', 1, now() + INTERVAL 14 DAY)"))
+					$hash = genUUID();
+					if ($polaczenie->query("INSERT INTO uzytkownicy VALUES (NULL, '$nick', '$haslo_hash', '$email', 1, now() + INTERVAL 14 DAY, '$hash')"))
 					{
 						$_SESSION['udanarejestracja']=true;
 						header('Location: witamy.php');
