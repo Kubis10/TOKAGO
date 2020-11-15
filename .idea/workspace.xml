@@ -19,14 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1582864b-0a6d-4142-906a-c13d27918912" name="Default Changelist" comment="baza">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2020_14_41__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2020_14_42__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2020_14_43__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2020_14_44__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="1582864b-0a6d-4142-906a-c13d27918912" name="Default Changelist" comment="ajax">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/level8.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/data/level8.tmx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forgotPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/forgotPassword.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lostPassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/lostPassword.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zalform.php" beforeDir="false" afterPath="$PROJECT_DIR$/zalform.php" afterDir="false" />
     </list>
@@ -104,7 +98,7 @@
       <workItem from="1605441645703" duration="266000" />
       <workItem from="1605443357043" duration="64000" />
       <workItem from="1605443428601" duration="2259000" />
-      <workItem from="1605472621825" duration="981000" />
+      <workItem from="1605472621825" duration="2142000" />
     </task>
     <task id="LOCAL-00001" summary="baza">
       <created>1605443404303</created>
@@ -134,7 +128,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605447792305</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ajax">
+      <created>1605473776546</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605473776546</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ajax">
+      <created>1605473782675</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605473782675</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +162,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="baza" />
-    <option name="LAST_COMMIT_MESSAGE" value="baza" />
+    <MESSAGE value="ajax" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajax" />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="255" key="IDE.errors.dialog" timestamp="1604578527552">
@@ -165,10 +174,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604578467406" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1605447797198">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1605473786391">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605447797198" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605473786391" />
     <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605441654100">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

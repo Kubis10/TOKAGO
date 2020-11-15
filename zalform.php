@@ -75,6 +75,24 @@
     .box input[type = "submit"]:hover{
       background: #2ecc71;
     }
+    a:link {
+        color: green;
+    }
+
+    /* visited link */
+    a:visited {
+        color: red;
+    }
+
+    /* mouse over link */
+    a:hover {
+        color: blue;
+    }
+
+    /* selected link */
+    a:active {
+        color: hotpink;
+    }
 	</style>
 </head>
 
