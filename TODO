@@ -1,3 +1,0 @@
-- dodać do tabeli 'uzytkownicy' w bazie kolumnę hash (varchar(2000) not null) na serwerze
-- wgrać nowy push na localhost
-- sprawdzić działanie modułu zmiany hasła

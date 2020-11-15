@@ -3,15 +3,15 @@
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-        $uname = $link->real_escape_string($_POST['uname']);
-        $pass1 = $link->real_escape_string($_POST['pass1']);
-        $pass2 = $link->real_escape_string($_POST['pass2']);
+        $uname = $polaczenie->real_escape_string($_POST['uname']);
+        $pass1 = $polaczenie->real_escape_string($_POST['pass1']);
+        $pass2 = $polaczenie->real_escape_string($_POST['pass2']);
 
         if ($pass1 === $pass2){
 
             $hashedPassword = password_hash($pass1, PASSWORD_DEFAULT);
             if(password_verify($pass1, $hashedPassword)){
-                $update = $link->query("UPDATE uzytkownicy SET pass='$pass1' WHERE user='$uname'");
+                $update = $polaczenie->query("UPDATE uzytkownicy SET pass='$pass1' WHERE user='$uname'");
                 echo 'Hasło zostało zmienione!';
             } else {
                 echo 'Wystąpił problem, skontaktuj się z adminem w celu ręcznej zmiany hasła.';
