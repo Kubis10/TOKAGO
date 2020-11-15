@@ -75,7 +75,8 @@ CREATE TABLE `uzytkownicy` (
   `pass` text COLLATE utf8_polish_ci NOT NULL,
   `email` text COLLATE utf8_polish_ci NOT NULL,
   `lvl` int(11) NOT NULL,
-  `vip` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `vip` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `hash` VARCHAR(2000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
 --

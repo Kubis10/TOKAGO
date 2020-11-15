@@ -88,6 +88,7 @@
 		<input type="password" name="haslo" placeholder="Hasło"/>
 		<input type="submit" value="Zaloguj się" />
 		<a href="rejestracja.php">Rejestracja - załóż darmowe konto!</a>
+		<a href="lostPassword.php">Zapomniałeś hasła? Zresetuj je tutaj</a>
 	</form>
 	
 <?php
