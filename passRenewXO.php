@@ -11,8 +11,8 @@
 
             $hashedPassword = password_hash($pass1, PASSWORD_DEFAULT);
             if(password_verify($pass1, $hashedPassword)){
-                $update = $polaczenie->query("UPDATE uzytkownicy SET pass='$pass1' WHERE user='$uname'");
-                echo 'Hasło zostało zmienione!';
+                $update = $polaczenie->query("UPDATE uzytkownicy SET pass='$hashedPassword' WHERE user='$uname'");
+                header('Location: zalform.php');
             } else {
                 echo 'Wystąpił problem, skontaktuj się z adminem w celu ręcznej zmiany hasła.';
             }

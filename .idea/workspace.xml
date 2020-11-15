@@ -19,11 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1582864b-0a6d-4142-906a-c13d27918912" name="Default Changelist" comment="ajax">
+    <list default="true" id="1582864b-0a6d-4142-906a-c13d27918912" name="Default Changelist" comment="pass">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lostPassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/lostPassword.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/passRenew.php" beforeDir="false" afterPath="$PROJECT_DIR$/passRenew.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/passRenewXO.php" beforeDir="false" afterPath="$PROJECT_DIR$/passRenewXO.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +97,7 @@
       <workItem from="1605441645703" duration="266000" />
       <workItem from="1605443357043" duration="64000" />
       <workItem from="1605443428601" duration="2259000" />
-      <workItem from="1605472621825" duration="4816000" />
+      <workItem from="1605472621825" duration="5211000" />
     </task>
     <task id="LOCAL-00001" summary="baza">
       <created>1605443404303</created>
@@ -158,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605475727794</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="pass">
+      <created>1605477452543</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1605477452543</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +183,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="baza" />
     <MESSAGE value="ajax" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajax" />
+    <MESSAGE value="pass" />
+    <option name="LAST_COMMIT_MESSAGE" value="pass" />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="255" key="IDE.errors.dialog" timestamp="1604578527552">
@@ -190,10 +195,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604578467406" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1605475733133">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1605477455601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605475733133" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605477455601" />
     <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605441654100">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
