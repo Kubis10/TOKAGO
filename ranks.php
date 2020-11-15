@@ -100,7 +100,7 @@ for ($level = 1; $level <= 11; $level++) {
       echo "<tbody>";
         $nums = 1;
         while($row = $query->fetch_assoc()){
-        if($row[$lvl]!="0"){
+        if($row[$lvl]!="0" && $nums<11){
           echo '<tr>';
             echo '<td>'.$nums.'</td>';
             echo '<th>' . $row['user'] . '</th>';
