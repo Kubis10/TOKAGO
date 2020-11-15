@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1582864b-0a6d-4142-906a-c13d27918912" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1jq8lKJOeTKMIxrAGGWMWX6Ko65" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\TOKAGO" />
+      <recent name="C:\xampp\htdocs\TOKAGO\data" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1582864b-0a6d-4142-906a-c13d27918912" name="Default Changelist" comment="" />
+      <created>1604520411265</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604520411265</updated>
+      <workItem from="1604520412522" duration="490000" />
+      <workItem from="1604521136463" duration="604000" />
+      <workItem from="1604524886751" duration="212000" />
+      <workItem from="1604526546182" duration="60000" />
+      <workItem from="1604559604860" duration="1501000" />
+      <workItem from="1604578048568" duration="419000" />
+      <workItem from="1604578475169" duration="3727000" />
+      <workItem from="1604586972786" duration="3810000" />
+      <workItem from="1604598472388" duration="3625000" />
+      <workItem from="1604610052175" duration="2699000" />
+      <workItem from="1604649957055" duration="4838000" />
+      <workItem from="1604672378404" duration="4203000" />
+      <workItem from="1604758216345" duration="735000" />
+      <workItem from="1604849532338" duration="15885000" />
+      <workItem from="1604911557169" duration="15650000" />
+      <workItem from="1604940798759" duration="410000" />
+      <workItem from="1604946084112" duration="4758000" />
+      <workItem from="1604952251205" duration="5995000" />
+      <workItem from="1605023270008" duration="14531000" />
+      <workItem from="1605089300261" duration="201000" />
+      <workItem from="1605093829311" duration="168000" />
+      <workItem from="1605094689781" duration="440000" />
+      <workItem from="1605095225927" duration="21000" />
+      <workItem from="1605108387035" duration="31000" />
+      <workItem from="1605116148269" duration="10292000" />
+      <workItem from="1605165083207" duration="29964000" />
+      <workItem from="1605254409341" duration="44000" />
+      <workItem from="1605354097959" duration="6863000" />
+      <workItem from="1605379347544" duration="5012000" />
+      <workItem from="1605434906625" duration="2963000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="540" y="255" key="IDE.errors.dialog" timestamp="1604578527552">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="255" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604578527552" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1604578467406">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604578467406" />
+  </component>
+</project>

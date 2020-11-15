@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona głowna | TOKAGO</title>
+    <link rel="icon" type="image/png" href="photo/logo.png">
+    <style>
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: #34495e;
+      color: white;
+    }
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #191919;
+        line-height: 50px;
+    }
+
+    li {
+        float: right;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 30px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #3498db;
+    }
+    .logo{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+    h1{
+        text-align: center;
+        font-size: 50px;
+        font-weight: 900;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    footer{
+        text-align: center;
+        width: 100%;
+        background-color: #191919;
+        padding: 7px 0;
+    }
+.container {
+    background: url("photo/game.png") no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #3498db96;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="photo/logo.png" width="70" height="70" class="logo">
+            <ul>
+                <li><a href="zalform.php">Login</a></li>
+                <li><a href="rejestracja.php">Rejestracja</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h1>TOKAGO</h1>
+        </header>
+        <div class="container">
+            <div class="overlay">
+                <div class="text">
+                    <h2>TOKAGO - stara gra, nowy styl</h2>
+                    <p>Jest to platformówka stworzona przez Jakuba Przybysza na podstawie silnika Quintus.js. Zawiera system logowania, system zapisu postępu gry oraz wiele innych! Zarejestruj się już teraz za darmo!</p>
+                </div>
+            </div>
+          </div>
+    </main>
+    <footer>
+        Strona stworzona w 2020. Jakub Przybysz <a href="credits.html" style="text-decoration: none;">Credits</a>
+    </footer>
+    <script src="https://skrypt-cookies.pl/id/d09716b511157630.js"></script>
+</body>
+</html>
