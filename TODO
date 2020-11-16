@@ -1,3 +1,4 @@
--w passrenewxo naprawić przenoszenie na stronę logowania /naprawione
 -dodac zew. pliki css do plikow html
--zamienic echo na tekst w nowych plikach jako komunikaty o błędach oraz zrobić aby w inputach zostawały wartości po złym wpisaniu i submit
+-zamienic echo na tekst w nowych plikach jako komunikaty o błędach
+oraz zrobić aby w inputach zostawały wartości po złym wpisaniu i submit
+-zrobić czas aby liczył się wewnątrz serwera a nie lokalnie
