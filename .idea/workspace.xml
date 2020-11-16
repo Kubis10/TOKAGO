@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1582864b-0a6d-4142-906a-c13d27918912" name="Default Changelist" comment="pass">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020-11-15_20_41__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020-11-15_20_41__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +98,7 @@
       <workItem from="1605443428601" duration="2259000" />
       <workItem from="1605472621825" duration="5498000" />
       <workItem from="1605478144933" duration="112000" />
-      <workItem from="1605515852037" duration="411000" />
+      <workItem from="1605515852037" duration="2191000" />
     </task>
     <task id="LOCAL-00001" summary="baza">
       <created>1605443404303</created>
@@ -172,7 +170,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605477914316</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="pass">
+      <created>1605516311854</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1605516311854</updated>
+    </task>
+    <task id="LOCAL-00012" summary="pass">
+      <created>1605516318109</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1605516318109</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,10 +221,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604578467406" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1605477929801">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1605516323776">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605477929801" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605516323776" />
     <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605441654100">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
