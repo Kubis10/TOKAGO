@@ -25,7 +25,7 @@
             $check = $polaczenie->query("UPDATE uzytkownicy SET hash='$hash' WHERE email='$email'");
 
             $emailMsg = "Cześć! Podobno Twoje hasło się gdzieś zgubiło. Aby je zmienić, kliknij w link poniżej<br>
-            http://tokago.pl/passRenew?hash=".$hash."<br>
+            https://tokago.pl/passRenew?hash=".$hash."<br>
             Nie chciałeś / chciałaś zmieniać hasła? Natychmiast skontaktuj się z adminem.";
 
             $mail = new PHPMailer(true);
@@ -52,10 +52,10 @@
             $mail->AltBody = $emailMsg;
 
             if(!$mail->send()) {
+                var_dump($mail);
                 echo "Wiadomość nie została wysłana.";
                 echo "Błąd wysyłania: " . $mail->ErrorInfo; 
             }
-
             echo 'Na podany adres email została wysłana wiadomość z linkiem do zmiany hasła';
         }
 
