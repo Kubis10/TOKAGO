@@ -12,7 +12,7 @@
             $hashedPassword = password_hash($pass1, PASSWORD_DEFAULT);
             if(password_verify($pass1, $hashedPassword)){
                 $update = $polaczenie->query("UPDATE uzytkownicy SET pass='$hashedPassword' WHERE user='$uname'");
-                header('Location: zalform.php');
+                echo 'Hasło zostało zmienione pomyślnie';
             } else {
                 echo 'Wystąpił problem, skontaktuj się z adminem w celu ręcznej zmiany hasła.';
             }
