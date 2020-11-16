@@ -66,6 +66,12 @@
             .box input[type = "submit"]:hover{
               background: #2ecc71;
             }
+            #error
+            {
+                color:red;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
         </style>
     </head>
     <body>
@@ -81,6 +87,7 @@
                     <input type="text" id="user" name="uname" placeholder="Podaj nazwę użytkownika" required>
                     <input type="password" id="pass1" name="pass1" placeholder="Podaj nowe hasło" required>
                     <input type="password" id="pass2" name="pass2" placeholder="Powtórz nowe hasło" required>
+                    <div id="error"></div>
                     <input type="submit" id="submit" onclick="chPass()" value="Zmień hasło"></input>
                     </form>';
                 } else {
@@ -98,11 +105,12 @@
                 let user = document.getElementById("user").value;
                 let p1 = document.getElementById("pass1").value;
                 let p2 = document.getElementById("pass2").value;
+                let msg = document.getElementById("error");
 
                 let xhttp = new XMLHttpRequest();
                 xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
-                  alert(this.responseText);
+                  msg.innerHTML = this.responseText;
                   window.location.href = "zalform.php";
                 }
                 xhttp.open("POST", "passRenewXO.php", true);

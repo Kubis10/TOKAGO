@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1582864b-0a6d-4142-906a-c13d27918912" name="Default Changelist" comment="del htacces">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forgotPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/forgotPassword.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lostPassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/lostPassword.html" afterDir="false" />
-    </list>
+    <list default="true" id="1582864b-0a6d-4142-906a-c13d27918912" name="Default Changelist" comment="del htacces" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +104,7 @@
       <workItem from="1605472621825" duration="5498000" />
       <workItem from="1605478144933" duration="112000" />
       <workItem from="1605515852037" duration="4653000" />
-      <workItem from="1605522757510" duration="4847000" />
+      <workItem from="1605522757510" duration="5204000" />
     </task>
     <task id="LOCAL-00001" summary="baza">
       <created>1605443404303</created>
@@ -254,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605524635505</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="del htacces">
+      <created>1605528721872</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1605528721872</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
 >>>>>>> 7e13c77c891e7350828ca0b7201c20f22803ce1e
     <servers />
   </component>
@@ -332,10 +335,10 @@
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605522779320" />
 >>>>>>> f8a877c449a01dc984440536127eeea2fb3c52db
 =======
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1605524638961">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1605528725359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605524638961" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605528725359" />
 >>>>>>> 7e13c77c891e7350828ca0b7201c20f22803ce1e
     <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605441654100">
       <screen x="0" y="0" width="1920" height="1050" />
