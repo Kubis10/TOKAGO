@@ -103,7 +103,7 @@
       <workItem from="1605472621825" duration="5498000" />
       <workItem from="1605478144933" duration="112000" />
       <workItem from="1605515852037" duration="4653000" />
-      <workItem from="1605522757510" duration="1493000" />
+      <workItem from="1605522757510" duration="4847000" />
     </task>
     <task id="LOCAL-00001" summary="baza">
       <created>1605443404303</created>
@@ -224,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605522774527</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="del htacces">
+      <created>1605524635505</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1605524635505</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,9 +255,9 @@
     <MESSAGE value="ajax" />
     <MESSAGE value="pass" />
     <MESSAGE value="added htacces" />
-    <MESSAGE value="del htacces" />
     <MESSAGE value="e" />
-    <option name="LAST_COMMIT_MESSAGE" value="e" />
+    <MESSAGE value="del htacces" />
+    <option name="LAST_COMMIT_MESSAGE" value="del htacces" />
   </component>
   <component name="WindowStateProjectService">
     <state x="729" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605478160016">
@@ -265,10 +272,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604578467406" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1605522779320">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1605524638961">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605522779320" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605524638961" />
     <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605441654100">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
