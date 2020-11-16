@@ -54,8 +54,10 @@
             if(!$mail->send()) {
                 echo "Wiadomość nie została wysłana.";
                 echo "Błąd wysyłania: " . $mail->ErrorInfo; 
+            } else {
+                echo 'Na podany adres email została wysłana wiadomość z linkiem do zmiany hasła';
             }
-            echo 'Na podany adres email została wysłana wiadomość z linkiem do zmiany hasła';
+            
         }
 
     } else {
