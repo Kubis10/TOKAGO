@@ -16,22 +16,13 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1582864b-0a6d-4142-906a-c13d27918912" name="Default Changelist" comment="pass">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020-11-15_20_41__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020-11-15_20_41__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lostPassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/lostPassword.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/passRenew.php" beforeDir="false" afterPath="$PROJECT_DIR$/passRenew.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/passRenewXO.php" beforeDir="false" afterPath="$PROJECT_DIR$/passRenewXO.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +35,6 @@
   <component name="ProjectId" id="1jq8lKJOeTKMIxrAGGWMWX6Ko65" />
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
-    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -110,6 +100,7 @@
       <workItem from="1605443428601" duration="2259000" />
       <workItem from="1605472621825" duration="5498000" />
       <workItem from="1605478144933" duration="112000" />
+      <workItem from="1605515852037" duration="411000" />
     </task>
     <task id="LOCAL-00001" summary="baza">
       <created>1605443404303</created>
