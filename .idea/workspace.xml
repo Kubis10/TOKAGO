@@ -19,12 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="1582864b-0a6d-4142-906a-c13d27918912" name="Default Changelist" comment="Repaired passRenewXO.php - after successful change of password user is relocated to login form">
-=======
     <list default="true" id="1582864b-0a6d-4142-906a-c13d27918912" name="Default Changelist" comment="del htacces">
->>>>>>> ffdc2c5e27511a05b6f4f87f027ca04ec2ba2784
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forgotPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/forgotPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lostPassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/lostPassword.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +108,7 @@
       <workItem from="1605472621825" duration="5498000" />
       <workItem from="1605478144933" duration="112000" />
       <workItem from="1605515852037" duration="4653000" />
+      <workItem from="1605522757510" duration="1493000" />
     </task>
     <task id="LOCAL-00001" summary="baza">
       <created>1605443404303</created>
@@ -233,8 +232,19 @@
       <option name="project" value="LOCAL" />
       <updated>1605522742730</updated>
     </task>
+<<<<<<< HEAD
     <option name="localTasksCounter" value="17" />
 >>>>>>> ffdc2c5e27511a05b6f4f87f027ca04ec2ba2784
+=======
+    <task id="LOCAL-00017" summary="e">
+      <created>1605522774527</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1605522774527</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+>>>>>>> f8a877c449a01dc984440536127eeea2fb3c52db
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,8 +273,13 @@
 =======
     <MESSAGE value="added htacces" />
     <MESSAGE value="del htacces" />
+<<<<<<< HEAD
     <option name="LAST_COMMIT_MESSAGE" value="del htacces" />
 >>>>>>> ffdc2c5e27511a05b6f4f87f027ca04ec2ba2784
+=======
+    <MESSAGE value="e" />
+    <option name="LAST_COMMIT_MESSAGE" value="e" />
+>>>>>>> f8a877c449a01dc984440536127eeea2fb3c52db
   </component>
   <component name="WindowStateProjectService">
     <state x="729" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605478160016">
@@ -280,6 +295,7 @@
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604578467406" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <state x="552" y="251" key="Vcs.Push.Dialog.v2" timestamp="1605485365851">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -291,6 +307,12 @@
     </state>
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605519262139" />
 >>>>>>> ffdc2c5e27511a05b6f4f87f027ca04ec2ba2784
+=======
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1605522779320">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605522779320" />
+>>>>>>> f8a877c449a01dc984440536127eeea2fb3c52db
     <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605441654100">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -52,11 +52,11 @@
             $mail->AltBody = $emailMsg;
 
             if(!$mail->send()) {
+                var_dump($mail);
                 echo "Wiadomość nie została wysłana.";
                 echo "Błąd wysyłania: " . $mail->ErrorInfo; 
             }
-
-            echo '<div>Na podany adres email została wysłana wiadomość z linkiem do zmiany hasła<div>';
+            echo 'Na podany adres email została wysłana wiadomość z linkiem do zmiany hasła';
         }
 
     } else {
