@@ -48,4 +48,4 @@ Your patches are welcome. Here's our suggested workflow:
 
 ## Copyright and attribution
 
-Copyright (c) 2016 DataMade. Released under the [MIT License](https://github.com/kubis10/tokago/blob/master/LICENSE).
+Copyright (c) 2020 TOKAGO. Released under the [MIT License](https://github.com/kubis10/tokago/blob/master/LICENSE).
