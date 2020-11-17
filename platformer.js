@@ -194,7 +194,7 @@ let id = div2.textContent;
     }
     else{
       client = new Date();
-      wartosc = timesample +(ServerDate-client)*-1;
+      wartosc = timesample + ((ServerDate-client)*-1);
     }
     if((Q.inputs['right'] || Q.inputs['left']) && gui === false) {
       run=true;
@@ -396,3 +396,4 @@ let id = div2.textContent;
   });
 
 });
+
