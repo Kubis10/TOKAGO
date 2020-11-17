@@ -186,13 +186,15 @@ let id = div2.textContent;
       console.log(wartosc);
       timesample = contime-client;
       console.log(timesample);
-      time = ((wartosc+timesample)/1000).toFixed(2);
+      timesample = wartosc+timesample;
+      console.log(timesample);
+      time = (timesample/1000).toFixed(2);
       console.log(time)
       Q.stageScene('times', 3)
     }
     else{
-      wartosc = timesample;
       client = new Date();
+      wartosc = timesample +(ServerDate-client)*-1;
     }
     if((Q.inputs['right'] || Q.inputs['left']) && gui === false) {
       run=true;
@@ -212,7 +214,7 @@ let id = div2.textContent;
   function cheatCode() {
     var cheat = prompt("Code:");
     if (cheat != null) {
-      if(cheat === "Level"){
+      if(cheat === "lvl"){
         level = prompt("Level:");
         if(level>=0&&level<12) {
           saveUserLevel();
@@ -322,6 +324,8 @@ let id = div2.textContent;
       Q.clearStages();
       reset();
       gui=false;
+      timesample = 0;
+      wartosc = 0;
       Q.stageScene('level'+level);
       Q.stageScene('pause', 1);
     });
@@ -344,6 +348,8 @@ let id = div2.textContent;
       Q.clearStages();
       reset();
       gui=false;
+      timesample = 0;
+      wartosc = 0;
       Q.stageScene('level'+level, 0);
       Q.stageScene('pause', 1);
     });
@@ -366,6 +372,8 @@ let id = div2.textContent;
       Q.clearStages();
       reset();
       gui=false;
+      timesample = 0;
+      wartosc = 0;
       Q.stageScene('level'+level, 0);
       Q.stageScene('pause', 1);
     });
