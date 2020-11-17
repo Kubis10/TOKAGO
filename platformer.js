@@ -173,20 +173,32 @@ let id = div2.textContent;
     xhttp.send(`id=${id}&level=${level}&time=${time}`);
   }
   //js stopper
-   var stopper = setInterval(myTimer, 10);
-   let time = 0;
-   let run = false;
-   let gui = false;
-   function myTimer() {
-     if(run) {
-       time += 0.01;
-       Q.stageScene('times', 3)
-     }
-     if((Q.inputs['right'] || Q.inputs['left']) && gui === false) {
-        run=true;
-        gui = true;
-     }
-   }
+  let time = 0;
+  let wartosc = 0;
+  let timesample = 0;
+  let run = false;
+  let gui = false;
+  let client;
+  var stopper = setInterval(myTimer, 10);
+  function myTimer() {
+    if(run) {
+      var contime = window.ServerDate;
+      console.log(wartosc);
+      timesample = contime-client;
+      console.log(timesample);
+      time = ((wartosc+timesample)/1000).toFixed(2);
+      console.log(time)
+      Q.stageScene('times', 3)
+    }
+    else{
+      wartosc = timesample;
+      client = new Date();
+    }
+    if((Q.inputs['right'] || Q.inputs['left']) && gui === false) {
+      run=true;
+      gui = true;
+    }
+  }
    //reset time
    function reset(){
      time=0;
@@ -204,6 +216,7 @@ let id = div2.textContent;
         level = prompt("Level:");
         if(level>=0&&level<12) {
           saveUserLevel();
+          saveUserLevel();
           location.reload();
         }
       }
@@ -217,7 +230,7 @@ let id = div2.textContent;
      }));
 
      stage.insert(new Q.UI.Text({x:50, y: 20,
-       label: "Czas: " + time.toFixed(2) + "s", color: "white" }),container);
+       label: "Czas: " + time + "s", color: "white" }),container);
 
      container.fit(20, 20);
    });

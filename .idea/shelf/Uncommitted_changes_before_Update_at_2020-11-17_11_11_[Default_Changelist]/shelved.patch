@@ -1,0 +1,432 @@
+Index: platformer.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>window.addEventListener(\"load\",function() {\r\n\r\n// Set up an instance of the Quintus engine  and include\r\n// the Sprites, Scenes, Input and 2D module. The 2D module\r\n// includes the `TileLayer` class as well as the `2d` componet.\r\n  var Q = window.Q = Quintus({development: true}, {audioSupported: [ 'mp3']})\r\n      .include(\"Sprites, Scenes, Input, 2D, Anim, Touch, UI, TMX, Audio\")\r\n      // Maximize this game to whatever the size of the browser is\r\n      .setup({ maximize: true })\r\n      // And turn on default input controls and touch input (for UI)\r\n      .enableSound()\r\n      .touch()\r\n      // And turn on input controls and touch input (for UI)\r\n      Q.input.keyboardControls({\r\n        A: \"left\",\r\n        D: \"right\",\r\n        W: \"up\",\r\n        LEFT: \"left\",\r\n        RIGHT: \"right\",\r\n        UP: \"up\"\r\n      })\r\n      Q.input.touchControls({\r\n      controls:   [ ['left','<' ],\r\n                    ['right','>' ],\r\n                    [],\r\n                    [],\r\n                    ['up','/\\\\']]\r\n      });\r\n\r\n// ## Player Sprite\r\n  Q.Sprite.extend(\"Player\",{\r\n\r\n    // the init constructor is called on creation\r\n    init: function(p) {\r\n\r\n      this._super(p, {\r\n        sheet: \"player\",  // Setting a sprite sheet sets sprite width and height\r\n        jumpSpeed: -400,\r\n        speed: 300\r\n      });\r\n\r\n      this.add('2d, platformerControls');\r\n\r\n      this.on(\"hit.sprite\",function(collision) {\r\n\r\n        if(collision.obj.isA(\"Tower\")) {\r\n          run=false;\r\n          saveUserTime();\r\n          Q.stage().pause();\r\n          if(level>=11){\r\n            Q.stageScene(\"gameover\", 1, {label: \"Dziękuje za przejście gry!\"});\r\n          }\r\n          else {\r\n            Q.stageScene(\"nextLevel\", 1, {label: \"Udało się!\"});\r\n          }\r\n          this.destroy();\r\n        }\r\n      });\r\n    }\r\n  });\r\n\r\n\r\n// ## Tower Sprite\r\n  Q.Sprite.extend(\"Tower\", {\r\n    init: function(p) {\r\n      this._super(p, { sheet: 'tower' });\r\n    }\r\n  });\r\n\r\n// ## Enemy Sprite\r\n// Create the Enemy class to add in some baddies\r\n  Q.Sprite.extend(\"Enemy\",{\r\n    init: function(p) {\r\n      this._super(p, { sheet: 'enemy', vx: 100, visibleOnly: true });\r\n\r\n      this.add('2d, aiBounce');\r\n\r\n      this.on(\"bump.left,bump.right,bump.bottom\",function(collision) {\r\n        if(collision.obj.isA(\"Player\")) {\r\n          Q.stageScene(\"endGame\",1, { label: \"Umarłeś\" });\r\n          run=false;\r\n          Q.stage().pause();\r\n          collision.obj.destroy();\r\n        }\r\n      });\r\n\r\n      this.on(\"bump.top\",function(collision) {\r\n        if(collision.obj.isA(\"Player\")) {\r\n          this.destroy();\r\n          collision.obj.p.vy = -300;\r\n        }\r\n      });\r\n    }\r\n  });\r\n  //get from html id and level\r\nlet div1 = document.getElementById(\"level\");\r\nlet level = div1.textContent;\r\nlet div2 = document.getElementById(\"ids\");\r\nlet id = div2.textContent;\r\n// ## Level0 scene (test)\r\n  Q.scene(\"level0\",function(stage) {\r\n    Q.stageTMX(\"level0.tmx\",stage);\r\n    stage.add(\"viewport\").follow(Q(\"Player\").first());\r\n  });\r\n// ## Level1 scene\r\n  Q.scene(\"level1\",function(stage) {\r\n    Q.stageTMX(\"level1.tmx\",stage);\r\n    stage.add(\"viewport\").follow(Q(\"Player\").first());\r\n  });\r\n// ## Level2 scene\r\n  Q.scene(\"level2\",function(stage) {\r\n    Q.stageTMX(\"level2.tmx\",stage);\r\n    stage.add(\"viewport\").follow(Q(\"Player\").first());\r\n  });\r\n  // ## Level3 scene\r\n  Q.scene(\"level3\",function(stage) {\r\n    Q.stageTMX(\"level3.tmx\",stage);\r\n    stage.add(\"viewport\").follow(Q(\"Player\").first());\r\n  });\r\n  // ## Level4 scene\r\n  Q.scene(\"level4\",function(stage) {\r\n    Q.stageTMX(\"level4.tmx\",stage);\r\n    stage.add(\"viewport\").follow(Q(\"Player\").first());\r\n  });\r\n  // ## Level5 scene\r\n  Q.scene(\"level5\",function(stage) {\r\n    Q.stageTMX(\"level5.tmx\",stage);\r\n    stage.add(\"viewport\").follow(Q(\"Player\").first());\r\n  });\r\n  // ## Level6 scene\r\n  Q.scene(\"level6\",function(stage) {\r\n    Q.stageTMX(\"level6.tmx\",stage);\r\n    stage.add(\"viewport\").follow(Q(\"Player\").first());\r\n  });\r\n  // ## Level7 scene\r\n  Q.scene(\"level7\",function(stage) {\r\n    Q.stageTMX(\"level7.tmx\",stage);\r\n    stage.add(\"viewport\").follow(Q(\"Player\").first());\r\n  });\r\n  // ## Level8 scene\r\n  Q.scene(\"level8\",function(stage) {\r\n    Q.stageTMX(\"level8.tmx\",stage);\r\n    stage.add(\"viewport\").follow(Q(\"Player\").first());\r\n  });\r\n  // ## Level9 scene\r\n  Q.scene(\"level9\",function(stage) {\r\n    Q.stageTMX(\"level9.tmx\",stage);\r\n    stage.add(\"viewport\").follow(Q(\"Player\").first());\r\n  });\r\n  // ## Level10 scene\r\n  Q.scene(\"level10\",function(stage) {\r\n    Q.stageTMX(\"level10.tmx\",stage);\r\n    stage.add(\"viewport\").follow(Q(\"Player\").first());\r\n  });\r\n  // ## Level11 scene\r\n  Q.scene(\"level11\",function(stage) {\r\n    Q.stageTMX(\"level11.tmx\",stage);\r\n    stage.add(\"viewport\").follow(Q(\"Player\").first());\r\n  });\r\n  //##FUNCTIONS\r\n  //ajax save level\r\n  function saveUserLevel() {\r\n    var xhttp = new XMLHttpRequest();\r\n    xhttp.open(\"POST\", \"savelevel.php\", true);\r\n    xhttp.setRequestHeader(\"Content-type\", \"application/x-www-form-urlencoded\");\r\n    xhttp.send(`id=${id}&level=${level}`);\r\n  }\r\n  //ajax save time\r\n  function saveUserTime() {\r\n    var xhttp = new XMLHttpRequest();\r\n    xhttp.open(\"POST\", \"ranking.php\", true);\r\n    xhttp.setRequestHeader(\"Content-type\", \"application/x-www-form-urlencoded\");\r\n    xhttp.send(`id=${id}&level=${level}&time=${time}`);\r\n  }\r\n  //js stopper\r\n   var stopper = setInterval(myTimer, 10);\r\n   let time = 0;\r\n   let run = false;\r\n   let gui = false;\r\n   function myTimer() {\r\n     if(run) {\r\n       time += 0.01;\r\n       Q.stageScene('times', 3)\r\n     }\r\n     if((Q.inputs['right'] || Q.inputs['left']) && gui === false) {\r\n        run=true;\r\n        gui = true;\r\n     }\r\n   }\r\n   //reset time\r\n   function reset(){\r\n     time=0;\r\n   }\r\n  document.onkeyup = function(e){\r\n    if (e.ctrlKey && e.altKey && e.shiftKey && e.which == 85){\r\n      cheatCode();\r\n    }\r\n  }\r\n  //dev shortcut or.. cheats?\r\n  function cheatCode() {\r\n    var cheat = prompt(\"Code:\");\r\n    if (cheat != null) {\r\n      if(cheat === \"Level\"){\r\n        level = prompt(\"Level:\");\r\n        if(level>=0&&level<12) {\r\n          saveUserLevel();\r\n          location.reload();\r\n        }\r\n      }\r\n    }\r\n  }\r\n   //##SCENES\r\n   //display timer\r\n   Q.scene('times',function(stage) {\r\n     var container = stage.insert(new Q.UI.Container({\r\n       x: 50, y: 0, fill: \"rgba(0,0,0,0.5)\"\r\n     }));\r\n\r\n     stage.insert(new Q.UI.Text({x:50, y: 20,\r\n       label: \"Czas: \" + time.toFixed(2) + \"s\", color: \"white\" }),container);\r\n\r\n     container.fit(20, 20);\r\n   });\r\n   //pause button\r\n  Q.scene('pause',function(stage) {\r\n    stage.insert(new Q.UI.Button({\r\n      asset: 'pause.png',\r\n      x: Q.width-50,\r\n      scale: 0.4,\r\n      y: 50\r\n    }, function() {\r\n      if(time==0){\r\n        gui =!gui;\r\n      }\r\n      else{\r\n        run=!run;\r\n      }\r\n      if(run===false && gui === true){\r\n        Q.stage(0).pause();\r\n        Q.stageScene('menu', 2);\r\n      }\r\n      else{\r\n        Q.stage(0).unpause();\r\n        Q.clearStage(2);\r\n      }\r\n      this.p.angle += 90;\r\n    }));\r\n  });\r\n  //script music\r\n  let muzyka = true;\r\n  if(muzyka===true){\r\n    Q.audio.play('jump.mp3',{ loop: true });\r\n  }\r\n  else{\r\n    Q.audio.stop();\r\n  }\r\n  //menu section\r\n  Q.scene('menu',function(stage) {\r\n    var container = stage.insert(new Q.UI.Container({\r\n      x: Q.width/2, y: Q.height/2-100, fill: \"rgba(0,0,0,0.9)\"\r\n    }));\r\n    stage.insert(new Q.UI.Text({\r\n      label: \"Pauza\",\r\n      color: \"white\",\r\n      x: 0,\r\n      y: 0\r\n    }),container);\r\n    stage.insert(new Q.UI.Button({\r\n      label: \"Ranking\",\r\n      y: 60,\r\n      x: 0,\r\n      fill: \"#f28400\",\r\n      border: 2,\r\n    }, function() {\r\n      location.replace(\"ranks.php\")\r\n    }),container);\r\n    stage.insert(new Q.UI.Button({\r\n      label: \"Muzyka w tle\",\r\n      y: 115,\r\n      x: 0,\r\n      fill: \"#f28400\",\r\n      border: 2,\r\n    }, function() {\r\n      muzyka=!muzyka;\r\n    }),container);\r\n    stage.insert(new Q.UI.Button({\r\n      label: \"Wyloguj się\",\r\n      y: 180,\r\n      x: 0,\r\n      fill: \"#990000\",\r\n      border: 2,\r\n    }, function() {\r\n      location.replace(\"logout.php\")\r\n    }),container);\r\n\r\n    container.fit(20, 50);\r\n  });\r\n  //die event\r\n  Q.scene('endGame',function(stage) {\r\n    var container = stage.insert(new Q.UI.Container({\r\n      x: Q.width/2, y: Q.height/2, fill: \"rgba(0,0,0,0.5)\"\r\n    }));\r\n\r\n    var button = container.insert(new Q.UI.Button({ x: 0, y: 0, fill: \"#CCCCCC\",\r\n      label: \"Zagraj Ponownie\" }))\r\n    var label = container.insert(new Q.UI.Text({x:0, y: -10 - button.p.h,\r\n      label: stage.options.label }));\r\n    button.on(\"click\",function() {\r\n      Q.clearStages();\r\n      reset();\r\n      gui=false;\r\n      Q.stageScene('level'+level);\r\n      Q.stageScene('pause', 1);\r\n    });\r\n\r\n    container.fit(20);\r\n  });\r\n  //go to next level\r\n  Q.scene('nextLevel',function(stage) {\r\n    var container = stage.insert(new Q.UI.Container({\r\n      x: Q.width/2, y: Q.height/2, fill: \"rgba(0,0,0,0.5)\"\r\n    }));\r\n\r\n    var button = container.insert(new Q.UI.Button({ x: 0, y: 0, fill: \"#CCCCCC\",\r\n      label: \"Następny poziom\" }))\r\n    var label = container.insert(new Q.UI.Text({x:0, y: -10 - button.p.h,\r\n      label: stage.options.label }));\r\n    button.on(\"click\",function() {\r\n      level = parseInt(level)+1;\r\n      saveUserLevel();\r\n      Q.clearStages();\r\n      reset();\r\n      gui=false;\r\n      Q.stageScene('level'+level, 0);\r\n      Q.stageScene('pause', 1);\r\n    });\r\n\r\n    container.fit(20);\r\n  });\r\n  //koniec gry\r\n  Q.scene('gameover',function(stage) {\r\n    var container = stage.insert(new Q.UI.Container({\r\n      x: Q.width/2, y: Q.height/2, fill: \"rgba(0,0,0,0.5)\"\r\n    }));\r\n\r\n    var button = container.insert(new Q.UI.Button({ x: 0, y: 0, fill: \"#CCCCCC\",\r\n      label: \"Nowa gra\" }))\r\n    var label = container.insert(new Q.UI.Text({x:0, y: -10 - button.p.h,\r\n      label: stage.options.label }));\r\n    button.on(\"click\",function() {\r\n      level = 1;\r\n      saveUserLevel();\r\n      Q.clearStages();\r\n      reset();\r\n      gui=false;\r\n      Q.stageScene('level'+level, 0);\r\n      Q.stageScene('pause', 1);\r\n    });\r\n\r\n    container.fit(20);\r\n  });\r\n\r\n\r\n// Load TMX files\r\n// and load all the assets referenced in them\r\n  Q.loadTMX(\"level0.tmx, level1.tmx, level2.tmx, level3.tmx, level4.tmx, level5.tmx, level6.tmx, level7.tmx, level8.tmx, level9.tmx, level10.tmx, level11.tmx, sprites.json, pause.png\", function() {\r\n    Q.compileSheets(\"sprites.png\",\"sprites.json\");\r\n    Q.stageScene('level'+level);\r\n    Q.stageScene('pause', 1, Q('Player').first().p);\r\n  },{\r\n    progressCallback: function(loaded,total) {\r\n      var element = document.getElementById(\"loading_progress\");\r\n      element.style.width = Math.floor(loaded/total*100) + \"%\";\r\n    }\r\n  });\r\n\r\n});\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- platformer.js	(revision 76e3eb03287614b5017e3783d47de111743c4dbd)
++++ platformer.js	(date 1605602544473)
+@@ -173,20 +173,32 @@
+     xhttp.send(`id=${id}&level=${level}&time=${time}`);
+   }
+   //js stopper
+-   var stopper = setInterval(myTimer, 10);
+-   let time = 0;
+-   let run = false;
+-   let gui = false;
+-   function myTimer() {
+-     if(run) {
+-       time += 0.01;
+-       Q.stageScene('times', 3)
+-     }
+-     if((Q.inputs['right'] || Q.inputs['left']) && gui === false) {
+-        run=true;
+-        gui = true;
+-     }
+-   }
++  let time = 0;
++  let wartosc = 0;
++  let timesample = 0;
++  let run = false;
++  let gui = false;
++  let client;
++  var stopper = setInterval(myTimer, 10);
++  function myTimer() {
++    if(run) {
++      var contime = window.ServerDate;
++      console.log(wartosc);
++      timesample = contime-client;
++      console.log(timesample);
++      time = ((wartosc+timesample)/1000).toFixed(2);
++      console.log(time)
++      Q.stageScene('times', 3)
++    }
++    else{
++      wartosc = timesample;
++      client = new Date();
++    }
++    if((Q.inputs['right'] || Q.inputs['left']) && gui === false) {
++      run=true;
++      gui = true;
++    }
++  }
+    //reset time
+    function reset(){
+      time=0;
+@@ -204,6 +216,7 @@
+         level = prompt("Level:");
+         if(level>=0&&level<12) {
+           saveUserLevel();
++          saveUserLevel();
+           location.reload();
+         }
+       }
+@@ -217,7 +230,7 @@
+      }));
+ 
+      stage.insert(new Q.UI.Text({x:50, y: 20,
+-       label: "Czas: " + time.toFixed(2) + "s", color: "white" }),container);
++       label: "Czas: " + time + "s", color: "white" }),container);
+ 
+      container.fit(20, 20);
+    });
+Index: gra.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\nrequire_once \"connect.php\";\r\n\tsession_start();\r\n\t\r\n\tif ((!isset($_SESSION['zalogowany'])) || (!isset($_SESSION['id'])))\r\n\t{\r\n\t\theader('Location: index.html');\r\n\t\texit();\r\n\t}\r\n    $sesid = $_SESSION['id'];\r\n?>\r\n<!DOCTYPE HTML>\r\n<html lang=\"pl\">\r\n<head>\r\n\t<meta charset=\"utf-8\" />\r\n\t<meta name=\"viewport\" content=\"width=device-width, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0\">\r\n\t<title>TOKAGO</title>\r\n\t<link rel=\"icon\" type=\"image/png\" href=\"photo/logo.png\">\r\n\t<script src='lib/quintus.js'></script>\r\n    <script src='lib/quintus_sprites.js'></script>\r\n    <script src='lib/quintus_scenes.js'></script>\r\n    <script src='lib/quintus_input.js'></script>\r\n    <script src='lib/quintus_touch.js'></script>\r\n    <script src='lib/quintus_2d.js'></script>\r\n    <script src='lib/quintus_anim.js'></script>\r\n    <script src='lib/quintus_audio.js'></script>\r\n    <script src='lib/quintus_ui.js'></script>\r\n    <script src='lib/quintus_tmx.js'></script>\r\n    <script src='platformer.js'></script>\r\n    <style>\r\n      body { padding:0px; margin:0px; }\r\n          #loading {\r\n            margin:50px auto;\r\n            max-width:1024px;\r\n            position:fixed;\r\n            width:100%;\r\n            height:100%;\r\n            text-align:center;\r\n          }\r\n\r\n          #loading_container {\r\n            position:relative;\r\n            margin:0 auto;\r\n            width:50%;\r\n            height:20px;\r\n            border:1px solid black;\r\n            text-align:center;\r\n            padding-top:10px;\r\n          }\r\n\r\n          #loading_progress {\r\n            width:0%;\r\n            background-color:red;\r\n            position:absolute;\r\n            height:30px;\r\n            top:0px;\r\n            left:0px;\r\n            opacity:0.4;\r\n          }\r\n    </style>\r\n</head>\r\n\r\n<body onmousedown='return false;' onselectstart='return false;'>\r\n<?php\r\n$result = $polaczenie->query(\"SELECT id, lvl FROM uzytkownicy WHERE id='$sesid'\");\r\n    if($result->num_rows>0) {\r\n       $resultTable = $result->fetch_assoc();\r\n       $lvl = $resultTable['lvl'];\r\n       $id = $resultTable['id'];\r\n    }\r\n    echo '<p hidden id=\"level\">'.$lvl.\"</p>\";\r\n    echo '<p hidden id=\"ids\">'.$id.\"</p>\";\r\n    /*\r\n\techo \"<br /><b>Data wygaśnięcia premium</b>: \".$_SESSION['vip'].\"</p>\";\r\n\r\n\r\n\t$dataczas = new DateTime();\r\n\r\n\techo \"Data i czas serwera: \".$dataczas->format('Y-m-d H:i:s').\"<br>\";\r\n\r\n\t$koniec = DateTime::createFromFormat('Y-m-d H:i:s', $_SESSION['vip']);\r\n\r\n\t$roznica = $dataczas->diff($koniec);\r\n\r\n\tif($dataczas<$koniec)\r\n\techo \"Pozostało premium: \".$roznica->format('%y lat, %m mies, %d dni, %h godz, %i min, %s sek');\r\n\telse\r\n\techo \"Premium nieaktywne od: \".$roznica->format('%y lat, %m mies, %d dni, %h godz, %i min, %s sek');*/\r\n?>\r\n    <div id='loading'>\r\n      <div id='loading_container'>\r\n        Loading...\r\n        <div id='loading_progress'></div>\r\n      </div>\r\n    </div>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gra.php	(revision 76e3eb03287614b5017e3783d47de111743c4dbd)
++++ gra.php	(date 1605601318970)
+@@ -93,5 +93,15 @@
+         <div id='loading_progress'></div>
+       </div>
+     </div>
++    <SCRIPT src="lib/ServerDate.js"></SCRIPT>
++    <script>
++    var contime = document.getElementById("tims")
++    function updateClocks()
++    {
++        var date = ServerDate;
++    }
++    updateClocks();
++    setInterval(updateClocks, 10);
++    </script>
+ </body>
+ </html>
+\ No newline at end of file
+Index: forgotPassword.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\n\r\n    require_once \"connect.php\";\r\n    require_once(__DIR__.'/PHPMailer-5.2-stable/PHPMailerAutoload.php');\r\n\r\n    if ($polaczenie->connect_errno!=0)\r\n    \t{\r\n    \t\techo \"Error: \".$polaczenie->connect_errno;\r\n    \t}\r\n\r\n    if ($_SERVER['REQUEST_METHOD'] === 'POST'){\r\n\r\n        $email = $polaczenie->real_escape_string($_POST['email']);\r\n        $checkIfCorr = $polaczenie->query(\"SELECT email from uzytkownicy WHERE email='$email'\");\r\n        $checkNum = $checkIfCorr->num_rows;\r\n\r\n        if ($checkNum != 1){\r\n\r\n            echo \"Podany adres nie istnieje w bazie\";\r\n\r\n        } else {\r\n\r\n            $hash = genUUID();\r\n\r\n            $check = $polaczenie->query(\"UPDATE uzytkownicy SET hash='$hash' WHERE email='$email'\");\r\n\r\n            $emailMsg = \"Cześć! Podobno Twoje hasło się gdzieś zgubiło. Aby je zmienić, kliknij w link poniżej<br>\r\n            https://tokago.pl/passRenew?hash=\".$hash.\"<br>\r\n            Nie chciałeś / chciałaś zmieniać hasła? Natychmiast skontaktuj się z adminem.\";\r\n\r\n            $mail = new PHPMailer(true);\r\n            $mail->SMTPDebug = 0;\r\n            $mail->CharSet = \"UTF-8\";\r\n            $mail->IsSMTP();\r\n            $mail->SMTPAuth = TRUE;\r\n            $mail->SMTPAutoTLS = false;\r\n            $mail->SMTPSecure = 'plain';\r\n            $mail->SMTPKeepAlive = true;\r\n            $mail->Host = 'serwer2040614.home.pl';\r\n            $mail->Username = $smtplog;\r\n            $mail->Password = $smtppass;\r\n            $mail->setFrom = 'pomoc@tokago.pl'; \r\n            $mail->From = 'pomoc@tokago.pl';\r\n            $mail->FromName = 'Zespół Tokago';\r\n            $mail->Port = 25;\r\n            $mail->WordWrap = 50;\r\n            $mail->Priority = 1;\r\n            $mail->Subject = 'Resetowanie hasła';\r\n            $mail->addAddress($email);\r\n            $mail->isHTML(true);\r\n            $mail->Body = $emailMsg;\r\n            $mail->AltBody = $emailMsg;\r\n\r\n            if(!$mail->send()) {\r\n                echo \"Wiadomość nie została wysłana.\";\r\n                echo \"Błąd wysyłania: \" . $mail->ErrorInfo; \r\n            } else {\r\n                echo 'Na podany adres email została wysłana wiadomość z linkiem do zmiany hasła';\r\n            }\r\n            \r\n        }\r\n\r\n    } else {\r\n        echo 'No data';\r\n    }\r\n\r\n?>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- forgotPassword.php	(revision 76e3eb03287614b5017e3783d47de111743c4dbd)
++++ forgotPassword.php	(date 1605530872389)
+@@ -56,6 +56,7 @@
+                 echo "Błąd wysyłania: " . $mail->ErrorInfo; 
+             } else {
+                 echo 'Na podany adres email została wysłana wiadomość z linkiem do zmiany hasła';
++
+             }
+             
+         }
+Index: lib/ServerDate.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- lib/ServerDate.js	(date 1605600164182)
++++ lib/ServerDate.js	(date 1605600164182)
+@@ -0,0 +1,308 @@
++/*
++
++COPYRIGHT
++
++Copyright 2012 David Braun
++
++This file is part of ServerDate.
++
++ServerDate is free software: you can redistribute it and/or modify
++it under the terms of the GNU Lesser General Public License as published by
++the Free Software Foundation, either version 3 of the License, or
++(at your option) any later version.
++
++ServerDate is distributed in the hope that it will be useful,
++but WITHOUT ANY WARRANTY; without even the implied warranty of
++MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++GNU Lesser General Public License for more details.
++
++You should have received a copy of the GNU Lesser General Public License
++along with ServerDate.  If not, see <http://www.gnu.org/licenses/>.
++
++*/
++
++'use strict';
++
++//Date.now support for older browsers
++if (!Date.now) {
++    Date.now = function() { return new Date().getTime(); }
++}
++
++var ServerDate = (function(serverNow) {
++// This is the first time we align with the server's clock by using the time
++// this script was generated (serverNow) and noticing the client time before
++// and after the script was loaded.  This gives us a good estimation of the
++// server's clock right away, which we later refine during synchronization.
++
++var
++  // Remember when the script was loaded.
++  scriptLoadTime = Date.now(),
++
++  // Remember the URL of this script so we can call it again during
++  // synchronization.
++  scripts = document.getElementsByTagName("script"),
++  URL = scripts[scripts.length - 1].src,
++
++  synchronizationIntervalDelay,
++  synchronizationInterval,
++  precision,
++  offset,
++  target = null,
++  synchronizing = false;
++
++// Everything is in the global function ServerDate.  Unlike Date, there is no
++// need for a constructor because there aren't instances.
++
++/// PUBLIC
++
++// Emulate Date's methods.
++
++function ServerDate() {
++  // See http://stackoverflow.com/a/18543216/1330099.
++  return this
++    ? ServerDate
++    : ServerDate.toString();
++}
++
++ServerDate.parse = Date.parse;
++ServerDate.UTC = Date.UTC;
++
++ServerDate.now = function() {
++  return Date.now() + offset;
++};
++
++// Populate ServerDate with the methods of Date's instances that don't change
++// state.
++
++["toString", "toDateString", "toTimeString", "toLocaleString",
++  "toLocaleDateString", "toLocaleTimeString", "valueOf", "getTime",
++  "getFullYear", "getUTCFullYear", "getMonth", "getUTCMonth", "getDate",
++  "getUTCDate", "getDay", "getUTCDay", "getHours", "getUTCHours",
++  "getMinutes", "getUTCMinutes", "getSeconds", "getUTCSeconds",
++  "getMilliseconds", "getUTCMilliseconds", "getTimezoneOffset", "toUTCString",
++  "toISOString", "toJSON"]
++  .forEach(function(method) {
++    ServerDate[method] = function() {
++      return new Date(ServerDate.now())[method]();
++    };
++  });
++
++// Because of network delays we can't be 100% sure of the server's time.  We do
++// know the precision in milliseconds and make it available here.
++ServerDate.getPrecision = function() // ms
++{
++  if (typeof target.precision != "undefined")
++    // Take into account the amortization.
++    return target.precision + Math.abs(target - offset);
++};
++
++// After a synchronization there may be a significant difference between our
++// clock and the server's clock.  Rather than make the change abruptly, we
++// change our clock by adjusting it once per second by the amortizationRate.
++ServerDate.amortizationRate = 25; // ms
++
++// The exception to the above is if the difference between the clock and
++// server's clock is too great (threshold set below).  If that's the case then
++// we skip amortization and set the clock to match the server's clock
++// immediately.
++ServerDate.amortizationThreshold = 2000; // ms
++
++Object.defineProperty(ServerDate, "synchronizationIntervalDelay", {
++  get: function() { return synchronizationIntervalDelay; },
++
++  set: function(value) {
++  synchronizationIntervalDelay = value;
++  clearInterval(synchronizationInterval);
++
++  synchronizationInterval = setInterval(synchronize,
++    ServerDate.synchronizationIntervalDelay);
++
++  //log("Set synchronizationIntervalDelay to " + value + " ms.");
++}});
++
++// After the initial synchronization the two clocks may drift so we
++// automatically synchronize again every synchronizationIntervalDelay.
++ServerDate.synchronizationIntervalDelay = 10 * 60 * 1000; // ms, 10 minutes
++
++/// PRIVATE
++
++// We need to work with precision as well as offset values, so bundle them
++// together conveniently.
++function Offset(value, precision) {
++  this.value = value;
++  this.precision = precision;
++}
++
++Offset.prototype.valueOf = function() {
++  return this.value;
++};
++
++Offset.prototype.toString = function() {
++  // The '±' character doesn't look right in Firefox's console for some
++  // reason.
++  return this.value + (typeof this.precision != "undefined"
++    ? " +/- " + this.precision
++    : "") + " ms";
++};
++
++// The target is the offset we'll get to over time after amortization.
++function setTarget(newTarget) {
++  var message = "Set target to " + String(newTarget),
++    delta;
++
++  if (target)
++    message += " (" + (newTarget > target ? "+" : "-") + " "
++      + Math.abs(newTarget - target) + " ms)";
++
++  target = newTarget;
++ // log(message + ".");
++
++  // If the target is too far off from the current offset (more than the
++  // amortization threshold) then skip amortization.
++
++  delta = Math.abs(target - offset);
++
++  if (delta > ServerDate.amortizationThreshold) {
++    log("Difference between target and offset too high (" + delta
++      + " ms); skipping amortization.");
++
++    offset = target;
++  }
++}
++
++// Synchronize the ServerDate object with the server's clock.
++function synchronize() {
++  var iteration = 1,
++    requestTime, responseTime,
++    best;
++
++  // Request a time sample from the server.
++  function requestSample() {
++    var request = new XMLHttpRequest();
++
++        // Ask the server for another copy of ServerDate.js but specify a unique number on the URL querystring
++	// so that we don't get the browser cached Javascript file.
++        // Which character to use for concatenation (it's either ? or &) depends on if current URL already has some GET parameters
++        var concatenationChar;
++
++        if (URL.indexOf('?') > -1) {
++            concatenationChar='&';
++        } else {
++            concatenationChar='?';
++        }
++
++	request.open("HEAD", URL + concatenationChar + "noCache=" + Date.now() + parseInt(Math.random()*1000000));
++
++    // At the earliest possible moment of the response, record the time at
++    // which we received it.
++    request.onreadystatechange = function() {
++      // If we got the headers and everything's OK
++      if ((this.readyState == this.HEADERS_RECEIVED)
++        && (this.status == 200))
++        responseTime = Date.now();
++    };
++
++    // Process the server's response.
++    request.onload = function() {
++      // If OK
++      if (this.status == 200) {
++        try {
++          // Process the server's Date from the response header
++		  processSample((new Date(this.getResponseHeader("Date"))).getTime());
++        }
++        catch (exception) {
++          log("Unable to read the server's response.");
++        }
++      }
++    };
++
++    // Remember the time at which we sent the request to the server.
++    requestTime = Date.now();
++
++    // Send the request.
++    request.send();
++  }
++
++  // Process the time sample received from the server.
++  function processSample(serverNow) {
++    var precision = (responseTime - requestTime) / 2,
++      sample = new Offset(serverNow + precision - responseTime,
++        precision);
++
++    //log("sample: " + iteration + ", offset: " + String(sample));
++
++    // Remember the best sample so far.
++    if ((iteration == 1) || (precision <= best.precision))
++      best = sample;
++
++    // Take 10 samples so we get a good chance of at least one sample with
++    // low latency.
++    if (iteration < 10) {
++      iteration++;
++      requestSample();
++    }
++    else {
++      // Set the offset target to the best sample collected.
++      setTarget(best);
++
++      synchronizing = false;
++    }
++  }
++
++  if (!synchronizing) {
++    synchronizing = true;
++
++    // Set a timer to stop synchronizing just in case there's a problem.
++    setTimeout(function () {
++      synchronizing = false;
++    },
++    10 * 1000);
++
++    // Request the first sample.
++    requestSample();
++  }
++}
++
++// Tag logged messages for better readability.
++function log(message) {
++    if (console && console.log) { console.log("[ServerDate] " + message); }
++}
++
++offset = serverNow - scriptLoadTime;
++
++// Not yet supported by all browsers (including Safari).  Calculate the
++// precision based on when the HTML page has finished loading and begins to load
++// this script from the server.
++if (typeof performance != "undefined") {
++  precision = (scriptLoadTime - performance.timing.domLoading) / 2;
++  offset += precision;
++}
++
++// Set the target to the initial offset.
++setTarget(new Offset(offset, precision));
++
++// Amortization process.  Every second, adjust the offset toward the target by
++// a small amount.
++setInterval(function()
++{
++  // Don't let the delta be greater than the amortizationRate in either
++  // direction.
++  var delta = Math.max(-ServerDate.amortizationRate,
++    Math.min(ServerDate.amortizationRate, target - offset));
++
++  offset += delta;
++
++/*  if (delta)
++    log("Offset adjusted by " + delta + " ms to " + offset + " ms (target: "
++      + target.value + " ms).");*/
++}, 1000);
++
++// Synchronize whenever the page is shown again after losing focus.
++window.addEventListener('pageshow', synchronize);
++
++// Start our first synchronization.
++synchronize();
++
++// Return the newly defined module.
++return ServerDate;
++})(Date.now());

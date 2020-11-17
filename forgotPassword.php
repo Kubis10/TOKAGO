@@ -3,13 +3,11 @@
     require_once "connect.php";
     require_once(__DIR__.'/PHPMailer-5.2-stable/PHPMailerAutoload.php');
 
-    $respond;
-
     if ($polaczenie->connect_errno!=0)
     	{
     		echo "Error: ".$polaczenie->connect_errno;
     	}
-
+    ob_start();
     if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 
         $email = $polaczenie->real_escape_string($_POST['email']);
@@ -18,7 +16,8 @@
 
         if ($checkNum != 1){
 
-            $respond = "Podany adres nie istnieje w bazie";
+            $msg = "Podany adres nie istnieje w bazie";
+            $msg2 = ["type" => "error", "text" => $msg]
 
         } else {
 
@@ -54,22 +53,20 @@
             $mail->AltBody = $emailMsg;
 
             if(!$mail->send()) {
-                $respond =  "Wiadomość nie została wysłana. ". $mail->ErrorInfo;
-                
+                $msg = "Wiadomość nie została wysłana.";
+                $msg .= " Błąd wysyłania: " . $mail->ErrorInfo;
+                $msg2 = ["type" => "error", "text" => $msg]
             } else {
-                $respond = 'Na podany adres email została wysłana wiadomość z linkiem do zmiany hasła';
+                $msg = 'Na podany adres email została wysłana wiadomość z linkiem do zmiany hasła';
+                $msg2 = ["type" => "success", "text" => $msg]
             }
             
         }
 
     } else {
-        $respond = 'No data';
-        
+        $msg = 'No data';
     }
-
-    print(json_encode($respond));
-    die();
-
-
-
+ob_end_clean();
+echo json_encode($msg2);
+die();
 ?>

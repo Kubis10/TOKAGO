@@ -93,5 +93,15 @@ $result = $polaczenie->query("SELECT id, lvl FROM uzytkownicy WHERE id='$sesid'"
         <div id='loading_progress'></div>
       </div>
     </div>
+    <SCRIPT src="lib/ServerDate.js"></SCRIPT>
+    <script>
+    var contime = document.getElementById("tims")
+    function updateClocks()
+    {
+        var date = ServerDate;
+    }
+    updateClocks();
+    setInterval(updateClocks, 10);
+    </script>
 </body>
 </html>
