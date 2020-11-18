@@ -17,7 +17,7 @@
         if ($checkNum != 1){
 
             $msg = "Podany adres nie istnieje w bazie";
-            $msg2 = ["type" => "error", "text" => $msg]
+            $msg2 = ["typeEr" => "error", "text" => $msg]
 
         } else {
 
@@ -55,10 +55,10 @@
             if(!$mail->send()) {
                 $msg = "Wiadomość nie została wysłana.";
                 $msg .= " Błąd wysyłania: " . $mail->ErrorInfo;
-                $msg2 = ["type" => "error", "text" => $msg]
+                $msg2 = ["typeEr" => "error", "text" => $msg]
             } else {
                 $msg = 'Na podany adres email została wysłana wiadomość z linkiem do zmiany hasła';
-                $msg2 = ["type" => "success", "text" => $msg]
+                $msg2 = ["typeEr" => "success", "text" => $msg]
             }
             
         }
