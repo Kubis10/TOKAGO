@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="65">
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="66">
  <tileset firstgid="1" name="Tiles" tilewidth="32" tileheight="32" tilecount="3" columns="3">
   <image source="../images/tiles.png" width="96" height="32"/>
  </tileset>
@@ -1862,7 +1862,7 @@
    <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="1"/>
-   <tile gid="1"/>
+   <tile gid="2"/>
    <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="1"/>
@@ -1942,7 +1942,6 @@
    <tile gid="2"/>
    <tile gid="2"/>
    <tile gid="1"/>
-   <tile gid="2"/>
    <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="1"/>
@@ -1953,13 +1952,12 @@
    <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="1"/>
+   <tile gid="1"/>
    <tile gid="2"/>
    <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="2"/>
-   <tile gid="1"/>
-   <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="1"/>
@@ -1969,6 +1967,8 @@
    <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
    <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="1"/>
@@ -2041,10 +2041,8 @@
    <tile gid="2"/>
    <tile gid="2"/>
    <tile gid="2"/>
-   <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="1"/>
-   <tile gid="2"/>
    <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="1"/>
@@ -2062,16 +2060,18 @@
    <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="2"/>
-   <tile gid="1"/>
-   <tile gid="1"/>
-   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
    <tile gid="1"/>
    <tile gid="1"/>
+   <tile gid="2"/>
    <tile gid="1"/>
    <tile gid="1"/>
+   <tile gid="2"/>
    <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="1"/>
+   <tile gid="2"/>
    <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="2"/>
@@ -2156,8 +2156,6 @@
    <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="2"/>
-   <tile gid="1"/>
-   <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="1"/>
@@ -2172,6 +2170,8 @@
    <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
    <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="1"/>
@@ -2241,11 +2241,11 @@
    <tile gid="2"/>
    <tile gid="2"/>
    <tile gid="2"/>
-   <tile gid="1"/>
-   <tile gid="1"/>
-   <tile gid="1"/>
-   <tile gid="1"/>
-   <tile gid="1"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
    <tile gid="2"/>
    <tile gid="2"/>
    <tile gid="2"/>
@@ -10037,8 +10037,7 @@
  </layer>
  <objectgroup id="3" name="Object Layer 1">
   <object id="1" gid="4" x="725.728" y="982.728" width="30" height="30"/>
-  <object id="57" gid="6" x="390.166" y="985.833" width="30" height="30"/>
-  <object id="58" gid="5" x="408" y="1110.67" width="30" height="30"/>
+  <object id="57" gid="6" x="385.166" y="993.833" width="30" height="30"/>
   <object id="59" gid="5" x="555.333" y="1116.33" width="30" height="30"/>
   <object id="60" gid="5" x="660.333" y="1115" width="30" height="30">
    <properties>
@@ -10047,7 +10046,10 @@
   </object>
   <object id="61" gid="5" x="1284.06" y="1117.59" width="30" height="30"/>
   <object id="62" gid="5" x="1155.67" y="1119.67" width="30" height="30"/>
-  <object id="63" gid="5" x="285.5" y="735" width="30" height="30"/>
-  <object id="64" gid="5" x="352" y="734" width="30" height="30"/>
+  <object id="65" gid="5" x="384" y="1108" width="30" height="30">
+   <properties>
+    <property name="scale" type="float" value="0.5"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

@@ -29,7 +29,7 @@ require_once "connect.php";
     <script src='platformer.js'></script>
     <link rel="stylesheet" href="css/main.css">
     <style>
-      body { padding:0px; margin:0px; }
+      body { padding:0px; margin:0px;}
     </style>
 </head>
 

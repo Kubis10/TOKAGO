@@ -3,6 +3,10 @@ body{
     padding: 0;
     font-family: sans-serif;
     background: #34495e;
+    color: white;
+}
+label{
+    color: white;
 }
 .box{
     width: 300px;
@@ -94,7 +98,7 @@ article{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    align-items: auto;
+    align-items: normal;
     align-content: space-between
 }
 
@@ -112,7 +116,7 @@ article{
     background-color: #990000;
     border-radius: 5px;
     border: 1px solid black;
-    color: white;
+    color: white !important;
 }
 table {
     margin-top: 2vh;
