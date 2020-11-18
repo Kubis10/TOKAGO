@@ -261,7 +261,7 @@ let id = div2.textContent;
       this.p.angle += 90;
     }));
   });
-  //script music
+  //music
   let muzyka = true;
   if(muzyka===true){
     Q.audio.play('jump.mp3',{ loop: true });
