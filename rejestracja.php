@@ -151,6 +151,7 @@
 	<title>TOKAGO - załóż darmowe konto!</title>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<link rel="icon" type="image/png" href="photo/logo.png">
+	<link rel="stylesheet" href="css/main.css">
 	<style>
 		.g-recaptcha{
 		margin-top:20px;
