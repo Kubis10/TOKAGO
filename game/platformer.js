@@ -183,13 +183,9 @@ let id = div2.textContent;
   function myTimer() {
     if(run) {
       var contime = window.ServerDate;
-      console.log(wartosc);
       timesample = contime-client;
-      console.log(timesample);
       timesample = wartosc+timesample;
-      console.log(timesample);
       time = (timesample/1000).toFixed(2);
-      console.log(time)
       Q.stageScene('times', 3)
     }
     else{
@@ -292,7 +288,7 @@ let id = div2.textContent;
     }, function() {
       muzyka=!muzyka;
       if(muzyka===true){
-        Q.audio.play('jump.mp3',{ loop: true });
+        Q.audio.play('background.mp3',{ loop: true });
       }
       else{
         Q.audio.stop();
@@ -384,7 +380,7 @@ let id = div2.textContent;
 
 // Load TMX files
 // and load all the assets referenced in them
-  Q.loadTMX("level0.tmx, level1.tmx, level2.tmx, level3.tmx, level4.tmx, level5.tmx, level6.tmx, level7.tmx, level8.tmx, level9.tmx, level10.tmx, level11.tmx, sprites.json, pause.png", function() {
+  Q.loadTMX("level0.tmx, level1.tmx, level2.tmx, level3.tmx, level4.tmx, level5.tmx, level6.tmx, level7.tmx, level8.tmx, level9.tmx, level10.tmx, level11.tmx, sprites.json, pause.png, background.mp3", function() {
     Q.compileSheets("sprites.png","sprites.json");
     Q.stageScene('level'+level);
     Q.stageScene('pause', 1, Q('Player').first().p);
@@ -392,6 +388,9 @@ let id = div2.textContent;
     progressCallback: function(loaded,total) {
       var element = document.getElementById("loading_progress");
       element.style.width = Math.floor(loaded/total*100) + "%";
+      if (loaded == total) {
+        document.getElementById("loading").remove();
+      }
     }
   });
 

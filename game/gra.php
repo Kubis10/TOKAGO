@@ -60,12 +60,11 @@ $result = $polaczenie->query("SELECT id, lvl FROM uzytkownicy WHERE id='$sesid'"
 	else
 	echo "Premium nieaktywne od: ".$roznica->format('%y lat, %m mies, %d dni, %h godz, %i min, %s sek');*/
 ?>
-    <div id='loading'>
-      <div id='loading_container'>
-        Loading...
-        <div id='loading_progress'></div>
-      </div>
+  <div id='loading'>
+    <div id='loading_container'>
+      <div id='loading_progress'><span>Loading...</span></div>
     </div>
+  </div>
     <SCRIPT src="lib/ServerDate.js"></SCRIPT>
     <script>
     var contime = document.getElementById("tims")
