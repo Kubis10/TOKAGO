@@ -36,25 +36,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<title>TOKAGO - gra przeglądarkowa</title>
 	<link rel="icon" type="image/png" href="photo/logo.png">
-	<style>
-	body{
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-	  background: #34495e;
-	  color: white;
-    }
-    .box{
-      width: 300px;
-      padding: 40px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      background: #191919;
-      text-align: center;
-    }
-	</style>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>

@@ -27,36 +27,9 @@ require_once "connect.php";
     <script src='lib/quintus_ui.js'></script>
     <script src='lib/quintus_tmx.js'></script>
     <script src='platformer.js'></script>
+    <link rel="stylesheet" href="css/main.css">
     <style>
       body { padding:0px; margin:0px; }
-          #loading {
-            margin:50px auto;
-            max-width:1024px;
-            position:fixed;
-            width:100%;
-            height:100%;
-            text-align:center;
-          }
-
-          #loading_container {
-            position:relative;
-            margin:0 auto;
-            width:50%;
-            height:20px;
-            border:1px solid black;
-            text-align:center;
-            padding-top:10px;
-          }
-
-          #loading_progress {
-            width:0%;
-            background-color:red;
-            position:absolute;
-            height:30px;
-            top:0px;
-            left:0px;
-            opacity:0.4;
-          }
     </style>
 </head>
 

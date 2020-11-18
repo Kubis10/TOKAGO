@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #34495e;
+}
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box input[type = "text"],.box input[type = "password"],.box input[type = "email"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus,.box input[type = "email"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+.box input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+    background: #2ecc71;
+}
+.message
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.error{
+    color:red;
+}
+.success{
+    color: green;
+}
+a:link {
+    color: green;
+}
+
+/* visited link */
+a:visited {
+    color: red;
+}
+
+/* mouse over link */
+a:hover {
+    color: blue;
+}
+
+/* selected link */
+a:active {
+    color: hotpink;
+}
+article{
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 20px 50px;
+    background-color: rgb(93, 93, 224);
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: auto;
+    align-content: space-between
+}
+
+.flex-item {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+.back{
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 7px;
+    background-color: #990000;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: white;
+}
+table {
+    margin-top: 2vh;
+    margin-bottom:2vh;
+    background-color: #191919;
+    border: #191919 solid 1px;
+}
+thead, tbody, td, tr, th{
+    border: #3498db solid 1px;
+    padding: 10px;
+}
+th{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+tr{
+    height: 5vh;
+    color: white;
+    font-size: 10px;
+    font-weight: 300;
+    text-align: center;
+}
+.my_score{
+    color: gold;
+    font-size: 15px;
+}
+#loading {
+    margin:50px auto;
+    max-width:1024px;
+    position:fixed;
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+
+#loading_container {
+    position:relative;
+    margin:0 auto;
+    width:50%;
+    height:20px;
+    border:1px solid black;
+    text-align:center;
+    padding-top:10px;
+}
+
+#loading_progress {
+    width:0%;
+    background-color:red;
+    position:absolute;
+    height:30px;
+    top:0px;
+    left:0px;
+    opacity:0.4;
+}

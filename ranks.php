@@ -23,67 +23,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 	<title>TOKAGO | Ranking</title>
 	<link rel="icon" type="image/png" href="photo/logo.png">
-    <style>
-        body{
-          margin: 0;
-          padding: 0;
-          font-family: sans-serif;
-          background: #34495e;
-          color: white;
-        }
-        .flex-container {
-              display: flex;
-              flex-wrap: wrap;
-              flex-direction: row;
-              justify-content: space-around;
-              align-items: auto;
-              align-content: space-between
-            }
-
-        .flex-item {
-            order: 0;
-            flex: 0 1 auto;
-            align-self: auto;
-            }
-        .back{
-        text-decoration: none;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        padding: 7px;
-        background-color: #990000;
-        border-radius: 5px;
-        border: 1px solid black;
-        color: white;
-        }
-        table {
-            margin-top: 2vh;
-            margin-bottom:2vh;
-            background-color: #191919;
-            border: #191919 solid 1px;
-        }
-        thead, tbody, td, tr, th{
-            border: #3498db solid 1px;
-            padding: 10px;
-        }
-        th{
-            text-align: center;
-            color: white;
-            font-size: 15px;
-            font-weight: 400;
-        }
-        tr{
-            height: 5vh;
-            color: white;
-            font-size: 10px;
-            font-weight: 300;
-            text-align: center;
-        }
-        .my_score{
-        color: gold;
-        font-size: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <h1 style="text-align: center;">Ranking</h1>
