@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="file system update">
+    <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="TODO">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/zaloguj.php" beforeDir="false" afterPath="$PROJECT_DIR$/auth/zaloguj.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,8 @@
       <workItem from="1605713647229" duration="423000" />
       <workItem from="1605714090171" duration="12000" />
       <workItem from="1605714103465" duration="3038000" />
-      <workItem from="1605721115775" duration="3074000" />
+      <workItem from="1605721115775" duration="3128000" />
+      <workItem from="1605726093024" duration="66000" />
     </task>
     <task id="LOCAL-00001" summary="level update">
       <created>1605713731385</created>
@@ -89,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605723431596</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="TODO">
+      <created>1605724379376</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605724379376</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,17 +119,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="level update" />
     <MESSAGE value="file system update" />
-    <option name="LAST_COMMIT_MESSAGE" value="file system update" />
+    <MESSAGE value="TODO" />
+    <option name="LAST_COMMIT_MESSAGE" value="TODO" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605714100804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605714100804" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1605723441303">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1605724386433">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605723441303" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605724386433" />
     <state x="778" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605716318451">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

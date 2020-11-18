@@ -4,11 +4,11 @@
 	
 	if ((!isset($_POST['login'])) || (!isset($_POST['haslo'])))
 	{
-		header('Location: index.html');
+		header('Location: ../index.html');
 		exit();
 	}
 
-	require_once "connect.php";
+	require_once "../res/connect.php";
 	
 	if ($polaczenie->connect_errno!=0)
 	{
@@ -40,7 +40,7 @@
 					
 					unset($_SESSION['blad']);
 					$rezultat->free_result();
-					header('Location: gra.php');
+					header('Location: ../game/gra.php');
 				}
 				else 
 				{
