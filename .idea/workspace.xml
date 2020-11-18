@@ -19,8 +19,332 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/platformer.js" beforeDir="false" afterPath="$PROJECT_DIR$/platformer.js" afterDir="false" />
+    <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="level update">
+      <change afterPath="$PROJECT_DIR$/.idea/TOKAGO.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/forgotPassword.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/lostPassword.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/passRenew.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/passRenewXO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/rejestracja.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/witamy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/zalform.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/zaloguj.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/audio/hit.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/audio/jump.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/data/level0.tmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/data/level1.tmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/data/level10.tmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/data/level11.tmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/data/level2.tmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/data/level3.tmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/data/level4.tmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/data/level5.tmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/data/level6.tmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/data/level7.tmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/data/level8.tmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/data/level9.tmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/data/sprites.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/gra.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/images/background-wall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/images/pause.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/images/sprites.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/images/tiles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/lib/ServerDate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/lib/quintus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/lib/quintus_2d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/lib/quintus_anim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/lib/quintus_audio.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/lib/quintus_input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/lib/quintus_scenes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/lib/quintus_sprites.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/lib/quintus_tmx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/lib/quintus_touch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/lib/quintus_ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/platformer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/ranking.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/ranks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/savelevel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/33779168_gra.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/PHPMailerAutoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/VERSION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/class.phpmailer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/class.phpmaileroauth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/class.phpmaileroauthgoogle.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/class.pop3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/class.smtp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/DKIM.phps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/code_generator.phps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/contactform.phps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/contents.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/contentsutf8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/exceptions.phps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/gmail.phps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/gmail_xoauth.phps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/images/phpmailer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/images/phpmailer_mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/mail.phps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/mailing_list.phps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/pop_before_smtp.phps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/scripts/XRegExp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/scripts/shAutoloader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/scripts/shBrushPhp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/scripts/shCore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/scripts/shLegacy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/send_file_upload.phps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/send_multiple_file_upload.phps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/sendmail.phps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/signed-mail.phps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/smtp.phps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/smtp_check.phps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/smtp_no_auth.phps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/ssl_options.phps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/shCore.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/shCoreDefault.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/shCoreDjango.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/shCoreEclipse.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/shCoreEmacs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/shCoreFadeToGrey.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/shCoreMDUltra.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/shCoreMidnight.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/shCoreRDark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/shThemeAppleScript.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/shThemeDefault.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/shThemeDjango.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/shThemeEclipse.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/shThemeEmacs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/shThemeFadeToGrey.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/shThemeMDUltra.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/shThemeMidnight.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/shThemeRDark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/shThemeVisualStudio.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/examples/styles/wrapping.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/extras/EasyPeasyICS.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/extras/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/extras/htmlfilter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/extras/ntlm_sasl_client.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/get_oauth_token.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-am.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-ar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-az.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-ba.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-be.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-bg.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-ca.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-ch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-cs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-da.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-de.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-el.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-eo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-es.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-et.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-fa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-fi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-fo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-fr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-gl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-he.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-hr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-hu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-id.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-it.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-ja.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-ka.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-ko.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-lt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-lv.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-ms.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-nb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-nl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-pl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-pt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-pt_br.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-ro.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-rs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-ru.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-sk.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-sl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-sv.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-tr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-uk.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-vi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-zh.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/PHPMailer-5.2-stable/language/phpmailer.lang-zh_cn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/connect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/photo/game.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/photo/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/33779168_gra.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/PHPMailerAutoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/VERSION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/class.phpmailer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/class.phpmaileroauth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/class.phpmaileroauthgoogle.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/class.pop3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/class.smtp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/DKIM.phps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/code_generator.phps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/contactform.phps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/contents.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/contentsutf8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/exceptions.phps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/gmail.phps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/gmail_xoauth.phps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/images/phpmailer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/images/phpmailer_mini.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/mail.phps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/mailing_list.phps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/pop_before_smtp.phps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/scripts/XRegExp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/scripts/shAutoloader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/scripts/shBrushPhp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/scripts/shCore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/scripts/shLegacy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/send_file_upload.phps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/send_multiple_file_upload.phps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/sendmail.phps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/signed-mail.phps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/smtp.phps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/smtp_check.phps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/smtp_no_auth.phps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/ssl_options.phps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/shCore.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/shCoreDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/shCoreDjango.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/shCoreEclipse.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/shCoreEmacs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/shCoreFadeToGrey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/shCoreMDUltra.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/shCoreMidnight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/shCoreRDark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/shThemeAppleScript.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/shThemeDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/shThemeDjango.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/shThemeEclipse.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/shThemeEmacs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/shThemeFadeToGrey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/shThemeMDUltra.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/shThemeMidnight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/shThemeRDark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/shThemeVisualStudio.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/examples/styles/wrapping.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/extras/EasyPeasyICS.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/extras/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/extras/htmlfilter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/extras/ntlm_sasl_client.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/get_oauth_token.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-am.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-ar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-az.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-ba.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-be.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-bg.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-ca.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-ch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-cs.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-da.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-de.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-el.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-eo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-es.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-et.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-fa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-fi.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-fo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-fr.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-gl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-he.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-hr.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-hu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-id.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-it.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-ja.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-ka.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-ko.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-lt.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-lv.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-ms.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-nb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-nl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-pl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-pt.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-pt_br.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-ro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-rs.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-ru.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-sk.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-sl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-sv.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-tr.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-uk.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-vi.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-zh.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHPMailer-5.2-stable/language/phpmailer.lang-zh_cn.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/hit.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/jump.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/credits.html" beforeDir="false" afterPath="$PROJECT_DIR$/credits.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/level0.tmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/level1.tmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/level10.tmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/level11.tmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/level2.tmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/level3.tmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/level4.tmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/level5.tmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/level6.tmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/level7.tmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/level8.tmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/level9.tmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sprites.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forgotPassword.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gra.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/background-wall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/sprites.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ServerDate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/quintus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/quintus_2d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/quintus_anim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/quintus_audio.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/quintus_input.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/quintus_scenes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/quintus_sprites.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/quintus_tmx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/quintus_touch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/quintus_ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lostPassword.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passRenew.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passRenewXO.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photo/game.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photo/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platformer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ranking.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ranks.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/regulamin.html" beforeDir="false" afterPath="$PROJECT_DIR$/regulamin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rejestracja.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/savelevel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/witamy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zalform.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zaloguj.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,13 +355,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kT9Jm99JFYUQNUwfeqCPRyS7sz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -48,7 +379,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605713645861</updated>
-      <workItem from="1605713647229" duration="395000" />
+      <workItem from="1605713647229" duration="423000" />
+      <workItem from="1605714090171" duration="12000" />
+      <workItem from="1605714103465" duration="3038000" />
+      <workItem from="1605721115775" duration="1937000" />
     </task>
     <task id="LOCAL-00001" summary="level update">
       <created>1605713731385</created>
@@ -57,7 +391,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605713731385</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="level update">
+      <created>1605714048866</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605714048866</updated>
+    </task>
+    <task id="LOCAL-00003" summary="level update">
+      <created>1605714055205</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605714055205</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,15 +421,25 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="level update" />
     <option name="LAST_COMMIT_MESSAGE" value="level update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="778" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605713673953">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605714100804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="778" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605713673953" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605714100804" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1605714058966">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605714058966" />
+    <state x="778" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605716318451">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="778" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605716318451" />
   </component>
 </project>

@@ -1,4 +1,8 @@
+#BACKEND#
 -naprawić błędy JSON w lostPass
+-sprawdzić ewentualne błędy
 -dodać do bazy tabele z logami
--uporządkować pliki
+-zrobić inserty do logów
+
+#############################
 -refaktoryzacja kodu
