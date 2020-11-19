@@ -19,12 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="UPDATE">
-      <change afterPath="$PROJECT_DIR$/game/audio/background.mp3" afterDir="false" />
+    <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="SONG">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/gra.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/gra.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/platformer.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/platformer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +60,8 @@
       <workItem from="1605714103465" duration="3038000" />
       <workItem from="1605721115775" duration="3128000" />
       <workItem from="1605726093024" duration="1345000" />
-      <workItem from="1605728285681" duration="3206000" />
+      <workItem from="1605728285681" duration="5453000" />
+      <workItem from="1605784438823" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="level update">
       <created>1605713731385</created>
@@ -108,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605726189941</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="SONG">
+      <created>1605731697244</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605731697244</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,20 +136,21 @@
     <MESSAGE value="file system update" />
     <MESSAGE value="TODO" />
     <MESSAGE value="UPDATE" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATE" />
+    <MESSAGE value="SONG" />
+    <option name="LAST_COMMIT_MESSAGE" value="SONG" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605714100804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605714100804" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1605726193809">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1605731703624">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605726193809" />
-    <state x="778" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605716318451">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605731703624" />
+    <state x="778" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605784447257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="778" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605716318451" />
+    <state x="778" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605784447257" />
   </component>
 </project>
