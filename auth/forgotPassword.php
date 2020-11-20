@@ -276,7 +276,7 @@
                              </table>
                             </div>
                            </body>
-                          </html>;';
+                          </html>';
             $mail->AltBody = $emailMsg;
 
             if(!$mail->send()) {

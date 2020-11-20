@@ -1,10 +1,8 @@
 #NOW#
--naprawić błędy JSON w lostPass - zrobione
 -sprawdzić ewentualne błędy
 -dodać do bazy tabele z logami - zrobie export, jak skoncze i bedzie update bazy, ale to na dniach
 -zrobić inserty do logów
--podpiąć nowego emaila - zrobione
 
-i błagam dodaj to sobie do localhosta XD - dodane XD
 #############################
+-api paypala
 -refaktoryzacja kodu
