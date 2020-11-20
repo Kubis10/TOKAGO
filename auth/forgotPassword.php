@@ -1,7 +1,7 @@
 <?php
 
     require_once "../res/connect.php";
-    require_once(__DIR__.'/res/PHPMailer-5.2-stable/PHPMailerAutoload.php');
+    require_once(__DIR__.'/../res/PHPMailer-5.2-stable/PHPMailerAutoload.php');
 
     if ($polaczenie->connect_errno!=0)
     	{
