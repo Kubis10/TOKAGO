@@ -16,8 +16,7 @@
 
         if ($checkNum != 1){
 
-            $msg = "Podany adres nie istnieje w bazie";
-            $msg2 = ["typeEr" => "error", "text" => $msg]
+            $msg2 = ["typeEr" => "error", "text" => "Podany adres nie istnieje w bazie"];
 
         } else {
 
@@ -40,7 +39,7 @@
             $mail->Host = 'serwer2040614.home.pl';
             $mail->Username = $smtplog;
             $mail->Password = $smtppass;
-            $mail->setFrom = 'pomoc@tokago.pl'; 
+            $mail->setFrom = 'pomoc@tokago.pl';
             $mail->From = 'pomoc@tokago.pl';
             $mail->FromName = 'Zespół Tokago';
             $mail->Port = 25;
@@ -53,12 +52,9 @@
             $mail->AltBody = $emailMsg;
 
             if(!$mail->send()) {
-                $msg = "Wiadomość nie została wysłana.";
-                $msg .= " Błąd wysyłania: " . $mail->ErrorInfo;
-                $msg2 = ["typeEr" => "error", "text" => $msg]
+                $msg2 = ["typeEr" => "error", "text" => "Wiadomość nie została wysłana: ". $mail->ErrorInfo];
             } else {
-                $msg = 'Na podany adres email została wysłana wiadomość z linkiem do zmiany hasła';
-                $msg2 = ["typeEr" => "success", "text" => $msg]
+                $msg2 = ["typeEr" => "success", "text" => "Na podany adres email została wysłana wiadomość z linkiem do zmiany hasła."];
             }
             
         }
