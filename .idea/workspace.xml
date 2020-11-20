@@ -19,10 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="Working lostPassword.html and forgotPassword.php">
+    <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="update path to mailer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/forgotPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/auth/forgotPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/lostPassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/auth/lostPassword.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,14 +157,7 @@
       <option name="project" value="LOCAL" />
       <updated>1605855841761</updated>
     </task>
-    <task id="LOCAL-00013" summary="Working lostPassword.html and forgotPassword.php">
-      <created>1605860434646</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1605860434646</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,19 +187,17 @@
     <MESSAGE value="email.html" />
     <MESSAGE value="update" />
     <MESSAGE value="update path to mailer" />
-    <MESSAGE value="Working lostPassword.html and forgotPassword.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working lostPassword.html and forgotPassword.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="update path to mailer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605714100804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605714100804" />
-    <state x="552" y="251" key="Vcs.Push.Dialog.v2" timestamp="1605860437802">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1605807814165">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605807814165" />
-    <state x="552" y="251" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.25.1680.1020@0.0.1920.1050" timestamp="1605860437802" />
     <state x="778" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605784447257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
