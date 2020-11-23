@@ -282,12 +282,12 @@
             $mail->AltBody = $emailMsg;
 
             if(!$mail->send()) {
-                if($polaczenie->query("INSERT INTO logs VALUES (NULL, 'Gracz o id =". $idGracza." wyslal prosbe o zmiane hasla - na jego adres emial
+                if($polaczenie->query("INSERT INTO logs VALUES (NULL, 'Gracz o id = ". $idGracza." wyslal prosbe o zmiane hasla - na jego adres emial
                   NIE zostala wyslana wiadomosc z linkiem - blad systemu', now())")){
                 $msg2 = ["typeEr" => "error", "text" => "Wiadomość nie została wysłana: ". $mail->ErrorInfo];
                   }
             } else {
-                if($polaczenie->query("INSERT INTO logs VALUES (NULL, 'Gracz o id =".$idGracza." wyslal prosbe o zmiane hasla - na jego adres emial
+                if($polaczenie->query("INSERT INTO logs VALUES (NULL, 'Gracz o id = ".$idGracza." wyslal prosbe o zmiane hasla - na jego adres emial
                   zostala wyslana wiadomosc z linkiem', now())")){
                 $msg2 = ["typeEr" => "success", "text" => "Na podany adres email została wysłana wiadomość z linkiem do zmiany hasła."];
                   }
