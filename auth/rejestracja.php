@@ -119,9 +119,10 @@
 					{
 						$tmp = $polaczenie->query("SELECT id FROM uzytkownicy WHERE user='$nick'");
 						$row = $tmp->fetch_assoc();
-						$logQuery = $polaczenie->query("INSERT INTO logs VALUES (NULL, 'Gracz o id = '".$row['id']."' zarejestrowal sie', now())");
+						if($polaczenie->query("INSERT INTO logs VALUES (NULL, 'Gracz o id = ".$row['id']." zarejestrowal sie', now())")){
 						$_SESSION['udanarejestracja']=true;
 						header('Location: witamy.php');
+						}
 					}
 					else
 					{

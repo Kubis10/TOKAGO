@@ -9,11 +9,9 @@
 
 	$idGracza = $_SESSION['id'];
 
-    $logQuery = $polaczenie->query("INSERT INTO logs VALUES (NULL, 'Gracz o id = '".$idGracza."' wylogowal sie',now())");
-
+    if($polaczenie->query("INSERT INTO logs VALUES (NULL, 'Gracz o id = ".$idGracza." wylogowal sie',now())")){
     session_unset();
-    	
-	
 	header('Location: ../index.html');
+    }
 
 ?>

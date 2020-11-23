@@ -23,8 +23,10 @@ try
                             if ((float)$aktualny_rekord["l".$level]>$newTime && (float)$aktualny_rekord["l".$level] != 0){
 
 	                                
-	                            $logQuery = $polaczenie->query("INSERT INTO logs VALUES (NULL, 'Gracz o id = '".$row['id']."' ustanowil rekord poziomu
-	                            	'".$aktualny_rekord["l".$level]."', now())");
+	                            if($polaczenie->query("INSERT INTO logs VALUES (NULL, 'Gracz o id = ".$row['id']." ustanowil rekord poziomu
+	                            	'".$aktualny_rekord["l".$level]."', now())")){
+
+	                            	}
 
                             }
 
