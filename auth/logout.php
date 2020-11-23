@@ -8,10 +8,8 @@
     	echo "Error: ".$polaczenie->connect_errno;
 
 	$idGracza = $_SESSION['id'];
-	
-    $time = date("Y-m-d");
 
-    $logQuery = $polaczenie->query("INSERT INTO logs ('text', 'data') VALUES ('Gracz o id = '".$idGracza."' wylogowal sie', '".$time."')");
+    $logQuery = $polaczenie->query("INSERT INTO logs VALUES (NULL, 'Gracz o id = '".$idGracza."' wylogowal sie',now())");
 
     session_unset();
     	
