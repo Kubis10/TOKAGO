@@ -11,8 +11,9 @@
     if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 
         $email = $polaczenie->real_escape_string($_POST['email']);
-        $checkIfCorr = $polaczenie->query("SELECT user, email from uzytkownicy WHERE email='$email'");
+        $checkIfCorr = $polaczenie->query("SELECT id, user, email from uzytkownicy WHERE email='$email'");
         $checkNum = $checkIfCorr->num_rows;
+        $time = date("Y-m-d");
 
         if ($checkNum != 1){
 
@@ -23,6 +24,8 @@
             $row = $checkIfCorr->fetch_assoc();
 
             $nick = $row['user'];
+
+            $idGracza = $row['id'];
 
             $hash = genUUID();
 
@@ -280,8 +283,12 @@
             $mail->AltBody = $emailMsg;
 
             if(!$mail->send()) {
+                $logQuery = $polaczenie->query("INSERT INTO logs ('text', 'data') VALUES ('Gracz o id ='". $idGracza."' wyslal prosbe o zmiane hasla - na jego adres emial
+                  NIE zostala wyslana wiadomosc z linkiem - blad systemu', '".$time."')");
                 $msg2 = ["typeEr" => "error", "text" => "Wiadomość nie została wysłana: ". $mail->ErrorInfo];
             } else {
+                $logQuery = $polaczenie->query("INSERT INTO logs ('text', 'data') VALUES ('Gracz o id ='".$idGracza."' wyslal prosbe o zmiane hasla - na jego adres emial
+                  zostala wyslana wiadomosc z linkiem', '".$time."')");
                 $msg2 = ["typeEr" => "success", "text" => "Na podany adres email została wysłana wiadomość z linkiem do zmiany hasła."];
             }
             

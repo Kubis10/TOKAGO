@@ -37,6 +37,9 @@
 					$_SESSION['user'] = $wiersz['user'];
 					$_SESSION['email'] = $wiersz['email'];
 					$_SESSION['vip'] = $wiersz['vip'];
+					$time = date("Y-m-d");
+
+					$logQuery = $polaczenie->query("INSERT INTO logs ('text', 'data') VALUES ('Gracz o id ='".$_SESSION['id']."' zalogowal sie', '".$time."')");
 					
 					unset($_SESSION['blad']);
 					$rezultat->free_result();

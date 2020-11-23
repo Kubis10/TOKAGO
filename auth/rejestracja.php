@@ -117,6 +117,10 @@
 					$hash = genUUID();
 					if ($polaczenie->query("INSERT INTO uzytkownicy VALUES (NULL, '$nick', '$haslo_hash', '$email', 1, now() + INTERVAL 14 DAY, '$hash')"))
 					{
+						$time = date("Y-m-d");
+						$tmp = $polaczenie->query("SELECT id FROM uzytkownicy WHERE user='$nick'");
+						$row = $tmp->fetch_assoc();
+						$logQuery = $polaczenie->query("INSERT INTO logs ('text', 'data') VALUES ('Gracz o id = '".$row['id']."' zarejestrowal sie', '$time')");
 						$_SESSION['udanarejestracja']=true;
 						header('Location: witamy.php');
 					}
