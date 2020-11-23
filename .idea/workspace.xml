@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="update">
-      <change beforePath="$PROJECT_DIR$/game/ranking.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/ranking.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/shop/TODO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606158684873</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="update">
+      <created>1606158834431</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1606158834431</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,10 +287,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605869418813" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606158689272">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606158838088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606158689272" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606158838088" />
     <state x="778" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606148850167">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
