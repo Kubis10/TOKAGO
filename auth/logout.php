@@ -4,8 +4,10 @@
 
 	require_once "../res/connect.php";
 
-	if ($polaczenie->connect_errno!=0){}
-    	echo "Error: ".$polaczenie->connect_errno;
+	if ($polaczenie->connect_errno!=0){
+		echo "Error: ".$polaczenie->connect_errno;
+	}
+    	
 
 	$idGracza = $_SESSION['id'];
 
