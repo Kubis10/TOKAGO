@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="update">
+    <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="todo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,9 @@
       <workItem from="1606120758091" duration="821000" />
       <workItem from="1606126842257" duration="3828000" />
       <workItem from="1606139097440" duration="1740000" />
-      <workItem from="1606141719295" duration="29000" />
+      <workItem from="1606141719295" duration="74000" />
+      <workItem from="1606148847493" duration="170000" />
+      <workItem from="1606149814694" duration="497000" />
     </task>
     <task id="LOCAL-00001" summary="level update">
       <created>1605713731385</created>
@@ -201,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606141280103</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="todo">
+      <created>1606141757263</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1606141757263</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,12 +236,12 @@
     <MESSAGE value="UPDATE" />
     <MESSAGE value="SONG" />
     <MESSAGE value="add email" />
-    <MESSAGE value="todo" />
     <MESSAGE value="email.html" />
     <MESSAGE value="update path to mailer" />
     <MESSAGE value="update credits" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="todo" />
+    <option name="LAST_COMMIT_MESSAGE" value="todo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605714100804">
@@ -243,13 +252,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605869418813" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606141284852">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606141764933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606141284852" />
-    <state x="778" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606120761084">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606141764933" />
+    <state x="778" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606148850167">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="778" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606120761084" />
+    <state x="778" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606148850167" />
   </component>
 </project>
