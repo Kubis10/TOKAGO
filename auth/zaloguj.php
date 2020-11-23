@@ -38,7 +38,7 @@
 					$_SESSION['email'] = $wiersz['email'];
 					$_SESSION['vip'] = $wiersz['vip'];
 
-					if($polaczenie->query("INSERT INTO logs VALUES (NULL, 'Gracz o id =".$_SESSION['id']." zalogowal sie', now())")){
+					if($polaczenie->query("INSERT INTO logs VALUES (NULL, 'Gracz o id = ".$_SESSION['id']." zalogowal sie', now())")){
 					unset($_SESSION['blad']);
 					$rezultat->free_result();
 					header('Location: ../game/gra.php');
