@@ -21,11 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/forgotPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/auth/forgotPassword.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/auth/logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/rejestracja.php" beforeDir="false" afterPath="$PROJECT_DIR$/auth/rejestracja.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/zaloguj.php" beforeDir="false" afterPath="$PROJECT_DIR$/auth/zaloguj.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/ranking.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/ranking.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +79,8 @@
       <workItem from="1606078698971" duration="607000" />
       <workItem from="1606120758091" duration="821000" />
       <workItem from="1606126842257" duration="3828000" />
-      <workItem from="1606139097440" duration="1597000" />
+      <workItem from="1606139097440" duration="1740000" />
+      <workItem from="1606141719295" duration="29000" />
     </task>
     <task id="LOCAL-00001" summary="level update">
       <created>1605713731385</created>
@@ -197,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606128926251</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update">
+      <created>1606141280103</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1606141280103</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,10 +243,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605869418813" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606128931629">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606141284852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606128931629" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606141284852" />
     <state x="778" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606120761084">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

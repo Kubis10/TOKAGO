@@ -1,8 +1,6 @@
 #NOW#
 -sprawdzić ewentualne błędy
--dodać do bazy tabele z logami - zrobie export, jak skoncze i bedzie update bazy, ale to na dniach
--zrobić inserty do logów
+-api paypala
 
 #############################
--api paypala
 -refaktoryzacja kodu
