@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
+    <title>Płatność | TOKAGO</title>
+    <link rel="icon" type="image/png" href="../../res/photo/logo.png">
 </head>
 
 <body>
-<script src="https://www.paypal.com/sdk/js?client-id=YOUR_SB_CLIENT_ID"> // Replace YOUR_SB_CLIENT_ID with your sandbox client ID
-</script>
+<script src="https://www.paypal.com/sdk/js?client-id=AbG5c5Gd_wKdtCEZGXXOAiPXg4NzBKqLTGSqvEvbZc1L6Mwanhuk90VRpfg_DYQNkLGT-QPQTwq4Hylv&currency=PLN"> </script>
 
 <div id="paypal-button-container"></div>
 
@@ -18,7 +20,7 @@
             return actions.order.create({
                 purchase_units: [{
                     amount: {
-                        value: '0.01'
+                        value: '1.23'
                     }
                 }]
             });
