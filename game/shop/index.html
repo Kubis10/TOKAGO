@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
     <title>Płatność | TOKAGO</title>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <link rel="icon" type="image/png" href="../../res/photo/logo.png">
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../../res/css/shop.css"/>
 
 </head>
 <body>
 
 <!-- JavaScript SDK -->
-<script src="https://www.paypal.com/sdk/js?components=hosted-fields,buttons&client-id=AbG5c5Gd_wKdtCEZGXXOAiPXg4NzBKqLTGSqvEvbZc1L6Mwanhuk90VRpfg_DYQNkLGT-QPQTwq4Hylv&currency=PLN>" data-client-token="<>"></script>
+<script src="https://www.paypal.com/sdk/js?components=hosted-fields,buttons&client-id=AbG5c5Gd_wKdtCEZGXXOAiPXg4NzBKqLTGSqvEvbZc1L6Mwanhuk90VRpfg_DYQNkLGT-QPQTwq4Hylv&currency=PLN>" data-client-token="<eyJicmFpbnRyZWUiOnsiYXV0aG9yaXphdGlvbkZpbmdlcnByaW50IjoiYjA0MWE2M2JlMTM4M2NlZGUxZTI3OWFlNDlhMWIyNzZlY2FjOTYzOWU2NjlhMGIzODQyYTdkMTY3NzcwYmY0OHxtZXJjaGFudF9pZD1yd3dua3FnMnhnNTZobTJuJnB1YmxpY19rZXk9czlic3BuaGtxMmYzaDk0NCZjcmVhdGVkX2F0PTIwMTgtMTEtMTRUMTE6MTg6MDAuMTU3WiIsInZlcnNpb24iOiIzLXBheXBhbCJ9LCJwYXlwYWwiOnsiYWNjZXNzVG9rZW4iOiJBMjFBQUhNVExyMmctVDlhSTJacUZHUmlFZ0ZFZGRHTGwxTzRlX0lvdk9ESVg2Q3pSdW5BVy02TzI2MjdiWUJ2cDNjQ0FNWi1lTFBNc2NDWnN0bDUyNHJyUGhUQklJNlBBIn19>"></script>
 <h1>Monety o wartości 24.99zł</h1>
 <!-- Buttons container -->
 <table border="0" align="center" valign="top" bgcolor="#FFFFFF" style="width:39%">
@@ -33,59 +32,32 @@
 <div class="col-75">
     <div class="container">
     <form id='my-sample-form'>
-
         <div class="row">
             <div class="col-50">
                 <h3>Adres</h3>
-                <label for="fname"><i class="fa fa-user"></i> Imię i Nazwisko</label>
-                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-                <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                <input type="text" id="email" name="email" placeholder="john@example.com">
-                <label for="adr"><i class="fa fa-address-card-o"></i> Adres</label>
-                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-                <label for="city"><i class="fa fa-institution"></i> Miejscowość</label>
-                <input type="text" id="city" name="city" placeholder="Warszawa">
-
-                <div class="row">
-                    <div class="col-50">
-                        <label for="state">Województwo</label>
-                        <input type="text" id="state" name="state" placeholder="Lubuskie">
-                    </div>
-                    <div class="col-50">
-                        <label for="zip">Kod pocztowy</label>
-                        <input type="text" id="zip" name="zip" placeholder="00-000">
-                    </div>
-                </div>
-            </div>
-
+            <input type='text' id='card-billing-address-street' name='card-billing-address-street' autocomplete='off' placeholder='Ulica'/>
+            <input type='text' id='card-billing-address-unit' name='card-billing-address-unit' autocomplete='off' placeholder='Numer domu/mieszkania'/>
+            <input type='text' id='card-billing-address-city' name='card-billing-address-city' autocomplete='off' placeholder='Miasto'/>
+            <input type='text' id='card-billing-address-zip' name='card-billing-address-zip' autocomplete='off' placeholder='Kod pocztowy'/>
+            <input type='text' id='card-billing-address-state' name='card-billing-address-state' autocomplete='off' placeholder='Województwo'/>
+            <input type='text' id='card-billing-address-country' name='card-billing-address-country' autocomplete='off' placeholder='Kraj' />
+        </div>
+        <div class="col-50">
+            <h3>Płatność</h3>
+            <label for='card-holder-name'>Nazwa na karcie</label><input type='text' id='card-holder-name' name='card-holder-name' autocomplete='off' placeholder='Nazwa posiadacza karty'/>
+            <label for='card-number'>Numer Karty</label><div id='card-number' class='card_field'></div>
+            <div class="row">
             <div class="col-50">
-                <h3>Płatność</h3>
-                <label for="fname">Akceptujemy karty</label>
-                <div class="icon-container">
-                    <i class="fa fa-cc-visa" style="color:navy;"></i>
-                    <i class="fa fa-cc-amex" style="color:blue;"></i>
-                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                    <i class="fa fa-cc-discover" style="color:orange;"></i>
-                </div>
-                <label for="cname">Nazwa na karcie</label>
-                <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-                <label for="ccnum">Numer Karty Kredytowej</label>
-                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                <label for="expmonth">Miesiąc wygaśnięcia</label>
-                <input type="text" id="expmonth" name="expmonth" placeholder="05">
-                <div class="row">
-                    <div class="col-50">
-                        <label for="expyear">Rok wygaśnięcia</label>
-                        <input type="text" id="expyear" name="expyear" placeholder="2023">
-                    </div>
-                    <div class="col-50">
-                        <label for="cvv">CVV</label>
-                        <input type="text" id="cvv" name="cvv" placeholder="352">
-                    </div>
-                </div>
+                <label for='expiration-date'>Data ważności</label><div id='expiration-date' class='card_field'></div>
+            </div>
+            <div class="col-50">
+                <label for='cvv'>CVV</label><div id='cvv' class='card_field'></div>
             </div>
         </div>
-        <input type="submit" value="Zapłać" class="btn">
+        </div>
+        </div>
+        <br><br>
+        <button value='submit' id='submit' class='btn'>Pay</button>
     </form>
 </div>
 </div>
@@ -133,15 +105,15 @@
             fields: {
                 number: {
                     selector: '#card-number',
-                    placeholder: 'card number'
+                    placeholder: 'Numer Karty'
                 },
                 cvv: {
                     selector: '#cvv',
-                    placeholder: 'card security number'
+                    placeholder: 'Numer bezpieczeństwa karty'
                 },
                 expirationDate: {
                     selector: '#expiration-date',
-                    placeholder: 'mm/yy'
+                    placeholder: 'mm/yyyy'
                 }
             }
         }).then(function (hf) {
