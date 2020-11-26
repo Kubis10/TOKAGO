@@ -14,16 +14,15 @@
 <body>
 
 <!-- JavaScript SDK -->
-<script src="https://www.paypal.com/sdk/js?components=hosted-fields,buttons&client-id=AbG5c5Gd_wKdtCEZGXXOAiPXg4NzBKqLTGSqvEvbZc1L6Mwanhuk90VRpfg_DYQNkLGT-QPQTwq4Hylv&currency=PLN>" data-client-token="<eyJicmFpbnRyZWUiOnsiYXV0aG9yaXphdGlvbkZpbmdlcnByaW50IjoiYjA0MWE2M2JlMTM4M2NlZGUxZTI3OWFlNDlhMWIyNzZlY2FjOTYzOWU2NjlhMGIzODQyYTdkMTY3NzcwYmY0OHxtZXJjaGFudF9pZD1yd3dua3FnMnhnNTZobTJuJnB1YmxpY19rZXk9czlic3BuaGtxMmYzaDk0NCZjcmVhdGVkX2F0PTIwMTgtMTEtMTRUMTE6MTg6MDAuMTU3WiIsInZlcnNpb24iOiIzLXBheXBhbCJ9LCJwYXlwYWwiOnsiYWNjZXNzVG9rZW4iOiJBMjFBQUhNVExyMmctVDlhSTJacUZHUmlFZ0ZFZGRHTGwxTzRlX0lvdk9ESVg2Q3pSdW5BVy02TzI2MjdiWUJ2cDNjQ0FNWi1lTFBNc2NDWnN0bDUyNHJyUGhUQklJNlBBIn19>"></script>
+<script src="https://www.paypal.com/sdk/js?components=hosted-fields,buttons&client-id=AbG5c5Gd_wKdtCEZGXXOAiPXg4NzBKqLTGSqvEvbZc1L6Mwanhuk90VRpfg_DYQNkLGT-QPQTwq4Hylv&currency=PLN" data-client-token="eyJicmFpbnRyZWUiOnsiYXV0aG9yaXphdGlvbkZpbmdlcnByaW50IjoiNDY1Y2ZmOTM0MGY5ZWQ3YzE4YjBlMTg2NzlhNjIyYzMzODIzN2VjYWYyNGUxN2FmZjVhNmQ4NzQwODA2NjFkMnxtZXJjaGFudF9pZD1yd3dua3FnMnhnNTZobTJuJnB1YmxpY19rZXk9NjNrdm4zN3Z0MjlxYjRkZiZjcmVhdGVkX2F0PTIwMjAtMTEtMjZUMTQ6MjM6MjMuMDI3WiIsInZlcnNpb24iOiIzLXBheXBhbCJ9LCJwYXlwYWwiOnsiYWNjZXNzVG9rZW4iOiJBMjFBQUktTjJBNWdSV1g2S2M5Xy1HSm4xZDFNZUhFeElXbXE4X0ZBV0tJSXZTR0ZWZ0FaSnpHZDd4R1dxVkNiUjBUSmZQWmRUdnB6MkJtRnQtY25oZkJvWEoxanplcjlRIn19"></script>
 <h1>Monety o wartości 24.99zł</h1>
 <!-- Buttons container -->
-<table border="0" align="center" valign="top" bgcolor="#FFFFFF" style="width:39%">
+<table border="0" align="center" valign="top" style="width:39%">
     <tr>
         <td colspan="2">
             <div id="paypal-button-container"></div>
         </td>
     </tr>
-    <tr><td colspan="2">&nbsp;</td></tr>
 </table>
 
 <div align="center" class="txt1"> lub </div>
@@ -57,7 +56,7 @@
         </div>
         </div>
         <br><br>
-        <button value='submit' id='submit' class='btn'>Pay</button>
+        <button value='submit' id='submit' class='btn'>Zapłać</button>
     </form>
 </div>
 </div>
@@ -105,11 +104,11 @@
             fields: {
                 number: {
                     selector: '#card-number',
-                    placeholder: 'Numer Karty'
+                    placeholder: '5111 1111 1111 1118'
                 },
                 cvv: {
                     selector: '#cvv',
-                    placeholder: 'Numer bezpieczeństwa karty'
+                    placeholder: '123'
                 },
                 expirationDate: {
                     selector: '#expiration-date',
@@ -133,7 +132,7 @@
                     }
                     // redirect after successful order approval
                 }).then(function () {
-                    window.location.replace('http://www.tokago.pl/game/shop/review');
+                    window.location.replace('http://www.tokago.pl/game/shop/review.php');
                 }).catch(function (err) {
                     console.log('error: ', JSON.stringify(err));
                     document.getElementById("consoleLog").innerHTML = JSON.stringify(err);

@@ -109,5 +109,6 @@ h1{
 .txt1{
     font-size: 20px;
     font-weight: 400;
-    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 15px;
 }
