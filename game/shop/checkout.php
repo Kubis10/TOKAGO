@@ -15,7 +15,7 @@
 <!-- JavaScript SDK -->
 <script src="https://www.paypal.com/sdk/js?client-id=AbG5c5Gd_wKdtCEZGXXOAiPXg4NzBKqLTGSqvEvbZc1L6Mwanhuk90VRpfg_DYQNkLGT-QPQTwq4Hylv&currency=PLN"></script>
 <div class="container">
-    <h1>Monety o wartości 25.99zł</h1>
+    <h1>Monety o wartości <?php echo $_POST['price']; ?> zł</h1>
     <div class="money">
         <div id="paypal-button-container"></div>
     </div>
