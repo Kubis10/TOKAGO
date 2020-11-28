@@ -37,3 +37,20 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
+.bodycoin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.header{
+    position: absolute;
+    top: 3vh;
+}
+button{
+    width: 200px;
+    height: 200px;
+    background: url("../../game/images/money.png") no-repeat 50%;
+    background-size: contain;
+    border: none;
+}
