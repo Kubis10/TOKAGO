@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="shop update">
-      <change afterPath="$PROJECT_DIR$/game/shop/addcoins.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/shop/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/shop/checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/shop/addcoins.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/shop/addcoins.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/404.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +106,7 @@
       <workItem from="1606421009993" duration="2774000" />
       <workItem from="1606490256144" duration="1650000" />
       <workItem from="1606502796515" duration="5852000" />
-      <workItem from="1606559884223" duration="15009000" />
+      <workItem from="1606559884223" duration="15529000" />
     </task>
     <task id="LOCAL-00001" summary="level update">
       <created>1605713731385</created>
@@ -367,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606576823621</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="shop update">
+      <created>1606577444255</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1606577444255</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,10 +426,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605869418813" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606576825980">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606577448120">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606576825980" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606577448120" />
     <state x="778" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606148850167">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
