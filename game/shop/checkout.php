@@ -14,7 +14,7 @@
 <body>
 
 <!-- JavaScript SDK -->
-<script src="https://www.paypal.com/sdk/js?components=hosted-fields,buttons&client-id=AbG5c5Gd_wKdtCEZGXXOAiPXg4NzBKqLTGSqvEvbZc1L6Mwanhuk90VRpfg_DYQNkLGT-QPQTwq4Hylv&currency=PLN" data-client-token="eyJicmFpbnRyZWUiOnsiYXV0aG9yaXphdGlvbkZpbmdlcnByaW50IjoiNWZjMjQ5MDU0MmFiNzIyZTQ0YWZjOWRiMDE0NDkzMDY0M2E3ZTUyNWQ1MGNiNGJlNmRhNDFmYzkxY2NlYjU4YnxtZXJjaGFudF9pZD1yd3dua3FnMnhnNTZobTJuJnB1YmxpY19rZXk9NjNrdm4zN3Z0MjlxYjRkZiZjcmVhdGVkX2F0PTIwMjAtMTEtMjdUMTU6MjE6MzMuNzEwWiIsInZlcnNpb24iOiIzLXBheXBhbCJ9LCJwYXlwYWwiOnsiYWNjZXNzVG9rZW4iOiJBMjFBQUl5TWFULXBQSWI1UVJqcnVOQk5MTjZGeTBHSENrS2VWRDFZWHA1YVZObHAxQ25MbGY4ZWx0dEhJX1hOWURtYnl5ZjZMZlB4XzNtbGh1NHpsanQ3WFFKTVpLQklRIn19"></script>
+<script src="https://www.paypal.com/sdk/js?components=hosted-fields,buttons&client-id=AbG5c5Gd_wKdtCEZGXXOAiPXg4NzBKqLTGSqvEvbZc1L6Mwanhuk90VRpfg_DYQNkLGT-QPQTwq4Hylv&currency=PLN" data-client-token="eyJicmFpbnRyZWUiOnsiYXV0aG9yaXphdGlvbkZpbmdlcnByaW50IjoiNDY1MTM3OWNlZTBmMjZmODE3YzQxZjA1ZDUwZDY1ZDY2NWMzYmJkYWY2ODNkYTY3YjI1N2U1YzU1ZWRmNDA3YXxtZXJjaGFudF9pZD1yd3dua3FnMnhnNTZobTJuJnB1YmxpY19rZXk9NjNrdm4zN3Z0MjlxYjRkZiZjcmVhdGVkX2F0PTIwMjAtMTEtMjhUMTE6MDA6MzguNDY1WiIsInZlcnNpb24iOiIzLXBheXBhbCJ9LCJwYXlwYWwiOnsiYWNjZXNzVG9rZW4iOiJBMjFBQUtkU0hJNm9pV2xzTlpHXzVwcWgzR29DVDRqWG56bkNyNmtWMHlndnpjSGZVSWx6eVVhdzRuclhobmhLNnZvN3Mxai1QOXU4UDUwbVRaSEY0NFNWVzR0MlNNM3lBIn19"></script>
 <h1>Monety o wartości 24.99zł</h1>
 <!-- Buttons container -->
 <table border="0" align="center" valign="top" style="width:39%">
@@ -30,17 +30,17 @@
 <!-- Advanced credit and debit card payments form -->
 <div class="col-75">
     <div class="container">
-    <form id='my-sample-form'>
+    <form id='my-sample-form' method="get">
         <div class="row">
             <div class="col-50">
                 <h3>Adres</h3>
-            <input type='text' id='card-billing-address-street' name='card-billing-address-street' autocomplete='off' placeholder='Ulica'/>
-            <input type='text' id='card-billing-address-unit' name='card-billing-address-unit' autocomplete='off' placeholder='Numer domu/mieszkania'/>
-            <input type='text' id='card-billing-address-city' name='card-billing-address-city' autocomplete='off' placeholder='Miasto'/>
-            <input type='text' id='card-billing-address-zip' name='card-billing-address-zip' autocomplete='off' placeholder='Kod pocztowy'/>
-            <input type='text' id='card-billing-address-state' name='card-billing-address-state' autocomplete='off' placeholder='Województwo'/>
-            <input type='text' id='card-billing-address-country' name='card-billing-address-country' autocomplete='off' placeholder='Kraj' />
-        </div>
+                <input type='text' id='card-billing-address-street' name='card-billing-address-street' autocomplete='off' placeholder='Ulica'/>
+                <input type='text' id='card-billing-address-unit' name='card-billing-address-unit' autocomplete='off' placeholder='Numer domu/mieszkania'/>
+                <input type='text' id='card-billing-address-city' name='card-billing-address-city' autocomplete='off' placeholder='Miasto'/>
+                <input type='text' id='card-billing-address-zip' name='card-billing-address-zip' autocomplete='off' placeholder='Kod pocztowy'/>
+                <input type='text' id='card-billing-address-state' name='card-billing-address-state' autocomplete='off' placeholder='Województwo'/>
+                <input type='text' id='card-billing-address-country' name='card-billing-address-country' autocomplete='off' placeholder='Kraj' />
+            </div>
         <div class="col-50">
             <h3>Płatność</h3>
             <label for='card-holder-name'>Nazwa na karcie</label><input type='text' id='card-holder-name' name='card-holder-name' autocomplete='off' placeholder='Nazwa posiadacza karty'/>
@@ -56,7 +56,7 @@
         </div>
         </div>
         <br><br>
-        <button value='submit' id='submit' class='btn'>Zapłać</button>
+        <button type='submit' value='Submit' id='submit' class='btn'>Zapłać</button>
     </form>
 </div>
 </div>
@@ -83,7 +83,7 @@
             // This function captures the funds from the transaction
             return actions.order.capture().then(function(details) {
                 // This function shows a transaction success message to your buyer
-                window.location.replace('https://www.tokago.pl/game/shop/review.php');
+                window.location.replace('review.php');
             });
         }
     }).render('#paypal-button-container');

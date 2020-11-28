@@ -1,5 +1,5 @@
 <?php
-require_once "../res/connect.php";
+require_once "../../res/connect.php";
 	session_start();
 
 	if (!isset($_SESSION['zakup']))
