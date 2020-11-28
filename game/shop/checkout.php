@@ -36,7 +36,8 @@
         },
         onApprove: function(data, actions) {
           return actions.order.capture().then(function(details) {
-            window.location.replace('review.php');
+          console.log(details)
+            //window.location.replace('review.php');
           });
         }
       }).render('#paypal-button-container'); // Display payment options on your web page
