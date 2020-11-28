@@ -7,12 +7,24 @@
 <title>TOKAGO | Sklep </title>
 <link rel="stylesheet" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/lightslider.css"/>
+<link rel="icon" type="image/png" href="../../res/photo/logo.png">
 <!--Jquery-->
 <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
 <script type="text/javascript" src="js/lightslider.js"></script>
 </head>
 
 <body>
+    <nav>
+        <a href="addcoins.php">
+       <div class="adds">
+       +
+       </div>
+       </a>
+        <h2 class="moneys">100</h2>
+        <div>
+            <img src="../images/money.png" width="30px" height="30px" class="iconDetails">
+       </div>
+    </nav>
 	<div class="container">
 		<!--slider------------------->
 		<ul id="autoWidth" class="cs-hidden">
@@ -119,13 +131,9 @@
 		</div>
 		</li>
 		</ul>
-			
-			
-	
-	
+
 	</div>
-	
-	
+	<a href="../gra.php" class="back">Powrót</a>
 <script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>

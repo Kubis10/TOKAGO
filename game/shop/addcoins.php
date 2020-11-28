@@ -10,28 +10,41 @@
 <body class="bodycoin">
 <h1 class="header">Dodaj Tokelony</h1>
 <form action="checkout.php" method="post">
-    <input type="hidden" name="price" value="5.99"></input>10
+    <h2 class="upper">10</h2>
+    <input type="hidden" name="price" value="5.99"/>
+    <h2 class="lower">5.99zł</h2>
     <button type="submit"></button>
 </form>
 <form action="checkout.php" method="post">
-    <input type="hidden" name="price" value="10.99"></input>20
+    <h2 class="upper">20</h2>
+    <input type="hidden" name="price" value="10.99"/>
+    <h2 class="lower">10.99zł</h2>
     <button type="submit"></button>
 </form>
 <form action="checkout.php" method="post">
-    <input type="hidden" name="price" value="25.99"></input>50
+    <h2 class="upper">50</h2>
+    <input type="hidden" name="price" value="25.99"/>
+    <h2 class="lower">25.99zł</h2>
     <button type="submit"></button>
 </form>
 <form action="checkout.php" method="post">
-    <input type="hidden" name="price" value="44.99"></input>100
+    <h2 class="upper">100</h2>
+    <input type="hidden" name="price" value="44.99"/>
+    <h2 class="lower">44.99zł</h2>
     <button type="submit"></button>
 </form>
 <form action="checkout.php" method="post">
-    <input type="hidden" name="price" value="139.99"></input>300
+    <h2 class="upper">300</h2>
+    <input type="hidden" name="price" value="139.99"/>
+    <h2 class="lower">139.99zł</h2>
     <button type="submit"></button>
 </form>
 <form action="checkout.php" method="post">
-    <input type="hidden" name="price" value="249.99"></input>500
+    <h2 class="upper">500</h2>
+    <input type="hidden" name="price" value="249.99"/>
+    <h2 class="lower">249.99zł</h2>
     <button type="submit"></button>
 </form>
+<a href="shop.php" class="back">Powrót</a>
 </body>
 </html>

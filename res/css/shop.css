@@ -39,7 +39,10 @@ h1{
 }
 .bodycoin{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
     align-items: center;
     min-height: 100vh;
 }
@@ -48,9 +51,35 @@ h1{
     top: 3vh;
 }
 button{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     background: url("../../game/images/money.png") no-repeat 50%;
     background-size: contain;
     border: none;
+}
+.lower{
+    font-size: 2em;
+    text-align: center;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 70px;
+}
+.upper{
+    position: absolute;
+}
+.back{
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 7px;
+    background-color: #990000;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: white !important;
+}
+@media (max-width: 600px), (max-height: 750px){
+    body{
+        padding-top: 12vh;
+    }
 }

@@ -35,12 +35,12 @@
         },
         onApprove: function(data, actions) {
           return actions.order.capture().then(function(details) {
-          console.log(details)
+          console.log(details);
             //window.location.replace('review.php');
           });
         }
       }).render('#paypal-button-container'); // Display payment options on your web page
     </script>
-
+<a href="addcoins.php" class="back">Powrót</a>
 </body>
 </html>
