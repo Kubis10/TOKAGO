@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
     <title>Płatność | TOKAGO</title>
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <link rel="icon" type="image/png" href="../../res/photo/logo.png">
     <link rel="stylesheet" type="text/css" href="../../res/css/shop.css"/>
 
