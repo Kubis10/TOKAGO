@@ -28,7 +28,7 @@
           return actions.order.create({
             purchase_units: [{
               amount: {
-                value: '25.99'
+                value: '<?php echo $_POST['price']; ?>'
               }
             }]
           });
