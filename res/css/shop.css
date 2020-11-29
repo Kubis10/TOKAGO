@@ -78,6 +78,13 @@ button{
     border: 1px solid black;
     color: white !important;
 }
+.logo{
+    text-align: center;
+}
+.logo > a{
+    color: #2bc253;
+    margin-top: 10vh;
+}
 @media (max-width: 600px), (max-height: 750px){
     body{
         padding-top: 12vh;

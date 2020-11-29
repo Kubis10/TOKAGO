@@ -119,6 +119,24 @@ nav{
 	position: absolute;
 	top: 5px;
 }
+a:link {
+	color: green;
+}
+
+/* visited link */
+a:visited {
+	color: red;
+}
+
+/* mouse over link */
+a:hover {
+	color: blue;
+}
+
+/* selected link */
+a:active {
+	color: hotpink;
+}
 /*--responsive for mobile phone--*/
 @media(max-width:720px){
 	.box{

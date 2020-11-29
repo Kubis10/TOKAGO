@@ -295,8 +295,17 @@ let id = div2.textContent;
       }
     }),container);
     stage.insert(new Q.UI.Button({
+      label: "Sklep",
+      y: 170,
+      x: 0,
+      fill: "#f28400",
+      border: 2,
+    }, function() {
+      location.replace("shop/shop.php")
+    }),container);
+    stage.insert(new Q.UI.Button({
       label: "Wyloguj się",
-      y: 180,
+      y: 230,
       x: 0,
       fill: "#990000",
       border: 2,

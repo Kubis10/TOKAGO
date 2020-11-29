@@ -1,3 +1,21 @@
+<?php
+
+	session_start();
+
+	if ((!isset($_SESSION['zalogowany'])) || (!isset($_SESSION['id'])))
+	{
+		header('Location: ../../index.html');
+		exit();
+	}
+
+	require_once "../../res/connect.php";
+
+	if ($polaczenie->connect_errno!=0)
+	{
+		echo "Error: ".$polaczenie->connect_errno;
+	}
+$_SESSION['zakup'] = false;
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,8 +53,10 @@
         },
         onApprove: function(data, actions) {
           return actions.order.capture().then(function(details) {
-          console.log(details);
-            //window.location.replace('review.php');
+            <?php
+            $_SESSION['zakup'] = true;
+            ?>
+            window.location.replace('review.php');
           });
         }
       }).render('#paypal-button-container'); // Display payment options on your web page

@@ -1,3 +1,21 @@
+<?php
+
+	session_start();
+
+	if ((!isset($_SESSION['zalogowany'])) || (!isset($_SESSION['id'])))
+	{
+		header('Location: ../../index.html');
+		exit();
+	}
+
+	require_once "../../res/connect.php";
+
+	if ($polaczenie->connect_errno!=0)
+	{
+		echo "Error: ".$polaczenie->connect_errno;
+	}
+
+?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
