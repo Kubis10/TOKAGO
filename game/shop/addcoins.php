@@ -25,44 +25,74 @@
     <link rel="icon" type="image/png" href="../../res/photo/logo.png">
     <link rel="stylesheet" href="../../res/css/shop.css"/>
 </head>
-<body class="bodycoin">
+<body class="bodycoin" draggable="false">
 <h1 class="header">Dodaj Tokelony</h1>
+<div class="upper">
 <form action="checkout.php" method="post">
-    <h2 class="upper">10</h2>
+    <div class="box-left">
+    <h2 class="left">10</h2>
     <input type="hidden" name="price" value="5.99"/>
-    <h2 class="lower">5.99zł</h2>
-    <button type="submit"></button>
+    </div>
+    <div class="box-right">
+    <img src="../images/money.png" alt="money">
+    </div>
+    <button type="submit">5.99zł</button>
 </form>
 <form action="checkout.php" method="post">
-    <h2 class="upper">20</h2>
+    <div class="box-left">
+    <h2 class="left">20</h2>
     <input type="hidden" name="price" value="10.99"/>
-    <h2 class="lower">10.99zł</h2>
-    <button type="submit"></button>
+    </div>
+    <div class="box-right">
+    <img src="../images/money.png" alt="money">
+    </div>
+    <button type="submit">10.99zł</button>
 </form>
 <form action="checkout.php" method="post">
-    <h2 class="upper">50</h2>
+    <div class="box-left">
+    <h2 class="left">50</h2>
     <input type="hidden" name="price" value="25.99"/>
-    <h2 class="lower">25.99zł</h2>
-    <button type="submit"></button>
+    </div>
+    <div class="box-right">
+    <img src="../images/money.png" alt="money">
+    </div>
+    <button type="submit">25.99zł</button>
 </form>
+</div>
+<div class="lower">
 <form action="checkout.php" method="post">
-    <h2 class="upper">100</h2>
+    <div class="box-left">
+    <h2 class="left">100</h2>
     <input type="hidden" name="price" value="44.99"/>
-    <h2 class="lower">44.99zł</h2>
-    <button type="submit"></button>
+    </div>
+    <div class="box-right">
+    <img src="../images/money.png" alt="money">
+    </div>
+    <button type="submit">44.99zł</button>
 </form>
 <form action="checkout.php" method="post">
-    <h2 class="upper">300</h2>
+    <div class="box-left">
+    <h2 class="left">300</h2>
     <input type="hidden" name="price" value="139.99"/>
-    <h2 class="lower">139.99zł</h2>
-    <button type="submit"></button>
+    </div>
+    <div class="box-right">
+    <img src="../images/money.png" alt="money">
+    </div>
+    <button type="submit">139.99zł</button>
 </form>
 <form action="checkout.php" method="post">
-    <h2 class="upper">500</h2>
-    <input type="hidden" name="price" value="249.99"/>
-    <h2 class="lower">249.99zł</h2>
-    <button type="submit"></button>
+    <div class="box-left">
+        <h2 class="left">500</h2>
+        <input type="hidden" name="price" value="249.99"/>
+    </div>
+    <div class="box-right">
+        <img src="../images/money.png" alt="money">
+    </div>
+    <button type="submit">249.99zł</button>
 </form>
+</div>
 <a href="shop.php" class="back">Powrót</a>
+<script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
+<script src="../lib/InspectorBlocker.js"></script>
 </body>
 </html>

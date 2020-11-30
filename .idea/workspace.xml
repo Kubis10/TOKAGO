@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,20 +23,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="shop update">
+      <change afterPath="$PROJECT_DIR$/game/lib/InspectorBlocker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/platformer.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/platformer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/shop/addcoins.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/shop/addcoins.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/shop/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/shop/checkout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/shop/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/game/shop/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/shop/review.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/shop/review.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/css/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/shop.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,6 +62,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HSQLDB" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -70,7 +73,22 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -114,7 +132,13 @@
       <workItem from="1606502796515" duration="5852000" />
       <workItem from="1606559884223" duration="15529000" />
       <workItem from="1606588827656" duration="16078000" />
-      <workItem from="1606608043702" duration="1684000" />
+      <workItem from="1606608043702" duration="3384000" />
+      <workItem from="1606763889372" duration="44000" />
+      <workItem from="1606763977976" duration="249000" />
+      <workItem from="1606764440781" duration="205000" />
+      <workItem from="1606764656772" duration="110000" />
+      <workItem from="1606764776623" duration="28000" />
+      <workItem from="1606764813033" duration="5511000" />
     </task>
     <task id="LOCAL-00001" summary="level update">
       <created>1605713731385</created>
@@ -403,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606603782868</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="shop update">
+      <created>1606609802042</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1606609802042</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,33 +470,17 @@
     <option name="LAST_COMMIT_MESSAGE" value="shop update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="717" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606561073738">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606767582962">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="717" y="318" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606561073738" />
-    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1606398558695">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606767582962" />
+    <state x="703" y="355" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1606767536310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606398558695" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605714100804">
+    <state x="703" y="355" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1606767536310" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1606764802421">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605714100804" />
-    <state x="184" y="86" key="MergeDialog" timestamp="1605869418813">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605869418813" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606603787455">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606603787455" />
-    <state x="778" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606148850167">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="778" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606148850167" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1606602212038">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606602212038" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606764802421" />
   </component>
 </project>
