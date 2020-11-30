@@ -23,11 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="shop update">
-      <change afterPath="$PROJECT_DIR$/game/lib/InspectorBlocker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/shop/addcoins.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/shop/addcoins.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/shop/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/game/shop/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/css/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/shop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/shop/css/lightslider.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/lightslider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/shop/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/shop/js/JQuery3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/res/js/JQuery3.3.1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/shop/js/lightslider.js" beforeDir="false" afterPath="$PROJECT_DIR$/res/js/lightslider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/shop/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/res/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/shop/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/shop/shop.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +79,12 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\TOKAGO\res" />
+      <recent name="C:\xampp\htdocs\TOKAGO\res\css" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -138,7 +147,7 @@
       <workItem from="1606764440781" duration="205000" />
       <workItem from="1606764656772" duration="110000" />
       <workItem from="1606764776623" duration="28000" />
-      <workItem from="1606764813033" duration="5511000" />
+      <workItem from="1606764813033" duration="6370000" />
     </task>
     <task id="LOCAL-00001" summary="level update">
       <created>1605713731385</created>
@@ -434,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606609802042</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="shop update">
+      <created>1606770768303</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1606770768303</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,5 +498,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606764802421" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606770772176">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606770772176" />
   </component>
 </project>

@@ -5,12 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TOKAGO | Sklep </title>
-<link rel="stylesheet" href="css/style.css"/>
-<link rel="stylesheet" type="text/css" href="css/lightslider.css"/>
+<link rel="stylesheet" href="../../res/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="../../res/css/lightslider.css"/>
 <link rel="icon" type="image/png" href="../../res/photo/logo.png">
 <!--Jquery-->
-<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
-<script type="text/javascript" src="js/lightslider.js"></script>
+<script type="text/javascript" src="../../res/js/JQuery3.3.1.js"></script>
+<script type="text/javascript" src="../../res/js/lightslider.js"></script>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
        </a>
         <h2 class="moneys">100</h2>
         <div>
-            <img src="../images/money.png" width="30px" height="30px" class="iconDetails">
+            <img src="../images/money.png" width="30px" height="30px" class="iconDetails" alt="money">
        </div>
     </nav>
 	<div class="container">
@@ -134,6 +134,6 @@
 
 	</div>
 	<a href="../gra.php" class="back">Powrót</a>
-<script src="js/script.js" type="text/javascript"></script>
+<script src="../../res/js/script.js" type="text/javascript"></script>
 </body>
 </html>
