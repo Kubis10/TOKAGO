@@ -90,8 +90,8 @@ a{
 .back{
 	text-decoration: none;
 	position: fixed;
-	bottom: 20px;
-	right: 20px;
+	bottom: 10px;
+	right: 10px;
 	padding: 7px;
 	background-color: #990000;
 	border-radius: 5px;
@@ -135,6 +135,28 @@ nav{
 .iconDetails {
 	position: absolute;
 	top: 5px;
+}
+.backpack{
+	position: fixed;
+	top: 4px;
+	left: 1px;
+	border: 3px solid black;
+	background: #ea5f5f;
+	padding: 5px;
+	border-radius: 50%;
+}
+.backpack:hover{
+	transform: scale(1.1);
+}
+.vip{
+	color: gold;
+	position: fixed;
+	bottom: 4px;
+	background-color: #353535;
+	left: 4px;
+	padding: 6px 20px;
+	border: 2px solid black;
+	border-radius: 15px;
 }
 a:link {
 	color: green;

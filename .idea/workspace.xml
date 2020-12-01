@@ -23,11 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="shop update">
-      <change afterPath="$PROJECT_DIR$/game/shop/img/12_money.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/shop/img/15_money.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/shop/img/20_money.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/shop/img/5_money.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/shop/img/7_money.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/eq.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/images/plecak.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/shop/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/shop/shop.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/style.css" afterDir="false" />
@@ -89,6 +86,19 @@
       <recent name="C:\xampp\htdocs\TOKAGO\res\css" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -141,7 +151,7 @@
       <workItem from="1606810048871" duration="138000" />
       <workItem from="1606810194992" duration="88000" />
       <workItem from="1606810291376" duration="396000" />
-      <workItem from="1606823023340" duration="8908000" />
+      <workItem from="1606823023340" duration="10598000" />
     </task>
     <task id="LOCAL-00001" summary="level update">
       <created>1605713731385</created>
@@ -465,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606836800322</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="shop update">
+      <created>1606838056764</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1606838056764</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,14 +526,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="703" y="355" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1606767536310" />
+    <state x="794" y="439" key="NewPhpFileDialog" timestamp="1606839086280">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="439" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606839086280" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1606836519468">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606836519468" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606836819266">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606838063630">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606836819266" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606838063630" />
     <state x="777" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606834612104">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -14,6 +14,11 @@
 </head>
 
 <body>
+<header>
+    <a href="../eq.php">
+        <img src="../images/plecak.png" width="40" height="40" class="backpack">
+    </a>
+</header>
     <nav>
         <a href="addcoins.php">
        <div class="adds">
@@ -133,6 +138,8 @@
 		</ul>
 
 	</div>
+
+    <div class="vip">VIP</div>
 	<a href="../gra.php" class="back">Powrót</a>
 <script src="../../res/js/script.js" type="text/javascript"></script>
 </body>
