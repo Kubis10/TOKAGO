@@ -12,6 +12,15 @@ require_once "../res/connect.php";
 <!DOCTYPE HTML>
 <html lang="pl">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZQB1WZ4W7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HZQB1WZ4W7');
+    </script>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 	<title>TOKAGO</title>

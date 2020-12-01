@@ -22,10 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="shop update">
-      <change afterPath="$PROJECT_DIR$/res/css/eq.css" afterDir="false" />
+    <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="add eq">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/eq.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/eq.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credits.html" beforeDir="false" afterPath="$PROJECT_DIR$/credits.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/gra.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/gra.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,14 +150,7 @@
       <workItem from="1606810048871" duration="138000" />
       <workItem from="1606810194992" duration="88000" />
       <workItem from="1606810291376" duration="396000" />
-      <workItem from="1606823023340" duration="11722000" />
-    </task>
-    <task id="LOCAL-00001" summary="level update">
-      <created>1605713731385</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1605713731385</updated>
+      <workItem from="1606823023340" duration="13218000" />
     </task>
     <task id="LOCAL-00002" summary="level update">
       <created>1605714048866</created>
@@ -494,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606839769988</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="add eq">
+      <created>1606840993454</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1606840993454</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +528,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="add shop" />
     <MESSAGE value="shop update" />
-    <option name="LAST_COMMIT_MESSAGE" value="shop update" />
+    <MESSAGE value="add eq" />
+    <option name="LAST_COMMIT_MESSAGE" value="add eq" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606767582962">
@@ -546,10 +548,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606836519468" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606839772000">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606840998459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606839772000" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606840998459" />
     <state x="777" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606834612104">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
