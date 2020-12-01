@@ -32,13 +32,13 @@
   <li class="item-a">
 	  <!--slider-box-->
 		<div class="box">
-		<p class="marvel">PINK</p>
+		<p class="marvel common">PINK</p>
 		<!--model-->
 		<img src="img/Pink_Monster.png" class="model">
 		<!--details-->
 		<div class="details">
 		<!--logo-character-->
-		<img src="img/10_money.png" class="logo">
+		<img src="img/5_money.png" class="logo">
 		<!--character-details-->
 		<p>Pink to mały słotki królik. Urodził się na skutek cudu który otrzymała jego mama w zamian za pomoc wróżce.</p>
 		</div>
@@ -49,7 +49,7 @@
   <li class="item-a">
 	  <!--slider-box-->
 		<div class="box">
-		<p class="marvel">DUDE</p>
+		<p class="marvel epic">DUDE</p>
 		<!--model-->
 		<img src="img/Dude_Monster.png" class="model">
 		<!--details-->
@@ -66,13 +66,13 @@
   <li class="item-a">
 	  <!--slider-box-->
 		<div class="box">
-		<p class="marvel">OWLET</p>
+		<p class="marvel uncommon">OWLET</p>
 		<!--model-->
 		<img src="img/Owlet_Monster.png" class="model">
 		<!--details-->
 		<div class="details">
 		<!--logo-character-->
-		<img src="img/10_money.png" class="logo" >
+		<img src="img/7_money.png" class="logo" >
 		<!--character-details-->
 		<p>Owlet to potomek starej rodziny sówek. Jego rodzice umarli gdy był mały jednak owlet się nie poddaje i walczy do końca.</p>
 		</div>
@@ -83,13 +83,13 @@
   <li class="item-a">
 	  <!--slider-box-->
 		<div class="box">
-		<p class="marvel">WEED</p>
+		<p class="marvel legendary">WEED</p>
 		<!--model-->
 		<img src="img/Weed_Monster.png" class="model">
 		<!--details-->
 		<div class="details">
 		<!--logo-character-->
-		<img src="img/10_money.png" class="logo" >
+		<img src="img/20_money.png" class="logo" >
 		<!--character-details-->
 		<p>Weed... Co tu dużo pisać.<br><br><br></p>
 		</div>
@@ -100,13 +100,13 @@
   <li class="item-a">
 	  <!--slider-box-->
 		<div class="box">
-		<p class="marvel">PRINCESS</p>
+		<p class="marvel rare">PRINCESS</p>
 		<!--model-->
 		<img src="img/Princess_Girl.png" class="model">
 		<!--details-->
 		<div class="details">
 		<!--logo-character-->
-		<img src="img/10_money.png" class="logo">
+		<img src="img/12_money.png" class="logo">
 		<!--character-details-->
 		<p>Princess Wiana(bo tak miała na imię) była córką króla małego kozaka. Jednak życie królewskie jej nie podpadło i uciekła.</p>
 		</div>
@@ -117,13 +117,13 @@
   <li class="item-a">
 	  <!--slider-box-->
 		<div class="box">
-		<p class="marvel">Santa</p>
+		<p class="marvel event">Santa</p>
 		<!--model-->
 		<img src="img/Santa_Event.png" class="model">
 		<!--details-->
 		<div class="details">
 		<!--logo-character-->
-		<img src="img/10_money.png" class="logo" >
+		<img src="img/15_money.png" class="logo" >
 		<!--character-details-->
 		<p>Przybył w te święta aby niczym tajemniczy gość rozdawać wszystkim prezenty. Bo kto w końcu nie kocha mikołaja?</p>
 		</div>

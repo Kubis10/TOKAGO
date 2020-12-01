@@ -67,8 +67,25 @@ a{
 	transition: all ease 0.3s;
 }
 .box:hover .marvel{
-	color:#c0292b;
 	transition: all ease 0.5s;
+}
+.box:hover .common{
+	color: #6a6a74;
+}
+.box:hover .uncommon{
+	color: #3498db;
+}
+.box:hover .rare{
+	color: #2bc253;
+}
+.box:hover .epic{
+	color: blueviolet;
+}
+.box:hover .legendary{
+	color: darkorange;
+}
+.box:hover .event{
+	color: #990000;
 }
 .back{
 	text-decoration: none;
