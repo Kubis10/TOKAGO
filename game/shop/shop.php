@@ -117,15 +117,15 @@
   <li class="item-a">
 	  <!--slider-box-->
 		<div class="box">
-		<p class="marvel">DIRT PRINCESS</p>
+		<p class="marvel">Santa</p>
 		<!--model-->
-		<img src="#" class="model">
+		<img src="img/Santa_Event.png" class="model">
 		<!--details-->
 		<div class="details">
 		<!--logo-character-->
 		<img src="img/10_money.png" class="logo" >
 		<!--character-details-->
-		<p>Princess Wiana(bo tak miała na imię) była córką króla małego kozaka. Jednak życie królewskie jej nie podpadło i uciekła.</p>
+		<p>Przybył w te święta aby niczym tajemniczy gość rozdawać wszystkim prezenty. Bo kto w końcu nie kocha mikołaja?</p>
 		</div>
 		
 		</div>
