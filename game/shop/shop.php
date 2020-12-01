@@ -22,7 +22,7 @@
        </a>
         <h2 class="moneys">100</h2>
         <div>
-            <img src="../images/money.png" width="30px" height="30px" class="iconDetails" alt="money">
+            <img src="../images/money.png" width="30" height="30" class="iconDetails" alt="money">
        </div>
     </nav>
 	<div class="container">
@@ -32,15 +32,15 @@
   <li class="item-a">
 	  <!--slider-box-->
 		<div class="box">
-		<p class="marvel">MARVEL</p>
+		<p class="marvel">PINK</p>
 		<!--model-->
-		<img src="img/Ant-Man.png" class="model">
+		<img src="img/Pink_Monster.png" class="model">
 		<!--details-->
 		<div class="details">
 		<!--logo-character-->
-		<img src="img/AntMan-logo.png" class="logo" width="100px" style="height: auto;">
+		<img src="img/10_money.png" class="logo">
 		<!--character-details-->
-		<p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+		<p>Pink to mały słotki królik. Urodził się na skutek cudu który otrzymała jego mama w zamian za pomoc wróżce.</p>
 		</div>
 		
 		</div>
@@ -49,15 +49,15 @@
   <li class="item-a">
 	  <!--slider-box-->
 		<div class="box">
-		<p class="marvel">MARVEL</p>
+		<p class="marvel">DUDE</p>
 		<!--model-->
-		<img src="img/DeadPool.png" class="model">
+		<img src="img/Dude_Monster.png" class="model">
 		<!--details-->
 		<div class="details">
 		<!--logo-character-->
-		<img src="img/Deadpool-logo.png" class="logo" >
+		<img src="img/10_money.png" class="logo" >
 		<!--character-details-->
-		<p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+		<p>Dude to potomek squirtle. Podczas ewolucji nauczył się chodzić na 2 nogach. Chusta to prezent od jego rodziców w dniu urodzin.</p>
 		</div>
 		
 		</div>
@@ -66,15 +66,15 @@
   <li class="item-a">
 	  <!--slider-box-->
 		<div class="box">
-		<p class="marvel">MARVEL</p>
+		<p class="marvel">OWLET</p>
 		<!--model-->
-		<img src="img/SpiderMan.png" class="model">
+		<img src="img/Owlet_Monster.png" class="model">
 		<!--details-->
 		<div class="details">
 		<!--logo-character-->
-		<img src="img/SpiderMan-logo.png" class="logo" >
+		<img src="img/10_money.png" class="logo" >
 		<!--character-details-->
-		<p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+		<p>Owlet to potomek starej rodziny sówek. Jego rodzice umarli gdy był mały jednak owlet się nie poddaje i walczy do końca.</p>
 		</div>
 		
 		</div>
@@ -83,15 +83,15 @@
   <li class="item-a">
 	  <!--slider-box-->
 		<div class="box">
-		<p class="marvel">MARVEL</p>
+		<p class="marvel">WEED</p>
 		<!--model-->
-		<img src="img/Venom.png" class="model">
+		<img src="img/Weed_Monster.png" class="model">
 		<!--details-->
 		<div class="details">
 		<!--logo-character-->
-		<img src="img/Venom-logo.png" class="logo" >
+		<img src="img/10_money.png" class="logo" >
 		<!--character-details-->
-		<p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+		<p>Weed... Co tu dużo pisać.<br><br><br></p>
 		</div>
 		
 		</div>
@@ -100,15 +100,15 @@
   <li class="item-a">
 	  <!--slider-box-->
 		<div class="box">
-		<p class="marvel">MARVEL</p>
+		<p class="marvel">PRINCESS</p>
 		<!--model-->
-		<img src="img/Thor.png" class="model">
+		<img src="img/Princess_Girl.png" class="model">
 		<!--details-->
 		<div class="details">
 		<!--logo-character-->
-		<img src="img/Thor-logo.png" class="logo">
+		<img src="img/10_money.png" class="logo">
 		<!--character-details-->
-		<p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+		<p>Princess Wiana(bo tak miała na imię) była córką króla małego kozaka. Jednak życie królewskie jej nie podpadło i uciekła.</p>
 		</div>
 		
 		</div>
@@ -117,15 +117,15 @@
   <li class="item-a">
 	  <!--slider-box-->
 		<div class="box">
-		<p class="marvel">MARVEL</p>
+		<p class="marvel">DIRT PRINCESS</p>
 		<!--model-->
-		<img src="img/IronMan.png" class="model">
+		<img src="#" class="model">
 		<!--details-->
 		<div class="details">
 		<!--logo-character-->
-		<img src="img/IronMan-logo.png" class="logo" >
+		<img src="img/10_money.png" class="logo" >
 		<!--character-details-->
-		<p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+		<p>Princess Wiana(bo tak miała na imię) była córką króla małego kozaka. Jednak życie królewskie jej nie podpadło i uciekła.</p>
 		</div>
 		
 		</div>
