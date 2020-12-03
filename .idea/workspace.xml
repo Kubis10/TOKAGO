@@ -23,10 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="add eq">
+      <change afterPath="$PROJECT_DIR$/res/js/eq.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credits.html" beforeDir="false" afterPath="$PROJECT_DIR$/credits.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/gra.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/gra.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/eq.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/eq.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/css/eq.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/eq.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +43,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -60,6 +63,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HSQLDB" />
@@ -84,19 +88,6 @@
       <recent name="C:\xampp\htdocs\TOKAGO\res" />
       <recent name="C:\xampp\htdocs\TOKAGO\res\css" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -150,14 +141,16 @@
       <workItem from="1606810048871" duration="138000" />
       <workItem from="1606810194992" duration="88000" />
       <workItem from="1606810291376" duration="396000" />
-      <workItem from="1606823023340" duration="13218000" />
-    </task>
-    <task id="LOCAL-00002" summary="level update">
-      <created>1605714048866</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1605714048866</updated>
+      <workItem from="1606823023340" duration="13274000" />
+      <workItem from="1606845360810" duration="244000" />
+      <workItem from="1606856371624" duration="23000" />
+      <workItem from="1606856462132" duration="2544000" />
+      <workItem from="1606908740889" duration="6000" />
+      <workItem from="1606909464651" duration="9000" />
+      <workItem from="1606931332200" duration="6966000" />
+      <workItem from="1606943558328" duration="4429000" />
+      <workItem from="1606985797330" duration="912000" />
+      <workItem from="1606987281742" duration="4071000" />
     </task>
     <task id="LOCAL-00003" summary="level update">
       <created>1605714055205</created>
@@ -495,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606840993454</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="add eq">
+      <created>1606842496342</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1606842496342</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,31 +530,5 @@
     <MESSAGE value="shop update" />
     <MESSAGE value="add eq" />
     <option name="LAST_COMMIT_MESSAGE" value="add eq" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606767582962">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606767582962" />
-    <state x="703" y="355" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1606767536310">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="703" y="355" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1606767536310" />
-    <state x="794" y="439" key="NewPhpFileDialog" timestamp="1606839086280">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="794" y="439" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606839086280" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1606836519468">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606836519468" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606840998459">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606840998459" />
-    <state x="777" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606834612104">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="777" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606834612104" />
   </component>
 </project>

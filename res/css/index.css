@@ -4,6 +4,7 @@ body{
     font-family: sans-serif;
     background: #34495e;
     color: white;
+    min-height: 100%;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -43,11 +44,22 @@ h1{
     font-weight: 900;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 1rem;    /* Footer height */
+}
 footer{
     text-align: center;
     width: 100%;
     background-color: #191919;
     padding: 7px 0;
+    position: absolute;
+    bottom: 0;
+    height: 1rem;
 }
 .container {
     background: url("../photo/game.png") no-repeat;

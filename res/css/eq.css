@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #34495e;
+    color: white;
+    overflow: hidden;
+}
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(13deg, #f9d4ff 14%,#c7ceff 64%);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: inset 7px 10px 12px #f0f0f0;
+}
+.okey{
+    text-decoration: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: 10px;
+    background-color: #990000;
+    border-radius: 15px;
+    border: 3px solid black;
+    color: white !important;
+}
+.items{
+    float: left;
+    background: #445b73;
+    overflow-y: scroll;
+    width: 40%;
+    height: 98vh;
+    padding-top: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    align-content: start;
+}
+.monster{
+    width: 60%;
+    min-height: 100vh;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.monster>img{
+    width: 480px;
+    height: 480px;
+}
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+[type=radio] + img {
+    cursor: pointer;
+}
+
+[type=radio]:checked + img {
+    outline: 2px solid #000dff;
+}
+.skin{
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    flex: 0 0 auto;
+}
+.skin>img{
+    width: 150px;
+    height: 150px;
+}

@@ -6,9 +6,41 @@
     <link rel="icon" type="image/png" href="../res/photo/logo.png">
     <title>TOKAGO | Ekwipunek</title>
     <link rel="stylesheet" href="../res/css/eq.css"/>
-    <link rel="stylesheet" href="../res/css/main.css"/>
 </head>
 <body>
+    <section class="container">
+        <form class="items">
+            <label class="skin">
+                <input type="radio" name="test" value="Pink_Monster" onclick="display()">
+                <img src="shop/img/Pink_Monster.png" alt="skin">
+            </label>
+        <label class="skin">
+            <input type="radio" name="test" value="Dude_Monster" onclick="display()">
+            <img src="shop/img/Dude_Monster.png" alt="skin">
+        </label>
+        <label class="skin">
+            <input type="radio" name="test" value="Owlet_Monster" onclick="display()">
+            <img src="shop/img/Owlet_Monster.png" alt="skin">
+        </label>
+        <label class="skin">
+            <input type="radio" name="test" value="Weed_Monster" onclick="display()">
+            <img src="shop/img/Weed_Monster.png" alt="skin">
+        </label>
+        <label class="skin">
+            <input type="radio" name="test" value="Princess_Girl" onclick="display()">
+            <img src="shop/img/Princess_Girl.png" alt="skin">
+        </label>
+        <label class="skin">
+            <input type="radio" name="test" value="Santa_Event" onclick="display()">
+            <img src="shop/img/Santa_Event.png" alt="skin">
+        </label>
 
+            <input type="submit" class="okey" value="Zatwierdź">
+        </form>
+    <section class="monster">
+        <img src="shop/img/Pink_Monster.png" alt="monster" id="img_mon">
+    </section>
+    </section>
+<script src="../res/js/eq.js"></script>
 </body>
 </html>
