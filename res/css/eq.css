@@ -16,7 +16,6 @@ body{
 }
 ::-webkit-scrollbar-track{
     background: #ffffff;
-    border-radius: 10px;
     box-shadow: inset 7px 10px 12px #f0f0f0;
 }
 .okey{
@@ -31,18 +30,20 @@ body{
     color: white !important;
 }
 .items{
+    height: 99vh;
+    padding-top: 1vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: start;
+    align-content: start;
+}
+.container{
     float: left;
     background: #445b73;
     overflow-y: scroll;
     width: 40%;
-    height: 98vh;
-    padding-top: 2vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: start;
-    align-items: start;
-    align-content: start;
 }
 .monster{
     width: 60%;
@@ -73,12 +74,19 @@ body{
 .skin{
     width: 150px;
     height: 150px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 10px;
     flex: 0 0 auto;
 }
 .skin>img{
     width: 150px;
     height: 150px;
+}
+@media screen and (max-width: 450px){
+    .skin{
+        padding: 0;
+    }
+    .monster > img{
+        width: 100%;
+        height: 100%;
+    }
 }

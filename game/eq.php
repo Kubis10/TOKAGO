@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="../res/css/eq.css"/>
 </head>
 <body>
-    <section class="container">
+    <div class="container">
         <form class="items">
-            <label class="skin">
-                <input type="radio" name="test" value="Pink_Monster" onclick="display()">
-                <img src="shop/img/Pink_Monster.png" alt="skin">
-            </label>
+        <label class="skin">
+            <input type="radio" name="test" value="Pink_Monster" onclick="display()">
+            <img src="shop/img/Pink_Monster.png" alt="skin">
+        </label>
         <label class="skin">
             <input type="radio" name="test" value="Dude_Monster" onclick="display()">
             <img src="shop/img/Dude_Monster.png" alt="skin">
@@ -34,12 +34,57 @@
             <input type="radio" name="test" value="Santa_Event" onclick="display()">
             <img src="shop/img/Santa_Event.png" alt="skin">
         </label>
-
-            <input type="submit" class="okey" value="Zatwierdź">
+            <label class="skin">
+                <input type="radio" name="test" value="Santa_Event" onclick="display()">
+                <img src="shop/img/Santa_Event.png" alt="skin">
+            </label>        <label class="skin">
+                <input type="radio" name="test" value="Santa_Event" onclick="display()">
+                <img src="shop/img/Santa_Event.png" alt="skin">
+            </label>        <label class="skin">
+                <input type="radio" name="test" value="Santa_Event" onclick="display()">
+                <img src="shop/img/Santa_Event.png" alt="skin">
+            </label>        <label class="skin">
+                <input type="radio" name="test" value="Santa_Event" onclick="display()">
+                <img src="shop/img/Santa_Event.png" alt="skin">
+            </label>        <label class="skin">
+                <input type="radio" name="test" value="Santa_Event" onclick="display()">
+                <img src="shop/img/Santa_Event.png" alt="skin">
+            </label>        <label class="skin">
+                <input type="radio" name="test" value="Santa_Event" onclick="display()">
+                <img src="shop/img/Santa_Event.png" alt="skin">
+            </label>        <label class="skin">
+                <input type="radio" name="test" value="Santa_Event" onclick="display()">
+                <img src="shop/img/Santa_Event.png" alt="skin">
+            </label>        <label class="skin">
+                <input type="radio" name="test" value="Santa_Event" onclick="display()">
+                <img src="shop/img/Santa_Event.png" alt="skin">
+            </label>        <label class="skin">
+                <input type="radio" name="test" value="Santa_Event" onclick="display()">
+                <img src="shop/img/Santa_Event.png" alt="skin">
+            </label>        <label class="skin">
+                <input type="radio" name="test" value="Santa_Event" onclick="display()">
+                <img src="shop/img/Santa_Event.png" alt="skin">
+            </label>        <label class="skin">
+                <input type="radio" name="test" value="Santa_Event" onclick="display()">
+                <img src="shop/img/Santa_Event.png" alt="skin">
+            </label>        <label class="skin">
+                <input type="radio" name="test" value="Santa_Event" onclick="display()">
+                <img src="shop/img/Santa_Event.png" alt="skin">
+            </label>        <label class="skin">
+                <input type="radio" name="test" value="Santa_Event" onclick="display()">
+                <img src="shop/img/Santa_Event.png" alt="skin">
+            </label>        <label class="skin">
+                <input type="radio" name="test" value="Santa_Event" onclick="display()">
+                <img src="shop/img/Santa_Event.png" alt="skin">
+            </label>        <label class="skin">
+                <input type="radio" name="test" value="Santa_Event" onclick="display()">
+                <img src="shop/img/Santa_Event.png" alt="skin">
+            </label>
+        <input type="submit" class="okey" value="Zatwierdź">
         </form>
+    </div>
     <section class="monster">
         <img src="shop/img/Pink_Monster.png" alt="monster" id="img_mon">
-    </section>
     </section>
 <script src="../res/js/eq.js"></script>
 </body>

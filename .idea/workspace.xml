@@ -23,12 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="add eq">
-      <change afterPath="$PROJECT_DIR$/res/js/eq.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/eq.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/eq.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/css/eq.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/eq.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +77,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Code with Me" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -150,14 +147,13 @@
       <workItem from="1606931332200" duration="6966000" />
       <workItem from="1606943558328" duration="4429000" />
       <workItem from="1606985797330" duration="912000" />
-      <workItem from="1606987281742" duration="4071000" />
-    </task>
-    <task id="LOCAL-00003" summary="level update">
-      <created>1605714055205</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1605714055205</updated>
+      <workItem from="1606987281742" duration="6119000" />
+      <workItem from="1607065659995" duration="3000" />
+      <workItem from="1607078925063" duration="3000" />
+      <workItem from="1607123405842" duration="1253000" />
+      <workItem from="1607126342379" duration="714000" />
+      <workItem from="1607165249602" duration="2479000" />
+      <workItem from="1607167743819" duration="2807000" />
     </task>
     <task id="LOCAL-00004" summary="file system update">
       <created>1605723431596</created>
@@ -495,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606842496342</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="add eq">
+      <created>1606996908114</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1606996908114</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
