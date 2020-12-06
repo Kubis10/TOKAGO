@@ -23,9 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="add eq">
+      <change afterPath="$PROJECT_DIR$/res/css/ranking.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020-11-28_16_44_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020-11-28_16_44__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/eq.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/eq.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/css/eq.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/eq.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/platformer.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/platformer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/ranks.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/ranks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +43,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -153,14 +157,9 @@
       <workItem from="1607123405842" duration="1253000" />
       <workItem from="1607126342379" duration="714000" />
       <workItem from="1607165249602" duration="2479000" />
-      <workItem from="1607167743819" duration="2807000" />
-    </task>
-    <task id="LOCAL-00004" summary="file system update">
-      <created>1605723431596</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1605723431596</updated>
+      <workItem from="1607167743819" duration="8026000" />
+      <workItem from="1607251148630" duration="4596000" />
+      <workItem from="1607272132409" duration="17000" />
     </task>
     <task id="LOCAL-00005" summary="TODO">
       <created>1605724379376</created>
@@ -498,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606996908114</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="add eq">
+      <created>1607170763043</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1607170763043</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

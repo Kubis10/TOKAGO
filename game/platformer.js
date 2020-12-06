@@ -240,7 +240,7 @@ let id = div2.textContent;
       scale: 0.4,
       y: 50
     }, function() {
-      if(time==0){
+      if(time===0){
         gui =!gui;
       }
       else{
@@ -280,7 +280,7 @@ let id = div2.textContent;
       location.replace("ranks.php")
     }),container);
     stage.insert(new Q.UI.Button({
-      label: "Muzyka w tle",
+      label: "Muzyka",
       y: 115,
       x: 0,
       fill: "#f28400",
