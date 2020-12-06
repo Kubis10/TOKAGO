@@ -232,7 +232,7 @@
 				echo "checked";
 				unset($_SESSION['fr_regulamin']);
 			}
-				?>/> Akceptuję <a href="regulamin.html" target="_blank" rel="noopener noreferrer">regulamin</a>
+				?>/> Akceptuję <a href="../regulamin.html" target="_blank" rel="noopener noreferrer">regulamin</a>
 		</label>
 		
 		<?php

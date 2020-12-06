@@ -22,14 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="add eq">
-      <change afterPath="$PROJECT_DIR$/res/css/ranking.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020-11-28_16_44_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020-11-28_16_44__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/platformer.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/platformer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/ranks.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/ranks.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/rejestracja.php" beforeDir="false" afterPath="$PROJECT_DIR$/auth/rejestracja.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,13 +155,11 @@
       <workItem from="1607167743819" duration="8026000" />
       <workItem from="1607251148630" duration="4596000" />
       <workItem from="1607272132409" duration="17000" />
-    </task>
-    <task id="LOCAL-00005" summary="TODO">
-      <created>1605724379376</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1605724379376</updated>
+      <workItem from="1607276325745" duration="73000" />
+      <workItem from="1607277891383" duration="3000" />
+      <workItem from="1607287830568" duration="704000" />
+      <workItem from="1607289308958" duration="29000" />
+      <workItem from="1607290920515" duration="372000" />
     </task>
     <task id="LOCAL-00006" summary="UPDATE">
       <created>1605726189941</created>
@@ -504,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607170763043</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="update">
+      <created>1607276383106</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1607276383106</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,10 +534,10 @@
     <MESSAGE value="update path to mailer" />
     <MESSAGE value="update credits" />
     <MESSAGE value="todo" />
-    <MESSAGE value="update" />
     <MESSAGE value="add shop" />
     <MESSAGE value="shop update" />
     <MESSAGE value="add eq" />
-    <option name="LAST_COMMIT_MESSAGE" value="add eq" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
