@@ -17,7 +17,8 @@ window.addEventListener("load",function() {
         W: "up",
         LEFT: "left",
         RIGHT: "right",
-        UP: "up"
+        UP: "up",
+        SPACE: "up"
       })
       Q.input.touchControls({
       controls:   [ ['left','<' ],
@@ -271,8 +272,23 @@ let id = div2.textContent;
       y: 0
     }),container);
     stage.insert(new Q.UI.Button({
+      label: "Restart",
+      y: 65,
+      x: 0,
+      fill: "#f28400",
+      border: 2,
+    }, function() {
+      Q.clearStages();
+      reset();
+      gui=false;
+      timesample = 0;
+      wartosc = 0;
+      Q.stageScene('level'+level);
+      Q.stageScene('pause', 1);
+    }),container);
+    stage.insert(new Q.UI.Button({
       label: "Ranking",
-      y: 60,
+      y: 120,
       x: 0,
       fill: "#f28400",
       border: 2,
@@ -281,7 +297,7 @@ let id = div2.textContent;
     }),container);
     stage.insert(new Q.UI.Button({
       label: "Muzyka",
-      y: 115,
+      y: 175,
       x: 0,
       fill: "#f28400",
       border: 2,
@@ -296,7 +312,7 @@ let id = div2.textContent;
     }),container);
     stage.insert(new Q.UI.Button({
       label: "Sklep",
-      y: 170,
+      y: 230,
       x: 0,
       fill: "#f28400",
       border: 2,
@@ -305,7 +321,7 @@ let id = div2.textContent;
     }),container);
     stage.insert(new Q.UI.Button({
       label: "Wyloguj się",
-      y: 230,
+      y: 290,
       x: 0,
       fill: "#990000",
       border: 2,

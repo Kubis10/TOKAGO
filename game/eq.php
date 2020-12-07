@@ -11,75 +11,34 @@
     <div class="container">
         <form class="items">
         <label class="skin">
-            <input type="radio" name="test" value="Pink_Monster" onclick="display()">
+            <input type="radio" name="skin" value="Pink_Monster" onclick="display()">
             <img src="shop/img/Pink_Monster.png" alt="skin">
         </label>
         <label class="skin">
-            <input type="radio" name="test" value="Dude_Monster" onclick="display()">
+            <input type="radio" name="skin" value="Dude_Monster" onclick="display()">
             <img src="shop/img/Dude_Monster.png" alt="skin">
         </label>
         <label class="skin">
-            <input type="radio" name="test" value="Owlet_Monster" onclick="display()">
+            <input type="radio" name="skin" value="Owlet_Monster" onclick="display()">
             <img src="shop/img/Owlet_Monster.png" alt="skin">
         </label>
         <label class="skin">
-            <input type="radio" name="test" value="Weed_Monster" onclick="display()">
+            <input type="radio" name="skin" value="Weed_Monster" onclick="display()">
             <img src="shop/img/Weed_Monster.png" alt="skin">
         </label>
         <label class="skin">
-            <input type="radio" name="test" value="Princess_Girl" onclick="display()">
+            <input type="radio" name="skin" value="Princess_Girl" onclick="display()">
             <img src="shop/img/Princess_Girl.png" alt="skin">
         </label>
         <label class="skin">
-            <input type="radio" name="test" value="Santa_Event" onclick="display()">
+            <input type="radio" name="skin" value="Santa_Event" onclick="display()">
             <img src="shop/img/Santa_Event.png" alt="skin">
         </label>
-            <label class="skin">
-                <input type="radio" name="test" value="Santa_Event" onclick="display()">
-                <img src="shop/img/Santa_Event.png" alt="skin">
-            </label>        <label class="skin">
-                <input type="radio" name="test" value="Santa_Event" onclick="display()">
-                <img src="shop/img/Santa_Event.png" alt="skin">
-            </label>        <label class="skin">
-                <input type="radio" name="test" value="Santa_Event" onclick="display()">
-                <img src="shop/img/Santa_Event.png" alt="skin">
-            </label>        <label class="skin">
-                <input type="radio" name="test" value="Santa_Event" onclick="display()">
-                <img src="shop/img/Santa_Event.png" alt="skin">
-            </label>        <label class="skin">
-                <input type="radio" name="test" value="Santa_Event" onclick="display()">
-                <img src="shop/img/Santa_Event.png" alt="skin">
-            </label>        <label class="skin">
-                <input type="radio" name="test" value="Santa_Event" onclick="display()">
-                <img src="shop/img/Santa_Event.png" alt="skin">
-            </label>        <label class="skin">
-                <input type="radio" name="test" value="Santa_Event" onclick="display()">
-                <img src="shop/img/Santa_Event.png" alt="skin">
-            </label>        <label class="skin">
-                <input type="radio" name="test" value="Santa_Event" onclick="display()">
-                <img src="shop/img/Santa_Event.png" alt="skin">
-            </label>        <label class="skin">
-                <input type="radio" name="test" value="Santa_Event" onclick="display()">
-                <img src="shop/img/Santa_Event.png" alt="skin">
-            </label>        <label class="skin">
-                <input type="radio" name="test" value="Santa_Event" onclick="display()">
-                <img src="shop/img/Santa_Event.png" alt="skin">
-            </label>        <label class="skin">
-                <input type="radio" name="test" value="Santa_Event" onclick="display()">
-                <img src="shop/img/Santa_Event.png" alt="skin">
-            </label>        <label class="skin">
-                <input type="radio" name="test" value="Santa_Event" onclick="display()">
-                <img src="shop/img/Santa_Event.png" alt="skin">
-            </label>        <label class="skin">
-                <input type="radio" name="test" value="Santa_Event" onclick="display()">
-                <img src="shop/img/Santa_Event.png" alt="skin">
-            </label>        <label class="skin">
-                <input type="radio" name="test" value="Santa_Event" onclick="display()">
-                <img src="shop/img/Santa_Event.png" alt="skin">
-            </label>        <label class="skin">
-                <input type="radio" name="test" value="Santa_Event" onclick="display()">
-                <img src="shop/img/Santa_Event.png" alt="skin">
-            </label>
+        <label class="skin">
+            <input type="radio" name="skin" value="Starter" onclick="display()">
+            <img src="shop/img/Starter.png" alt="skin">
+        </label>
+
         <input type="submit" class="okey" value="Zatwierdź">
         </form>
     </div>

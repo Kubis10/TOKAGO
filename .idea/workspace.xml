@@ -23,8 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/game/shop/img/Starter.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/rejestracja.php" beforeDir="false" afterPath="$PROJECT_DIR$/auth/rejestracja.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/eq.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/eq.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/platformer.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/platformer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/js/eq.js" beforeDir="false" afterPath="$PROJECT_DIR$/res/js/eq.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +87,19 @@
       <recent name="C:\xampp\htdocs\TOKAGO\res" />
       <recent name="C:\xampp\htdocs\TOKAGO\res\css" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -159,14 +175,11 @@
       <workItem from="1607277891383" duration="3000" />
       <workItem from="1607287830568" duration="704000" />
       <workItem from="1607289308958" duration="29000" />
-      <workItem from="1607290920515" duration="372000" />
-    </task>
-    <task id="LOCAL-00006" summary="UPDATE">
-      <created>1605726189941</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1605726189941</updated>
+      <workItem from="1607290920515" duration="400000" />
+      <workItem from="1607332749284" duration="6000" />
+      <workItem from="1607336707048" duration="3000" />
+      <workItem from="1607369404097" duration="430000" />
+      <workItem from="1607373301670" duration="2838000" />
     </task>
     <task id="LOCAL-00007" summary="SONG">
       <created>1605731697244</created>
@@ -504,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607276383106</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="update">
+      <created>1607291311978</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1607291311978</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
