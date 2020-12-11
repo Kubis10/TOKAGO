@@ -1,3 +1,18 @@
+<?php 
+	require_once("../res/connect.php");
+
+	session_start();
+	
+	if ((!isset($_SESSION['zalogowany'])) || (!isset($_SESSION['id'])))
+	{
+		header('Location: ../index.html');
+		exit();
+	}
+    $sesid = $_SESSION['id'];
+
+?>
+
+
 <!DOCTYPE HTML>
 <html lang="pl">
 <head>

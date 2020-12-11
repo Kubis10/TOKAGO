@@ -46,13 +46,14 @@
 
                 let xhttp = new XMLHttpRequest();
                 xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                  msg.innerHTML = this.responseText;
-                  window.location.href = "zalform.php";
+                    if (this.readyState == 4 && this.status == 200) {
+                    msg.innerHTML = this.responseText;
+                    window.location.href = "zalform.php";
+                    }
+                    xhttp.open("POST", "passRenewXO.php", true);
+                    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                    xhttp.send(`uname=${user}&pass1=${p1}&pass2=${p2}`);
                 }
-                xhttp.open("POST", "passRenewXO.php", true);
-                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                xhttp.send(`uname=${user}&pass1=${p1}&pass2=${p2}`);
             }
         </script>
     </body>

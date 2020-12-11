@@ -1,3 +1,17 @@
+<?php 
+	require_once("../../res/connect.php");
+
+	session_start();
+	
+	if ((!isset($_SESSION['zalogowany'])) || (!isset($_SESSION['id'])))
+	{
+		header('Location: ../index.html');
+		exit();
+	}
+    $sesid = $_SESSION['id'];
+
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -27,7 +41,16 @@
        </a>
         <h2 class="moneys"><?php
 
-                require_once("../../res/connect.php");
+			$nick = $_SESSION['user'];
+
+			$checkBalance = $polaczenie->query("SELECT balance FROM uzytkownicy WHERE user = '$nick'");
+			if ($checkBalance->num_rows > 0){
+
+				$tmp = $checkBalance->fetch_assoc();
+				$balance = $tmp['balance'];
+				echo $balance;
+
+			}
 
             ?></h2>
         <div>

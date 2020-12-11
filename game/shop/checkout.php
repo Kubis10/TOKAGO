@@ -14,7 +14,7 @@
 	{
 		echo "Error: ".$polaczenie->connect_errno;
 	}
-$_SESSION['zakup'] = false;
+  $_SESSION['zakup'] = false;
 ?>
 <!DOCTYPE html>
 <html>
@@ -56,6 +56,11 @@ $_SESSION['zakup'] = false;
             <?php
             $_SESSION['zakup'] = true;
             ?>
+            localStorage.setItem("txn_id", details.id);
+            localStorage.setItem("payment_status", details.status);
+            localStorage.setItem("payment_amount", details.purchase_units[0].amount.value);
+            localStorage.setItem("payment_currency", details.purchase_units[0].amount.currency_code);
+            localStorage.setItem("payer_email", details.payer.email_address);
             window.location.replace('review.php');
           });
         }
