@@ -25,7 +25,11 @@
        +
        </div>
        </a>
-        <h2 class="moneys">100</h2>
+        <h2 class="moneys"><?php
+
+                require_once("../../res/connect.php");
+
+            ?></h2>
         <div>
             <img src="../images/money.png" width="30" height="30" class="iconDetails" alt="money">
        </div>

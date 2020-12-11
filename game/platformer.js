@@ -193,7 +193,7 @@ let id = div2.textContent;
       client = new Date();
       wartosc = timesample + ((ServerDate-client)*-1);
     }
-    if(((Q.inputs['right'] || Q.inputs['left']) && gui === false)&&wartosc>0) {
+    if((Q.inputs['right'] || Q.inputs['left']) && gui === false) {
       run=true;
       gui = true;
     }

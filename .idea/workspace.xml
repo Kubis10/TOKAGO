@@ -23,11 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/game/shop/img/Starter.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/eq.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/eq.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/platformer.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/platformer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/js/eq.js" beforeDir="false" afterPath="$PROJECT_DIR$/res/js/eq.js" afterDir="false" />
+    </list>
+    <list id="94ba5d9c-fa9a-466d-9073-2161e2c82637" name="Changes by Edziu" comment="">
+      <change beforePath="$PROJECT_DIR$/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/shop/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/shop/shop.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +50,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/TODO">
+      <ranges>
+        <range start1="1" end1="2" start2="1" end2="1" changelist="73452015-42a6-4e2e-b2ea-d1eecc6777d0" />
+        <range start1="9" end1="11" start2="8" end2="9" changelist="94ba5d9c-fa9a-466d-9073-2161e2c82637" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectId" id="1kT9Jm99JFYUQNUwfeqCPRyS7sz" />
   <component name="ProjectLevelVcsManager">
@@ -87,19 +97,6 @@
       <recent name="C:\xampp\htdocs\TOKAGO\res" />
       <recent name="C:\xampp\htdocs\TOKAGO\res\css" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -179,14 +176,13 @@
       <workItem from="1607332749284" duration="6000" />
       <workItem from="1607336707048" duration="3000" />
       <workItem from="1607369404097" duration="430000" />
-      <workItem from="1607373301670" duration="2838000" />
-    </task>
-    <task id="LOCAL-00007" summary="SONG">
-      <created>1605731697244</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1605731697244</updated>
+      <workItem from="1607373301670" duration="2871000" />
+      <workItem from="1607414614616" duration="3000" />
+      <workItem from="1607603134924" duration="5000" />
+      <workItem from="1607638398775" duration="45000" />
+      <workItem from="1607691195778" duration="3979000" />
+      <workItem from="1607699759317" duration="126000" />
+      <workItem from="1607699897081" duration="1410000" />
     </task>
     <task id="LOCAL-00008" summary="add email">
       <created>1605807279644</created>
@@ -524,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607291311978</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="update">
+      <created>1607377314789</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1607377314790</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
