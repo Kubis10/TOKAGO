@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona głowna | TOKAGO</title>
+    <link rel="icon" type="image/png" href="res/photo/logo.png">
+    <link rel="stylesheet" href="res/css/more.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="sidenav">
+    <button class="dropdown-btn">Start
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#top">Wprowadzenie</a>
+        <a href="#news">News</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+  <a href="regulamin.html">Regulamin</a>
+  <a href="credits.html">Podziękowania</a>
+  <a href="http://kubis10.beep.pl/">O mnie</a>
+</div>
+
+<div class="main">
+  <div class="tops"><img src="res/photo/logo.png" alt="logo" width="100px" style="float: left;"> <h1 style="float: left;">TOKAGO</h1></div>
+  <div style="clear: both;"></div>
+  <div class="container">
+  <h2 id="top">Wprowadzenie</h2>
+  <This>Click on the dropdown button to open the dropdown menu inside the side navigation. This sidebar is of full height (100%) and always shown.</p>
+  <p>Some random text..</p>
+
+  <h2 id="news">Wiadomości</h2>
+  <p>Click on the dropdown button to open the dropdown menu inside the side navigation. This sidebar is of full height (100%) and always shown.</p>
+  <p>Some random text..</p>
+
+  <h2 id="kontakt">Kontakt</h2>
+  <p>Click on the dropdown button to open the dropdown menu inside the side navigation. This sidebar is of full height (100%) and always shown.</p>
+  <p>Some random text..</p>
+    </div>
+</div>
+
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+</body>
+</html> 
