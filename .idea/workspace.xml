@@ -23,19 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/game/images/Dude_Monster.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/images/Owlet_Monster.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/images/Pink_Monster.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/images/Princess_Girl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/images/Satnta_Event.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/images/Skeleton_guy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/images/Weed_Monster.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/css/more.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/shop/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/shop/shop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/33779168_gra.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,6 +176,7 @@
       <workItem from="1607893103798" duration="2874000" />
       <workItem from="1607941142133" duration="6978000" />
       <workItem from="1607959772084" duration="5000" />
+      <workItem from="1607979250351" duration="966000" />
     </task>
     <task id="LOCAL-00015" summary="update">
       <created>1605878496695</created>

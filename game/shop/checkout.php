@@ -54,7 +54,7 @@
         onApprove: function(data, actions) {
           return actions.order.capture().then(function(details) {
             <?php
-            $_SESSION['zakup'] = true;
+            $_SESSION['zakupmonet'] = true;
             ?>
             localStorage.setItem("txn_id", details.id);
             localStorage.setItem("payment_status", details.status);
