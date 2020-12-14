@@ -72,7 +72,7 @@
 		<!--logo-character-->
 		<img src="img/5_money.png" class="logo">
 		<!--character-details-->
-		<p>Zmartwywstał i przybył z obcej gry aby walczyć z innymi umarlakami.</p>
+		<p>Zmartwywstał i przybył z obcej gry aby walczyć z innymi umarlakami.<br><br></p>
 		</div>
 		
 		</div>

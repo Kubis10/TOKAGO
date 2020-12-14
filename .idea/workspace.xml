@@ -23,9 +23,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/game/images/Dude_Monster.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/images/Owlet_Monster.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/images/Pink_Monster.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/images/Princess_Girl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/images/Satnta_Event.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/images/Skeleton_guy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/images/Weed_Monster.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/css/more.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/rejestracja.php" beforeDir="false" afterPath="$PROJECT_DIR$/auth/rejestracja.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/eq.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/eq.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/shop/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/shop/shop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/33779168_gra.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,19 +95,6 @@
       <recent name="C:\xampp\htdocs\TOKAGO\res" />
       <recent name="C:\xampp\htdocs\TOKAGO\res\css" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -189,14 +186,8 @@
       <workItem from="1607774259382" duration="4000" />
       <workItem from="1607892899451" duration="194000" />
       <workItem from="1607893103798" duration="2874000" />
-      <workItem from="1607941142133" duration="5701000" />
-    </task>
-    <task id="LOCAL-00014" summary="update credits">
-      <created>1605869447301</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1605869447301</updated>
+      <workItem from="1607941142133" duration="6978000" />
+      <workItem from="1607959772084" duration="5000" />
     </task>
     <task id="LOCAL-00015" summary="update">
       <created>1605878496695</created>
@@ -534,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607945881799</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="update">
+      <created>1607947004162</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1607947004162</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
