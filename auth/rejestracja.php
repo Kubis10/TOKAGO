@@ -115,7 +115,7 @@
 				if ($wszystko_OK==true)
 				{
 					$hash = genUUID();
-					if ($polaczenie->query("INSERT INTO uzytkownicy VALUES (NULL, '$nick', '$haslo_hash', '$email', 1, now(), '$hash')"))
+					if ($polaczenie->query("INSERT INTO uzytkownicy VALUES (NULL, '$nick', '$haslo_hash', '$email', 1, 0, 'Pink_Monster', now(), '$hash')"))
 					{
 						$tmp = $polaczenie->query("SELECT id FROM uzytkownicy WHERE user='$nick'");
 						$row = $tmp->fetch_assoc();

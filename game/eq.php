@@ -34,10 +34,18 @@ if ($polaczenie->connect_errno!=0)
             <?php
             $query = $polaczenie->query("SELECT items.name FROM eq, items where items.item_id = eq.item_id AND eq.user_id = ".$user);
             while($row = $query->fetch_assoc()){
-                echo '  <label class="skin">
-                            <input type="radio" name="skin" value="'.$row['name'].'" onclick="display()">
-                            <img src="shop/img/'.$row['name'].'.png" alt="skin">
+                if($row['name']==="Pink_Monster") {
+                    echo '  <label class="skin">
+                            <input type="radio" name="skin" value="' . $row['name'] . '" onclick="display()" checked>
+                            <img src="shop/img/' . $row['name'] . '.png" alt="skin">
                         </label>';
+                }
+                else {
+                    echo '  <label class="skin">
+                            <input type="radio" name="skin" value="' . $row['name'] . '" onclick="display()">
+                            <img src="shop/img/' . $row['name'] . '.png" alt="skin">
+                        </label>';
+                }
             }
             ?>
              <input type="submit" class="okey" value="Zatwierdź">
