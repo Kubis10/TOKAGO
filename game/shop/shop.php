@@ -64,15 +64,15 @@
   <li class="item-a">
 	  <!--slider-box-->
 		<div class="box">
-		<p class="marvel common">PINK</p>
+		<p class="marvel common">Skeleton</p>
 		<!--model-->
-		<img src="img/Pink_Monster.png" class="model">
+		<img src="img/Skeleton_guy.png" class="model">
 		<!--details-->
 		<div class="details">
 		<!--logo-character-->
 		<img src="img/5_money.png" class="logo">
 		<!--character-details-->
-		<p>Pink to mały słotki królik. Urodził się na skutek cudu który otrzymała jego mama w zamian za pomoc wróżce.</p>
+		<p>Zmartwywstał i przybył z obcej gry aby walczyć z innymi umarlakami.</p>
 		</div>
 		
 		</div>

@@ -8,7 +8,13 @@
 		header('Location: ../index.html');
 		exit();
 	}
-    $sesid = $_SESSION['id'];
+    $user = $_SESSION['id'];
+
+if ($polaczenie->connect_errno!=0)
+{
+    echo "Error: ".$polaczenie->connect_errno;
+}
+
 
 ?>
 
@@ -24,42 +30,22 @@
 </head>
 <body>
     <div class="container">
-        <form class="items">
-        <label class="skin">
-            <input type="radio" name="skin" value="Pink_Monster" onclick="display()">
-            <img src="shop/img/Pink_Monster.png" alt="skin">
-        </label>
-        <label class="skin">
-            <input type="radio" name="skin" value="Dude_Monster" onclick="display()">
-            <img src="shop/img/Dude_Monster.png" alt="skin">
-        </label>
-        <label class="skin">
-            <input type="radio" name="skin" value="Owlet_Monster" onclick="display()">
-            <img src="shop/img/Owlet_Monster.png" alt="skin">
-        </label>
-        <label class="skin">
-            <input type="radio" name="skin" value="Weed_Monster" onclick="display()">
-            <img src="shop/img/Weed_Monster.png" alt="skin">
-        </label>
-        <label class="skin">
-            <input type="radio" name="skin" value="Princess_Girl" onclick="display()">
-            <img src="shop/img/Princess_Girl.png" alt="skin">
-        </label>
-        <label class="skin">
-            <input type="radio" name="skin" value="Santa_Event" onclick="display()">
-            <img src="shop/img/Santa_Event.png" alt="skin">
-        </label>
-        <label class="skin">
-            <input type="radio" name="skin" value="Starter" onclick="display()">
-            <img src="shop/img/Starter.png" alt="skin">
-        </label>
-
-        <input type="submit" class="okey" value="Zatwierdź">
-        </form>
-    </div>
-    <section class="monster">
-        <img src="shop/img/Pink_Monster.png" alt="monster" id="img_mon">
-    </section>
-<script src="../res/js/eq.js"></script>
-</body>
-</html>
+        <form class="items" method="post" action="writeq.php">
+            <?php
+            $query = $polaczenie->query("SELECT items.name FROM eq, items where items.item_id = eq.item_id AND eq.user_id = ".$user);
+            while($row = $query->fetch_assoc()){
+                echo '  <label class="skin">
+                            <input type="radio" name="skin" value="'.$row['name'].'" onclick="display()">
+                            <img src="shop/img/'.$row['name'].'.png" alt="skin">
+                        </label>';
+            }
+            ?>
+             <input type="submit" class="okey" value="Zatwierdź">
+             </form>
+         </div>
+         <section class="monster">
+             <img src="shop/img/Pink_Monster.png" alt="monster" id="img_mon">
+         </section>
+     <script src="../res/js/eq.js"></script>
+     </body>
+     </html>
