@@ -84,6 +84,16 @@ body {
   .icons a:hover{
     color: rgb(182, 178, 178);
   }
+  .glowna{
+    position: fixed;
+    background: #3498db;
+    padding: 10px;
+    border-radius: 10px;
+    bottom: 20px;
+    left: 20px;
+    z-index: 5;
+    text-decoration: none;
+  }
   /* Some media queries for responsiveness */
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
