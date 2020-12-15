@@ -1,4 +1,4 @@
-<?php 
+<?php
     session_start();
     ob_start();
     require_once "../../res/connect.php";
@@ -8,7 +8,7 @@
 		header('Location: ../../index.html');
 		exit();
     }
-    
+    $return = ["insert" => "nie", "balance" => "nie"];
     
     if ($polaczenie->connect_errno!=0)
 	{
@@ -36,13 +36,16 @@
         }
         
 
+        ob_clean();
+        echo json_encode($return);
+
+
     } else {
         echo "No data";
-        die();
     }
 
-    ob_clean();
-    echo json_encode($return);
-    die();
+    
+    
+    
     
 ?>
