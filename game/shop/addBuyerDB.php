@@ -1,6 +1,6 @@
 <?php
     session_start();
-    ob_start();
+    //ob_start();
     require_once "../../res/connect.php";
 	
 	if (!isset($_SESSION['zakup']) || !isset($_SESSION['zalogowany']))
@@ -32,20 +32,16 @@
             $return["insert"] = "tak";
         }
         if ($polaczenie->query("UPDATE uzytkownicy SET balance = balance + '$money' WHERE id = '$user_id'")){
-            $return["balance"] = "tak";
+           $return["balance"] = "tak";
         }
         
 
-        ob_clean();
-        echo json_encode($return);
+        //ob_clean();
+        //echo json_encode($return);
 
 
     } else {
         echo "No data";
     }
-
-    
-    
-    
     
 ?>
