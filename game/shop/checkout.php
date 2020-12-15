@@ -14,7 +14,7 @@
 	{
 		echo "Error: ".$polaczenie->connect_errno;
 	}
-  $_SESSION['zakup'] = false;
+  $_SESSION['zakupmonet'] = false;
 ?>
 <!DOCTYPE html>
 <html>

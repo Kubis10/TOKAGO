@@ -4,7 +4,7 @@ require_once "../../res/connect.php";
 
 	if (!isset($_SESSION['zakup']))
 	{
-		header('Location: ../index.html');
+		header('Location: ../../index.html');
 		exit();
 	}
 ?>
