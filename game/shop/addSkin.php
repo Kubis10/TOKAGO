@@ -2,7 +2,7 @@
     session_start();
     require_once "../../res/connect.php";
 	
-	if (!isset($_SESSION['zalogowany']) || isset($_POST['item_id']))
+	if (!isset($_SESSION['zalogowany']))
 	{
 		header('Location: ../../index.html');
 		exit();

@@ -186,12 +186,13 @@ $sesid = $_SESSION['id'];
 						'Kupione!',
 						'Skin został dodany do twojego eq.',
 						'success'
-					)
-					var xhttp = new XMLHttpRequest();
-					xhttp.open("POST", "addSkin.php", true);
-					xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-					xhttp.send(`item_id=${nazwa}&money=${cena}`);
-					window.location.reload(true);
+					).then((result) => {
+						var xhttp = new XMLHttpRequest();
+						xhttp.open("POST", "addSkin.php", true);
+						xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+						xhttp.send(`item_id=${nazwa}&money=${cena}`);
+						window.location.reload(true);
+					})
 				}
 			})
 		}
