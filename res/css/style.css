@@ -159,7 +159,7 @@ nav{
 	border-radius: 15px;
 }
 a:link {
-	color: green;
+	color: red;
 }
 
 /* visited link */
@@ -169,7 +169,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-	color: blue;
+	color: green;
 }
 
 /* selected link */

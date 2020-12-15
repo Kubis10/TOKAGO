@@ -16,7 +16,6 @@
 	}
   $_SESSION['zakupmonet'] = false;
   $_SESSION['iloscMonet'] = $_POST['moneyAmount'];
-
 ?>
 <!DOCTYPE html>
 <html>

@@ -105,12 +105,32 @@ form{
     border: 1px solid black;
     color: white !important;
 }
+.koniec{
+    text-decoration: none;
+    padding: 7px 10px;
+    background-color: #16a112;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: white !important;
+}
 .logo{
     text-align: center;
 }
 .logo > a{
     color: #2bc253;
     margin-top: 10vh;
+}
+.check{
+    margin-top: -10vh;
+}
+.rev{
+    max-width: 1000px;
+    height: auto;
+    margin: 9vh auto 0 auto;
+    padding: 5px 20px 35px 20px;
+    text-align:center;
+    background-color: #fff;
+    border-radius: 20px;
 }
 @media (max-width: 600px), (max-height: 750px){
     body{
