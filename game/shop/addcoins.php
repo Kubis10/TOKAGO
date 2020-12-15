@@ -32,6 +32,7 @@
     <div class="box-left">
     <h2 class="left">10</h2>
     <input type="hidden" name="price" value="5.99"/>
+    <input type="hidden" name="moneyAmount" value="10"/>
     </div>
     <div class="box-right">
     <img src="../images/money.png" alt="money">
@@ -42,6 +43,7 @@
     <div class="box-left">
     <h2 class="left">20</h2>
     <input type="hidden" name="price" value="10.99"/>
+    <input type="hidden" name="moneyAmount" value="20"/>
     </div>
     <div class="box-right">
     <img src="../images/money.png" alt="money">
@@ -52,6 +54,7 @@
     <div class="box-left">
     <h2 class="left">50</h2>
     <input type="hidden" name="price" value="25.99"/>
+    <input type="hidden" name="moneyAmount" value="50"/>
     </div>
     <div class="box-right">
     <img src="../images/money.png" alt="money">
@@ -64,6 +67,7 @@
     <div class="box-left">
     <h2 class="left">100</h2>
     <input type="hidden" name="price" value="44.99"/>
+    <input type="hidden" name="moneyAmount" value="100"/>
     </div>
     <div class="box-right">
     <img src="../images/money.png" alt="money">
@@ -74,6 +78,7 @@
     <div class="box-left">
     <h2 class="left">300</h2>
     <input type="hidden" name="price" value="139.99"/>
+    <input type="hidden" name="moneyAmount" value="300"/>
     </div>
     <div class="box-right">
     <img src="../images/money.png" alt="money">
@@ -84,6 +89,7 @@
     <div class="box-left">
         <h2 class="left">500</h2>
         <input type="hidden" name="price" value="249.99"/>
+        <input type="hidden" name="moneyAmount" value="500"/>
     </div>
     <div class="box-right">
         <img src="../images/money.png" alt="money">

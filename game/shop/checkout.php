@@ -15,6 +15,8 @@
 		echo "Error: ".$polaczenie->connect_errno;
 	}
   $_SESSION['zakupmonet'] = false;
+  $_SESSION['iloscMonet'] = $_POST['moneyAmount'];
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -53,7 +55,7 @@
         },
         onApprove: function(data, actions) {
           return actions.order.capture().then(function(details) {
-            <?php
+           <?php
             $_SESSION['zakupmonet'] = true;
             ?>
             localStorage.setItem("txn_id", details.id);
