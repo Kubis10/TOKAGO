@@ -21,7 +21,9 @@
 
         if ($polaczenie->query("INSERT INTO eq VALUES ('$user_id','$item_id')")){
             if ($polaczenie->query("UPDATE uzytkownicy SET balance = balance - '$money' WHERE id = '$user_id'")){
-                echo "tak";
+                if($polaczenie->query("INSERT INTO logs VALUES (NULL, 'Gracz o id = ".$user_id." kupił skina o id = ".$item_id."', now())")){
+                    echo "tak";
+                }
              }
              else {
                  echo "nie";
