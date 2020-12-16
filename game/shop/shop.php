@@ -92,7 +92,6 @@ $sesid = $_SESSION['id'];
 	<script src="../../res/js/script.js" type="text/javascript"></script>
 	<script src="../../res/js/sklep.js" type="text/javascript"></script>
 	<script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
-			
 </body>
 
 </html>
