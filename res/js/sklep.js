@@ -1,7 +1,5 @@
-window.addEventListener("load", function () {
-    let stan = parseInt(document.getElementById("stan").innerText);
-})
 function zakup(cena, nazwa) {
+    var stan = document.getElementById("stan").innerText;
     if (stan >= cena) {
         Swal.fire({
             title: 'Jesteś pewien że chcesz to kupić?',
@@ -37,6 +35,7 @@ function zakup(cena, nazwa) {
     }
 }
 function vip() {
+    var stan = document.getElementById("stan").innerText;
     Swal.fire({
         icon: 'question',
         title: 'Czy chcesz kupić lub przedłużyć vipa?',
@@ -59,10 +58,10 @@ function vip() {
             cancelButtonColor: '#d33'
         }).then((result) => {
             if (result.isConfirmed) {
-                if (stan >= "20") {
+                if (stan >= 20) {
                     Swal.fire('Zakupiono na kolejny miesiąc!', '', 'success').then((result) => {
                     var xhttp = new XMLHttpRequest();
-                    xhttp.open("POST", "addSkin.php", true);
+                    xhttp.open("POST", "addVip.php", true);
                     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
                     xhttp.send(`ile=${"miesiac"}&money=${"20"}`);
                     window.location.reload(true);
@@ -76,10 +75,10 @@ function vip() {
                     })
                 }
             } else if (result.isDenied) {
-                if (stan >= "200") {
+                if (stan >= 200) {
                     Swal.fire('Zakupiono na kolejny rok!', '', 'success').then((result) => {
                         var xhttp = new XMLHttpRequest();
-                        xhttp.open("POST", "addSkin.php", true);
+                        xhttp.open("POST", "addVip.php", true);
                         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
                         xhttp.send(`ile=${"rok"}&money=${"200"}`);
                         window.location.reload(true);

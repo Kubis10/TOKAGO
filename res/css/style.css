@@ -152,6 +152,7 @@ nav{
 	transform: scale(1.1);
 }
 .vip{
+	cursor: pointer;
 	color: gold;
 	position: fixed;
 	bottom: 4px;
