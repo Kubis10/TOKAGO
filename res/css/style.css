@@ -37,6 +37,9 @@ a{
 	max-height: 100%;
 	max-width: 100%;
 }
+.bought{
+	filter: grayscale(85%) blur(1px);
+}
 .details{
 	display: flex;
 	flex-direction: column;

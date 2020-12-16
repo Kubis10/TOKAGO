@@ -60,154 +60,39 @@ $sesid = $_SESSION['id'];
 	<div class="container">
 		<!--slider------------------->
 		<ul id="autoWidth" class="cs-hidden">
-
-			<!--1------------------------------>
-			<li class="item-a" onclick="zakup(5, 7)">
+		<?php
+            $user = $_SESSION['id'];
+            $query = $polaczenie->query("SELECT items.name, items.item_id, items.s_nick, items.klasa, items.cost, items.about FROM items where items.czy_sklep = '1'");
+            while($row = $query->fetch_assoc()) {
+                echo '
+                <li class="item-a" onclick="zakup('. $row["cost"] .', '. $row["item_id"] .')">
 				<!--slider-box-->
 				<div class="box">
-					<p class="marvel common">Skeleton</p>
+					<p class="marvel '. $row["klasa"] .'">'. $row["s_nick"] .'</p>
 					<!--model-->
-					<img src="img/Skeleton_guy.png" class="model">
+					<img src="img/'. $row["name"] .'.png" class="model" alt="skin">
 					<!--details-->
 					<div class="details">
 						<!--logo-character-->
-						<img src="img/5_money.png" class="logo">
+						<img src="img/'. $row["cost"] .'_money.png" class="logo" alt="money">
 						<!--character-details-->
-						<p>Zmartwywstał i przybył z obcej gry aby walczyć z innymi umarlakami.<br><br></p>
+						<p>'. $row["about"] .'</p>
 					</div>
 
 				</div>
-			</li>
-			<!--2------------------------------>
-			<li class="item-a" onclick="zakup(10, 2)">
-				<!--slider-box-->
-				<div class="box">
-					<p class="marvel epic">DUDE</p>
-					<!--model-->
-					<img src="img/Dude_Monster.png" class="model">
-					<!--details-->
-					<div class="details">
-						<!--logo-character-->
-						<img src="img/10_money.png" class="logo">
-						<!--character-details-->
-						<p>Dude to potomek squirtle. Podczas ewolucji nauczył się chodzić na 2 nogach. Chusta to prezent od jego rodziców w dniu urodzin.</p>
-					</div>
-
-				</div>
-			</li>
-			<!--3------------------------------>
-			<li class="item-a" onclick="zakup(7, 3)">
-				<!--slider-box-->
-				<div class="box">
-					<p class="marvel uncommon">OWLET</p>
-					<!--model-->
-					<img src="img/Owlet_Monster.png" class="model">
-					<!--details-->
-					<div class="details">
-						<!--logo-character-->
-						<img src="img/7_money.png" class="logo">
-						<!--character-details-->
-						<p>Owlet to potomek starej rodziny sówek. Jego rodzice umarli gdy był mały jednak owlet się nie poddaje i walczy do końca.</p>
-					</div>
-
-				</div>
-			</li>
-			<!--4------------------------------>
-			<li class="item-a" onclick="zakup(20, 4)">
-				<!--slider-box-->
-				<div class="box">
-					<p class="marvel legendary">WEED</p>
-					<!--model-->
-					<img src="img/Weed_Monster.png" class="model">
-					<!--details-->
-					<div class="details">
-						<!--logo-character-->
-						<img src="img/20_money.png" class="logo">
-						<!--character-details-->
-						<p>Weed... Co tu dużo pisać.<br><br><br></p>
-					</div>
-
-				</div>
-			</li>
-			<!--5------------------------------>
-			<li class="item-a" onclick="zakup(12, 5)">
-				<!--slider-box-->
-				<div class="box">
-					<p class="marvel rare">PRINCESS</p>
-					<!--model-->
-					<img src="img/Princess_Girl.png" class="model">
-					<!--details-->
-					<div class="details">
-						<!--logo-character-->
-						<img src="img/12_money.png" class="logo">
-						<!--character-details-->
-						<p>Princess Wiana(bo tak miała na imię) była córką króla małego kozaka. Jednak życie królewskie jej nie podpadło i uciekła.</p>
-					</div>
-
-				</div>
-			</li>
-			<!--6------------------------------>
-			<li class="item-a" onclick="zakup(15, 6)">
-				<!--slider-box-->
-				<div class="box">
-					<p class="marvel event">Santa</p>
-					<!--model-->
-					<img src="img/Santa_Event.png" class="model">
-					<!--details-->
-					<div class="details">
-						<!--logo-character-->
-						<img src="img/15_money.png" class="logo">
-						<!--character-details-->
-						<p>Przybył w te święta aby niczym tajemniczy gość rozdawać wszystkim prezenty. Bo kto w końcu nie kocha mikołaja?</p>
-					</div>
-
-				</div>
-			</li>
+				</li>';
+			}
+            ?>
 		</ul>
 
 	</div>
 
-	<div class="vip">VIP</div>
+	<div class="vip" onclick="vip()">VIP</div>
 	<a href="../gra.php" class="back">Powrót</a>
 	<script src="../../res/js/script.js" type="text/javascript"></script>
-	<script>
-		function zakup(cena, nazwa){
-        let stan = document.getElementById("stan").innerText
-		    if(stan >= cena) {
-                Swal.fire({
-                    title: 'Jesteś pewien że chcesz to kupić?',
-                    text: "Nie będzie możliwośći zwrotu!",
-                    icon: 'question',
-                    showCancelButton: true,
-                    cancelButtonText: 'Anuluj',
-                    confirmButtonColor: '#3085d6',
-                    cancelButtonColor: '#d33',
-                    confirmButtonText: 'Tak, kup!'
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        Swal.fire(
-                            'Kupione!',
-                            'Skin został dodany do twojego eq.',
-                            'success'
-                        ).then((result) => {
-                            var xhttp = new XMLHttpRequest();
-                            xhttp.open("POST", "addSkin.php", true);
-                            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                            xhttp.send(`item_id=${nazwa}&money=${cena}`);
-                            window.location.reload(true);
-                        })
-                    }
-                })
-            }
-		    else{
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Nie masz wystarczająco pieniędzy!',
-                })
-            }
-		}
-	</script>
+	<script src="../../res/js/sklep.js" type="text/javascript"></script>
+	<script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
+			
 </body>
 
 </html>
