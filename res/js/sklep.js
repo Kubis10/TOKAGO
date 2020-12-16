@@ -48,7 +48,7 @@ function vip() {
         if (result.isConfirmed) {
         Swal.fire({
             icon: 'question',
-            title: 'Na ile?',
+            title: 'O ile?',
             showDenyButton: true,
             showCancelButton: true,
             cancelButtonText: 'Anuluj',
