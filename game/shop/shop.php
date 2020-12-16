@@ -40,7 +40,7 @@ $sesid = $_SESSION['id'];
 				+
 			</div>
 		</a>
-		<h2 class="moneys"><?php
+		<h2 class="moneys" id="stan"><?php
 
 							$nick = $_SESSION['user'];
 
@@ -60,6 +60,7 @@ $sesid = $_SESSION['id'];
 	<div class="container">
 		<!--slider------------------->
 		<ul id="autoWidth" class="cs-hidden">
+
 			<!--1------------------------------>
 			<li class="item-a" onclick="zakup(5, 7)">
 				<!--slider-box-->
@@ -170,31 +171,41 @@ $sesid = $_SESSION['id'];
 	<a href="../gra.php" class="back">Powrót</a>
 	<script src="../../res/js/script.js" type="text/javascript"></script>
 	<script>
-		function zakup(cena, nazwa) {
-			Swal.fire({
-				title: 'Jesteś pewien że chcesz to kupić?',
-				text: "Nie będzie możliwośći zwrotu!",
-				icon: 'question',
-				showCancelButton: true,
-				cancelButtonText: 'Anuluj',
-				confirmButtonColor: '#3085d6',
-				cancelButtonColor: '#d33',
-				confirmButtonText: 'Tak, kup!'
-			}).then((result) => {
-				if (result.isConfirmed) {
-					Swal.fire(
-						'Kupione!',
-						'Skin został dodany do twojego eq.',
-						'success'
-					).then((result) => {
-						var xhttp = new XMLHttpRequest();
-						xhttp.open("POST", "addSkin.php", true);
-						xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-						xhttp.send(`item_id=${nazwa}&money=${cena}`);
-						window.location.reload(true);
-					})
-				}
-			})
+		function zakup(cena, nazwa){
+        let stan = document.getElementById("stan").innerText
+		    if(stan >= cena) {
+                Swal.fire({
+                    title: 'Jesteś pewien że chcesz to kupić?',
+                    text: "Nie będzie możliwośći zwrotu!",
+                    icon: 'question',
+                    showCancelButton: true,
+                    cancelButtonText: 'Anuluj',
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Tak, kup!'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire(
+                            'Kupione!',
+                            'Skin został dodany do twojego eq.',
+                            'success'
+                        ).then((result) => {
+                            var xhttp = new XMLHttpRequest();
+                            xhttp.open("POST", "addSkin.php", true);
+                            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                            xhttp.send(`item_id=${nazwa}&money=${cena}`);
+                            window.location.reload(true);
+                        })
+                    }
+                })
+            }
+		    else{
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Nie masz wystarczająco pieniędzy!',
+                })
+            }
 		}
 	</script>
 </body>
