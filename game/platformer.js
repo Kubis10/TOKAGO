@@ -98,6 +98,8 @@ let div1 = document.getElementById("level");
 let level = div1.textContent;
 let div2 = document.getElementById("ids");
 let id = div2.textContent;
+let div3 = document.getElementById("skin");
+let skin = div3.textContent;
 // ## Level0 scene (test)
   Q.scene("level0",function(stage) {
     Q.stageTMX("level0.tmx",stage);
@@ -405,8 +407,9 @@ let id = div2.textContent;
 
 // Load TMX files
 // and load all the assets referenced in them
-  Q.loadTMX("level0.tmx, level1.tmx, level2.tmx, level3.tmx, level4.tmx, level5.tmx, level6.tmx, level7.tmx, level8.tmx, level9.tmx, level10.tmx, level11.tmx, sprites.json, pause.png, background.mp3", function() {
+  Q.loadTMX("level0.tmx, level1.tmx, level2.tmx, level3.tmx, level4.tmx, level5.tmx, level6.tmx, level7.tmx, level8.tmx, level9.tmx, level10.tmx, level11.tmx, sprites.json, pause.png, background.mp3, skin.json, "+skin+".png", function() {
     Q.compileSheets("sprites.png","sprites.json");
+    Q.compileSheets(skin+".png","skin.json");
     Q.stageScene('level'+level);
     Q.stageScene('pause', 1, Q('Player').first().p);
   },{

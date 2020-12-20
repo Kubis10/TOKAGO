@@ -44,14 +44,16 @@ require_once "../res/connect.php";
 
 <body onmousedown='return false;' onselectstart='return false;'>
 <?php
-$result = $polaczenie->query("SELECT id, lvl FROM uzytkownicy WHERE id='$sesid'");
+$result = $polaczenie->query("SELECT id, lvl, avatar FROM uzytkownicy WHERE id='$sesid'");
     if($result->num_rows>0) {
        $resultTable = $result->fetch_assoc();
        $lvl = $resultTable['lvl'];
        $id = $resultTable['id'];
+       $skin = $resultTable['avatar'];
     }
     echo '<p hidden id="level">'.$lvl."</p>";
     echo '<p hidden id="ids">'.$id."</p>";
+    echo '<p hidden id="skin">'.$skin."</p>";
     /*
 	echo "<br /><b>Data wygaśnięcia premium</b>: ".$_SESSION['vip']."</p>";
 
