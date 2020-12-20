@@ -18,7 +18,7 @@
   $_SESSION['iloscMonet'] = $_POST['moneyAmount'];
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
 
     <meta charset="utf-8" />
