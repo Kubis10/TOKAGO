@@ -23,16 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/game/shop/vip.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/css/vip.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credits.html" beforeDir="false" afterPath="$PROJECT_DIR$/credits.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/shop/review.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/shop/review.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/shop/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/shop/shop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/shop/vip.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/shop/vip.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/js/sklep.js" beforeDir="false" afterPath="$PROJECT_DIR$/res/js/sklep.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,14 +203,7 @@
       <workItem from="1608244752397" duration="58000" />
       <workItem from="1608469717540" duration="3060000" />
       <workItem from="1608473808992" duration="978000" />
-      <workItem from="1608487557578" duration="4316000" />
-    </task>
-    <task id="LOCAL-00019" summary="update">
-      <created>1606155148887</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1606155148887</updated>
+      <workItem from="1608487557578" duration="5408000" />
     </task>
     <task id="LOCAL-00020" summary="update">
       <created>1606155303803</created>
@@ -554,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608475207604</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="update">
+      <created>1608492551059</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1608492551059</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
