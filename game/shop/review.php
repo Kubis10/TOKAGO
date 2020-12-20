@@ -22,7 +22,7 @@ require_once "../../res/connect.php";
 <body>
 	<section class="rev">
 	<div class="check"><img src="../../res/photo/logo.png" alt="logo"></div>
-  		<h3 id="txn">Zamówienie </h3>
+  		<h3 id="txn">Zamówienie o id </h3>
   		<h3 id="status">Płatność </h3>
   		<h3 id="amount"></h3>
 		<h3 id="email">Email: </h3>

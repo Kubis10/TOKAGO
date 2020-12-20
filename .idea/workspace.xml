@@ -22,11 +22,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="game skin update">
+    <list default="true" id="73452015-42a6-4e2e-b2ea-d1eecc6777d0" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/game/shop/vip.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/css/vip.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/data/sprites.json" beforeDir="false" afterPath="$PROJECT_DIR$/game/data/sprites.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/shop/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/shop/checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credits.html" beforeDir="false" afterPath="$PROJECT_DIR$/credits.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/shop/review.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/shop/review.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/shop/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/shop/shop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/js/sklep.js" beforeDir="false" afterPath="$PROJECT_DIR$/res/js/sklep.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +92,19 @@
       <recent name="C:\xampp\htdocs\TOKAGO\res" />
       <recent name="C:\xampp\htdocs\TOKAGO\res\css" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -189,14 +208,8 @@
       <workItem from="1608211451360" duration="5000" />
       <workItem from="1608244752397" duration="58000" />
       <workItem from="1608469717540" duration="3060000" />
-      <workItem from="1608473808992" duration="944000" />
-    </task>
-    <task id="LOCAL-00018" summary="todo">
-      <created>1606141757263</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1606141757263</updated>
+      <workItem from="1608473808992" duration="978000" />
+      <workItem from="1608487557578" duration="4316000" />
     </task>
     <task id="LOCAL-00019" summary="update">
       <created>1606155148887</created>
@@ -534,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608472185547</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="update">
+      <created>1608475207604</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1608475207604</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -567,8 +587,8 @@
     <MESSAGE value="add shop" />
     <MESSAGE value="shop update" />
     <MESSAGE value="add eq" />
-    <MESSAGE value="update" />
     <MESSAGE value="game skin update" />
-    <option name="LAST_COMMIT_MESSAGE" value="game skin update" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>

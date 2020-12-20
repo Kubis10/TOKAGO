@@ -12,7 +12,7 @@ $sesid = $_SESSION['id'];
 ?>
 
 <!doctype html>
-<html>
+<html lang="pl">
 
 <head>
 	<meta charset="utf-8">
@@ -87,7 +87,7 @@ $sesid = $_SESSION['id'];
 
 	</div>
 
-	<div class="vip" onclick="vip()">VIP</div>
+	<a class="vip" href="vip.php" ">VIP</a>
 	<a href="../gra.php" class="back">Powrót</a>
 	<script src="../../res/js/script.js" type="text/javascript"></script>
 	<script src="../../res/js/sklep.js" type="text/javascript"></script>
