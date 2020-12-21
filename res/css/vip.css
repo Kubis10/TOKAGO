@@ -320,3 +320,16 @@ body {
 .row .col-1-of-3 {
     width: calc((100% - 6rem) / 2);
 }
+@media screen and (max-width: 570px) {
+    .row .col-1-of-3{
+        width: 100%;
+    }
+
+    .card, .card__side {
+        display: block;
+    }
+    .card:first-child, .card__side:first-child{
+        margin-bottom: 5rem;
+    }
+    
+}

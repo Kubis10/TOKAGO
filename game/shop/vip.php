@@ -112,6 +112,6 @@ if ($checkBalance->num_rows > 0) {
     </div>
 </section>
 <script src="../../res/js/sklep.js" type="text/javascript"></script>
-<script>//document.addEventListener('contextmenu', event => event.preventDefault());</script>
+<script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
 </body>
 </html>
