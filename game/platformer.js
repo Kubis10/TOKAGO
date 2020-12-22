@@ -48,13 +48,19 @@ window.addEventListener("load",function() {
           run=false;
           saveUserTime();
           Q.stage().pause();
-          if(level>=11){
+          if(level>=9){
             Q.stageScene("gameover", 1, {label: "Dziękuje za przejście gry!"});
           }
           else {
             Q.stageScene("nextLevel", 1, {label: "Udało się!"});
           }
           this.destroy();
+        }
+        if(collision.obj.isA("Lava")) {
+          run=false;
+          saveUserTime();
+          Q.stage().pause();
+          Q.stageScene("endGame",1, { label: "Umarłeś" });
         }
       });
     }
@@ -67,12 +73,89 @@ window.addEventListener("load",function() {
       this._super(p, { sheet: 'tower' });
     }
   });
+  // ## Tower Sprite
+  Q.Sprite.extend("Lava", {
+    init: function(p) {
+      this._super(p, { sheet: 'lava' });
+    }
+  });
 
 // ## Enemy Sprite
-// Create the Enemy class to add in some baddies
   Q.Sprite.extend("Enemy",{
     init: function(p) {
       this._super(p, { sheet: 'enemy', vx: 100, visibleOnly: true });
+
+      this.add('2d, aiBounce');
+
+      this.on("bump.left,bump.right,bump.bottom",function(collision) {
+        if(collision.obj.isA("Player")) {
+          Q.stageScene("endGame",1, { label: "Umarłeś" });
+          run=false;
+          Q.stage().pause();
+          collision.obj.destroy();
+        }
+      });
+
+      this.on("bump.top",function(collision) {
+        if(collision.obj.isA("Player")) {
+          this.destroy();
+          collision.obj.p.vy = -300;
+        }
+      });
+    }
+  });
+  // ## Fly Sprite
+  Q.Sprite.extend("Fly",{
+    init: function(p) {
+      this._super(p, { sheet: 'fly', vx: 100, visibleOnly: true });
+
+      this.add('2d, aiBounce');
+
+      this.on("bump.left,bump.right,bump.bottom",function(collision) {
+        if(collision.obj.isA("Player")) {
+          Q.stageScene("endGame",1, { label: "Umarłeś" });
+          run=false;
+          Q.stage().pause();
+          collision.obj.destroy();
+        }
+      });
+
+      this.on("bump.top",function(collision) {
+        if(collision.obj.isA("Player")) {
+          this.destroy();
+          collision.obj.p.vy = -300;
+        }
+      });
+    }
+  });
+  // ## Pumpkin Sprite
+  Q.Sprite.extend("Pumpkin",{
+    init: function(p) {
+      this._super(p, { sheet: 'pumpkin', vx: 100, visibleOnly: true });
+
+      this.add('2d, aiBounce');
+
+      this.on("bump.left,bump.right,bump.bottom",function(collision) {
+        if(collision.obj.isA("Player")) {
+          Q.stageScene("endGame",1, { label: "Umarłeś" });
+          run=false;
+          Q.stage().pause();
+          collision.obj.destroy();
+        }
+      });
+
+      this.on("bump.top",function(collision) {
+        if(collision.obj.isA("Player")) {
+          this.destroy();
+          collision.obj.p.vy = -300;
+        }
+      });
+    }
+  });
+  // ## Turtle Sprite
+  Q.Sprite.extend("Turtle",{
+    init: function(p) {
+      this._super(p, { sheet: 'turtle', vx: 100, visibleOnly: true });
 
       this.add('2d, aiBounce');
 
@@ -148,16 +231,6 @@ let skin = div3.textContent;
   // ## Level9 scene
   Q.scene("level9",function(stage) {
     Q.stageTMX("level9.tmx",stage);
-    stage.add("viewport").follow(Q("Player").first());
-  });
-  // ## Level10 scene
-  Q.scene("level10",function(stage) {
-    Q.stageTMX("level10.tmx",stage);
-    stage.add("viewport").follow(Q("Player").first());
-  });
-  // ## Level11 scene
-  Q.scene("level11",function(stage) {
-    Q.stageTMX("level11.tmx",stage);
     stage.add("viewport").follow(Q("Player").first());
   });
   //##FUNCTIONS
@@ -407,8 +480,10 @@ let skin = div3.textContent;
 
 // Load TMX files
 // and load all the assets referenced in them
-  Q.loadTMX("level0.tmx, level1.tmx, level2.tmx, level3.tmx, level4.tmx, level5.tmx, level6.tmx, level7.tmx, level8.tmx, level9.tmx, level10.tmx, level11.tmx, sprites.json, pause.png, background.mp3, skin.json, "+skin+".png", function() {
+  Q.loadTMX("level0.tmx, level1.tmx, level2.tmx, level3.tmx, level4.tmx, level5.tmx, level6.tmx, level7.tmx, level8.tmx, level9.tmx, sprites.json, mobs.json, lava.json, pause.png, background.mp3, skin.json, "+skin+".png", function() {
     Q.compileSheets("sprites.png","sprites.json");
+    Q.compileSheets("newMobs.png","mobs.json");
+    Q.compileSheets("tiles.png","lava.json");
     Q.compileSheets(skin+".png","skin.json");
     Q.stageScene('level'+level);
     Q.stageScene('pause', 1, Q('Player').first().p);
