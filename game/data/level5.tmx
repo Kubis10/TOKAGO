@@ -45,7 +45,7 @@
   </tile>
  </tileset>
  <imagelayer id="1" name="Background" visible="0">
-  <image source="../images/background-wall.png" width="500" height="177"/>
+  <image source="../images/bg.png" width="256" height="256"/>
   <properties>
    <property name="speedX" value="0.5"/>
    <property name="speedY" value="0.5"/>

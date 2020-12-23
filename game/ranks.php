@@ -50,7 +50,7 @@
 <article class="flex-container">
 <?php
 $user = $_SESSION['user'];
-for ($level = 1; $level <= 11; $level++) {
+for ($level = 1; $level <= 9; $level++) {
     echo '<table id="$level" class="flex-item">';
     echo "<thead>";
     echo "<th>Level ".$level."</th><th>Nick</th><th>Czas</th>";

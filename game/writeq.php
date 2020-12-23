@@ -14,7 +14,7 @@ try
         if ($polaczenie->query("UPDATE uzytkownicy SET avatar='$postac' WHERE id='$id'"))
         {
             $_SESSION['udanyzapisavatara']=true;
-            header("Location:shop/shop.php");
+            header("Location:gra.php");
         }
         else
         {

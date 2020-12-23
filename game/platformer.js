@@ -40,7 +40,7 @@ window.addEventListener("load",function() {
         speed: 300
       });
 
-      this.add('2d, platformerControls');
+      this.add('2d, platformerControls, animation, tween');
 
       this.on("hit.sprite",function(collision) {
 
@@ -85,7 +85,7 @@ window.addEventListener("load",function() {
     init: function(p) {
       this._super(p, { sheet: 'enemy', vx: 100, visibleOnly: true });
 
-      this.add('2d, aiBounce');
+      this.add('2d, aiBounce, animation');
 
       this.on("bump.left,bump.right,bump.bottom",function(collision) {
         if(collision.obj.isA("Player")) {
@@ -109,7 +109,7 @@ window.addEventListener("load",function() {
     init: function(p) {
       this._super(p, { sheet: 'fly', vx: 100, visibleOnly: true });
 
-      this.add('2d, aiBounce');
+      this.add('2d, aiBounce, animation');
 
       this.on("bump.left,bump.right,bump.bottom",function(collision) {
         if(collision.obj.isA("Player")) {
@@ -133,7 +133,7 @@ window.addEventListener("load",function() {
     init: function(p) {
       this._super(p, { sheet: 'pumpkin', vx: 100, visibleOnly: true });
 
-      this.add('2d, aiBounce');
+      this.add('2d, aiBounce, animation');
 
       this.on("bump.left,bump.right,bump.bottom",function(collision) {
         if(collision.obj.isA("Player")) {
@@ -157,7 +157,7 @@ window.addEventListener("load",function() {
     init: function(p) {
       this._super(p, { sheet: 'turtle', vx: 100, visibleOnly: true });
 
-      this.add('2d, aiBounce');
+      this.add('2d, aiBounce, animation');
 
       this.on("bump.left,bump.right,bump.bottom",function(collision) {
         if(collision.obj.isA("Player")) {
@@ -308,6 +308,7 @@ let skin = div3.textContent;
 
      container.fit(20, 20);
    });
+
    //pause button
   Q.scene('pause',function(stage) {
     stage.insert(new Q.UI.Button({
@@ -348,7 +349,7 @@ let skin = div3.textContent;
     }),container);
     stage.insert(new Q.UI.Button({
       label: "Restart",
-      y: 65,
+      y: 60,
       x: 0,
       fill: "#f28400",
       border: 2,
@@ -362,18 +363,18 @@ let skin = div3.textContent;
       Q.stageScene('pause', 1);
     }),container);
     stage.insert(new Q.UI.Button({
-      label: "Ranking",
+      label: "  Ranking  ",
       y: 120,
-      x: 0,
+      x: -90,
       fill: "#f28400",
       border: 2,
     }, function() {
       location.replace("ranks.php")
     }),container);
     stage.insert(new Q.UI.Button({
-      label: "Muzyka",
-      y: 175,
-      x: 0,
+      label: "  Muzyka   ",
+      y: 120,
+      x: 90,
       fill: "#f28400",
       border: 2,
     }, function() {
@@ -386,17 +387,26 @@ let skin = div3.textContent;
       }
     }),container);
     stage.insert(new Q.UI.Button({
-      label: "Sklep",
-      y: 230,
-      x: 0,
+      label: "    Sklep    ",
+      y: 180,
+      x: -90,
       fill: "#f28400",
       border: 2,
     }, function() {
       location.replace("shop/shop.php")
     }),container);
     stage.insert(new Q.UI.Button({
+      label: "Ekwipunek",
+      y: 180,
+      x: 90,
+      fill: "#f28400",
+      border: 2,
+    }, function() {
+      location.replace("eq.php")
+    }),container);
+    stage.insert(new Q.UI.Button({
       label: "Wyloguj się",
-      y: 290,
+      y: 250,
       x: 0,
       fill: "#990000",
       border: 2,
@@ -409,12 +419,12 @@ let skin = div3.textContent;
   //die event
   Q.scene('endGame',function(stage) {
     var container = stage.insert(new Q.UI.Container({
-      x: Q.width/2, y: Q.height/2, fill: "rgba(0,0,0,0.5)"
+      x: Q.width/2, y: Q.height/2, fill: "rgba(0,0,0,0.7)"
     }));
 
     var button = container.insert(new Q.UI.Button({ x: 0, y: 0, fill: "#CCCCCC",
       label: "Zagraj Ponownie" }))
-    var label = container.insert(new Q.UI.Text({x:0, y: -10 - button.p.h,
+    var label = container.insert(new Q.UI.Text({x:0, y: -10 - button.p.h, color: "#FFFFFF",
       label: stage.options.label }));
     button.on("click",function() {
       Q.clearStages();
@@ -431,12 +441,12 @@ let skin = div3.textContent;
   //go to next level
   Q.scene('nextLevel',function(stage) {
     var container = stage.insert(new Q.UI.Container({
-      x: Q.width/2, y: Q.height/2, fill: "rgba(0,0,0,0.5)"
+      x: Q.width/2, y: Q.height/2, fill: "rgba(0,0,0,0.7)"
     }));
 
     var button = container.insert(new Q.UI.Button({ x: 0, y: 0, fill: "#CCCCCC",
       label: "Następny poziom" }))
-    var label = container.insert(new Q.UI.Text({x:0, y: -10 - button.p.h,
+    var label = container.insert(new Q.UI.Text({x:0, y: -10 - button.p.h, color: "#FFFFFF",
       label: stage.options.label }));
     button.on("click",function() {
       level = parseInt(level)+1;
@@ -455,12 +465,12 @@ let skin = div3.textContent;
   //koniec gry
   Q.scene('gameover',function(stage) {
     var container = stage.insert(new Q.UI.Container({
-      x: Q.width/2, y: Q.height/2, fill: "rgba(0,0,0,0.5)"
+      x: Q.width/2, y: Q.height/2, fill: "rgba(0,0,0,0.7)"
     }));
 
     var button = container.insert(new Q.UI.Button({ x: 0, y: 0, fill: "#CCCCCC",
       label: "Nowa gra" }))
-    var label = container.insert(new Q.UI.Text({x:0, y: -10 - button.p.h,
+    var label = container.insert(new Q.UI.Text({x:0, y: -10 - button.p.h, color: "#FFFFFF",
       label: stage.options.label }));
     button.on("click",function() {
       level = 1;
