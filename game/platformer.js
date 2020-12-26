@@ -63,8 +63,12 @@ window.addEventListener("load",function() {
           Q.stageScene("endGame",1, { label: "Umarłeś" });
         }
         if(collision.obj.isA("Boost")) {
-          this.p.gravity = 0.4;
-          setTimeout(function(){ this.p.gravity = 1; }, 3000);
+          if(this.p.gravity == 1){
+          this.p.gravity = 0.3;
+          setInterval(() => {
+            this.p.gravity = 1;
+        }, 3000);  
+          }
         }
       });
     }
