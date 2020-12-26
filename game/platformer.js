@@ -37,7 +37,8 @@ window.addEventListener("load",function() {
       this._super(p, {
         sheet: "player",  // Setting a sprite sheet sets sprite width and height
         jumpSpeed: -400,
-        speed: 300
+        speed: 300,
+        gravity: 1
       });
 
       this.add('2d, platformerControls, animation, tween');
@@ -58,9 +59,12 @@ window.addEventListener("load",function() {
         }
         if(collision.obj.isA("Lava")) {
           run=false;
-          saveUserTime();
           Q.stage().pause();
           Q.stageScene("endGame",1, { label: "Umarłeś" });
+        }
+        if(collision.obj.isA("Boost")) {
+          this.p.gravity = 0.4;
+          setTimeout(function(){ this.p.gravity = 1; }, 3000);
         }
       });
     }
@@ -73,12 +77,19 @@ window.addEventListener("load",function() {
       this._super(p, { sheet: 'tower' });
     }
   });
-  // ## Tower Sprite
+  // ## Lava block
   Q.Sprite.extend("Lava", {
     init: function(p) {
       this._super(p, { sheet: 'lava' });
     }
   });
+    // ## Jump BOOST block
+    Q.Sprite.extend("Boost", {
+      init: function(p) {
+        this._super(p, { sheet: 'boost' });
+      }
+    });
+  
 
 // ## Enemy Sprite
   Q.Sprite.extend("Enemy",{
@@ -333,6 +344,12 @@ let skin = div3.textContent;
       }
       this.p.angle += 90;
     }));
+    stage.insert(new Q.UI.Text({ 
+      label: "Level "+level,
+      color: "white",
+      x:  Q.width/2,
+      y: Q.height-30
+    }));
   });
   //music
   let muzyka = false;
@@ -490,10 +507,10 @@ let skin = div3.textContent;
 
 // Load TMX files
 // and load all the assets referenced in them
-  Q.loadTMX("level0.tmx, level1.tmx, level2.tmx, level3.tmx, level4.tmx, level5.tmx, level6.tmx, level7.tmx, level8.tmx, level9.tmx, sprites.json, mobs.json, lava.json, pause.png, background.mp3, skin.json, "+skin+".png", function() {
+  Q.loadTMX("level0.tmx, level1.tmx, level2.tmx, level3.tmx, level4.tmx, level5.tmx, level6.tmx, level7.tmx, level8.tmx, level9.tmx, sprites.json, mobs.json, supblock.json, pause.png, background.mp3, skin.json, "+skin+".png", function() {
     Q.compileSheets("sprites.png","sprites.json");
     Q.compileSheets("newMobs.png","mobs.json");
-    Q.compileSheets("tiles.png","lava.json");
+    Q.compileSheets("tiles.png","supblock.json");
     Q.compileSheets(skin+".png","skin.json");
     Q.stageScene('level'+level);
     Q.stageScene('pause', 1, Q('Player').first().p);
