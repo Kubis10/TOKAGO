@@ -65,8 +65,10 @@ window.addEventListener("load",function() {
         if(collision.obj.isA("Boost")) {
           if(this.p.gravity == 1){
           this.p.gravity = 0.3;
-          setInterval(() => {
+          console.log("03");
+          setTimeout(() => {
             this.p.gravity = 1;
+            console.log("set0");
         }, 3000);  
           }
         }
