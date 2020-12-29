@@ -37,6 +37,13 @@
         else{
             $time =$vip." + INTERVAL ".$czas;
         }
+        $query = $polaczenie->query("SELECT balance FROM uzytkownicy WHERE id = '$user_id'");
+        while ($row = $query->fetch_assoc()) {
+            $monety =  $row['balance'];
+        }
+        if($monety<$money){
+            die();
+        }
 
         if ($polaczenie->query("UPDATE uzytkownicy SET vip = '$time' WHERE id = '$user_id'")){
             if ($polaczenie->query("UPDATE uzytkownicy SET balance = balance - '$money' WHERE id = '$user_id'")){

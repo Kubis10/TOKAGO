@@ -49,6 +49,7 @@ tr{
 }
 .my_score{
     color: gold;
+    position: relative;
     font-size: 15px;
 }
 .flex-container {
@@ -66,7 +67,7 @@ tr{
     align-self: auto;
 }
 .select{
-    position: fixed;
+    position: absolute;
     right: 15px;
     top: 30px;
 }

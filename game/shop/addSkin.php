@@ -18,6 +18,13 @@
         $user_id = $_SESSION['id'];
         $item_id = $polaczenie->real_escape_string($_POST['item_id']);
         $money = $polaczenie->real_escape_string($_POST['money']);
+        $query = $polaczenie->query("SELECT balance FROM uzytkownicy WHERE id = '$user_id'");
+        while ($row = $query->fetch_assoc()) {
+            $monety =  $row['balance'];
+        }
+        if($monety<$money){
+            die();
+        }
 
         if ($polaczenie->query("INSERT INTO eq VALUES ('$user_id','$item_id')")){
             if ($polaczenie->query("UPDATE uzytkownicy SET balance = balance - '$money' WHERE id = '$user_id'")){

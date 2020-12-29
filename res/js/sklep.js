@@ -51,7 +51,7 @@ function vip_m() {
                     var xhttp = new XMLHttpRequest();
                     xhttp.open("POST", "addVip.php", true);
                     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                    xhttp.send(`ile=${"miesiac"}&money=${"20"}`);
+                    xhttp.send(`ile=${"miesiac"}&money=${"10"}`);
                     window.location.reload(true);
                     })
                 }
@@ -82,7 +82,7 @@ function vip_r() {
                     var xhttp = new XMLHttpRequest();
                     xhttp.open("POST", "addVip.php", true);
                     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                    xhttp.send(`ile=${"rok"}&money=${"200"}`);
+                    xhttp.send(`ile=${"rok"}&money=${"180"}`);
                     window.location.reload(true);
                 })
             }
