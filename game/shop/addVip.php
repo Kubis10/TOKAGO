@@ -13,11 +13,11 @@
 		echo "Error: ".$polaczenie->connect_errno;
     }
     
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    //if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         $user_id = $_SESSION['id'];
-        $ile = $polaczenie->real_escape_string($_POST['ile']);
-        $money = $polaczenie->real_escape_string($_POST['money']);
+        $ile = $polaczenie->real_escape_string($_GET['ile']);
+        $money = $polaczenie->real_escape_string($_GET['money']);
 
         if($ile == "miesiac"){
             $czas = "1 MONTH";
@@ -44,24 +44,24 @@
         if($monety<$money){
             die();
         }
-
+        echo "UPDATE uzytkownicy SET vip = '$time' WHERE id = '$user_id'";
         if ($polaczenie->query("UPDATE uzytkownicy SET vip = '$time' WHERE id = '$user_id'")){
             if ($polaczenie->query("UPDATE uzytkownicy SET balance = balance - '$money' WHERE id = '$user_id'")){
                 if($polaczenie->query("INSERT INTO logs VALUES (NULL, 'Gracz o id = ".$user_id." przedłużył vipa o ".$ile."!', now())")){
                     echo "tak";
                 }
-             }
-             else {
-                 echo "nie";
-             }
+            }
+            else {
+                echo "nie";
+            }
         }
         else {
             echo "nie";
         }
         
 
-    } else {
-        echo "No data";
-    }
+    //} else {
+    //    echo "No data";
+    //}
     
 ?>

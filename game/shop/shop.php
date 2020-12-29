@@ -62,8 +62,17 @@ $sesid = $_SESSION['id'];
 		<ul id="autoWidth" class="cs-hidden">
 		<?php
             $user = $_SESSION['id'];
-            $query = $polaczenie->query("SELECT items.name, items.item_id, items.s_nick, items.klasa, items.cost, items.about FROM items where items.czy_sklep = '1'");
+			$query = $polaczenie->query("SELECT items.name, items.item_id, items.s_nick, items.klasa, items.cost, items.about, (
+				SELECT eq.item_id from uzytkownicy join eq on uzytkownicy.id = eq.user_id
+			) AS czyObecny FROM items where items.czy_sklep = '1'");
+
+			//join (
+			//SELECT items.item_id from użytkownicy join itemy on uż.id = itemy.uż_id;)
+
             while($row = $query->fetch_assoc()) {
+
+				//przyrownanie $query i $itemy aby sprawdzić czy user ma juz taki item
+
                 echo '
                 <li class="item-a" onclick="zakup('. $row["cost"] .', '. $row["item_id"] .')">
 				<!--slider-box-->
@@ -87,7 +96,7 @@ $sesid = $_SESSION['id'];
 
 	</div>
 
-	<a class="vip" href="vip.php" ">VIP</a>
+	<a class="vip" href="vip.php">VIP</a>
 	<a href="../gra.php" class="back">Powrót</a>
 	<script src="../../res/js/script.js" type="text/javascript"></script>
 	<script src="../../res/js/sklep.js" type="text/javascript"></script>
