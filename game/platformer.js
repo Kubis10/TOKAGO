@@ -27,7 +27,8 @@ window.addEventListener("load", function () {
     [],
     ['up', '/\\']]
   });
-
+  let lava = true;
+  let gravity = true;
   // ## Player Sprite
   Q.Sprite.extend("Player", {
 
@@ -42,6 +43,9 @@ window.addEventListener("load", function () {
       });
 
       this.add('2d, platformerControls, animation, tween');
+      if(gravity==true){
+        this.p.gravity = 0.2;
+      }
 
       this.on("hit.sprite", function (collision) {
 
@@ -57,10 +61,12 @@ window.addEventListener("load", function () {
           }
           this.destroy();
         }
+        if(lava == true){
         if (collision.obj.isA("Lava")) {
           run = false;
           Q.stage().pause();
           Q.stageScene("endGame", 1, { label: "Umarłeś" });
+        }
         }
         if (collision.obj.isA("Boost")) {
           if (this.p.gravity == 1) {
@@ -303,11 +309,19 @@ window.addEventListener("load", function () {
     if (cheat != null) {
       if (cheat === "lvl") {
         level = prompt("Level:");
-        if (level >= 0 && level < 12) {
+        if (level >= 0 && level < 10) {
           saveUserLevel();
           saveUserLevel();
           location.reload();
         }
+      }
+      if(cheat === "lava"){
+        lava =! lava;
+        alert("Jestes odporny na lave");
+      }
+      if(cheat === "gravity"){
+        gravity =! gravity;
+        alert("Zmiejszona grawitacja!");
       }
     }
   }

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 29 Gru 2020, 12:48
+-- Czas generowania: 30 Gru 2020, 00:08
 -- Wersja serwera: 10.4.13-MariaDB
 -- Wersja PHP: 7.4.7
 
@@ -29,22 +29,23 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `eq` (
   `user_id` int(11) NOT NULL,
-  `item_id` int(11) NOT NULL
+  `1` tinyint(1) NOT NULL,
+  `2` tinyint(1) NOT NULL,
+  `3` tinyint(1) NOT NULL,
+  `4` tinyint(1) NOT NULL,
+  `5` tinyint(1) NOT NULL,
+  `6` tinyint(1) NOT NULL,
+  `7` tinyint(1) NOT NULL,
+  `8` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Zrzut danych tabeli `eq`
 --
 
-INSERT INTO `eq` (`user_id`, `item_id`) VALUES
-(1, 1),
-(1, 4),
-(1, 2),
-(1, 5),
-(1, 3),
-(1, 6),
-(1, 7),
-(1, 8);
+INSERT INTO `eq` (`user_id`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`) VALUES
+(1, 1, 1, 1, 1, 1, 1, 1, 1),
+(18, 1, 1, 1, 1, 1, 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -145,7 +146,11 @@ INSERT INTO `logs` (`id`, `text`, `date`) VALUES
 (50, 'Gracz o id = 1 zalogowal sie', '2020-12-26 19:33:44'),
 (51, 'Gracz o id = 1 zalogowal sie', '2020-12-27 11:41:21'),
 (52, 'Gracz o id = 1 zalogowal sie', '2020-12-27 11:50:41'),
-(53, 'Gracz o id = 1 zalogowal sie', '2020-12-27 21:48:40');
+(53, 'Gracz o id = 1 zalogowal sie', '2020-12-27 21:48:40'),
+(54, 'Gracz o id = 1 zalogowal sie', '2020-12-29 22:26:41'),
+(55, 'Gracz o id = 1 ustanowil rekord poziomu:28.9 na poziomie: 5', '2020-12-29 23:25:01'),
+(56, 'Gracz o id = 1 zalogowal sie', '2020-12-29 23:58:03'),
+(57, 'Gracz o id = 1 zalogowal sie', '2020-12-30 00:02:09');
 
 -- --------------------------------------------------------
 
@@ -200,7 +205,7 @@ CREATE TABLE `rank` (
 --
 
 INSERT INTO `rank` (`id_gracza`, `l1`, `l2`, `l3`, `l4`, `l5`, `l6`, `l7`, `l8`, `l9`) VALUES
-(1, 2.12, 2.95, 8.36, 11.69, 42.86, 4.27, 0.46, 0.54, 0.46),
+(1, 2.12, 2.95, 8.36, 11.69, 28.9, 4.27, 0.46, 0.54, 0.46),
 (15, 14.94, 0, 0, 0, 0, 0, 0, 0, 0),
 (17, 27.91, 65.02, 77.86, 0, 0, 0, 0, 0, 0),
 (18, 18.17, 30.41, 25.87, 71.49, 66.45, 28, 21.59, 0, 0),
@@ -238,30 +243,30 @@ CREATE TABLE `uzytkownicy` (
 --
 
 INSERT INTO `uzytkownicy` (`id`, `user`, `pass`, `email`, `lvl`, `balance`, `avatar`, `vip`, `hash`) VALUES
-(1, 'Kubis10', '$2y$10$NTVDURAHXiFF/NFuudDXh.xbi6PqVjr7ROPXtwOFWhTKJ0pwBb8/u', 'kuba.kubis@interia.pl', 0, 0, 'Hulk', '2020-12-10 14:10:24', ''),
-(2, 'jacek', '$2y$10$520GfTiKYdom8bBmFmnhc.dlePjIzHGyBGK7eX4xQe2eP9jo/ge.e', 'jacek@omega.pl', 1, 0, 'Pink_Monster', '2020-11-18 20:58:22', '30240c13-dc74-4324-9f89-b5463e1b08f2'),
-(15, 'Pawel', '$2y$10$6/1GtpnJjyiOkxYdaFxdnOq88Jwtb1BqJL4SJ3YpRFSfuKvoJkAH6', 'pawcio.fapcio2@gmail.com', 2, 0, 'Pink_Monster', '2020-11-25 19:42:15', ''),
-(16, 'Kuba', '$2y$10$1lKoUo2gbsuBOO5EOoiHtegZlZa2un8YyF9jTN9Cat4ZsGVWbA9Zq', 'Kubozo27@interia.pl', 1, 0, 'Pink_Monster', '2020-11-25 20:15:32', ''),
-(17, 'Ueloo', '$2y$10$5bSeaOJLYVwojrDq6dhqyeqUJj19i1Ys/.CaxIE4XEXTrrzfhxAtm', 'Jmiczek2005@gmail.com', 4, 0, 'Pink_Monster', '2020-11-25 23:33:14', ''),
-(18, 'Callum', '$2y$10$9C7CcnRpxiNieAbfbvR0v.Jc.LoYZuf/1tANwKFj/asn1DxFcNyhm', 'adrian.goral@gmail.com', 9, 0, 'Pink_Monster', '2020-11-26 17:54:37', ''),
-(19, 'cebyiul', '$2y$10$/Qx9OYqcCt/ENDEFZR3ADu6Bj7fqtN9dBMySYJElKGe8klzJAVypy', 'kuba.cybulski@puszkun.eu', 9, 0, 'Pink_Monster', '2020-11-26 19:25:31', ''),
-(20, 'GIGADYNIA', '$2y$10$0yXKhwXJUyHJy0HE8hbIY.2R7rMoZd9CSDCD5bKoyekXw8g1N8PyW', 'franciszeksuchora@gmail.com', 4, 0, 'Pink_Monster', '2020-11-26 19:26:03', ''),
-(21, 'PATTAL', '$2y$10$7n9H/noEtlyW2TjG2cXDouz4uLsJP8wlKdrnd4nD3RyAtfRLsuXCS', 'zikubaak@gmail.com', 1, 0, 'Pink_Monster', '2020-11-26 20:18:22', ''),
-(22, 'dzulia', '$2y$10$l8tZwaaufjQRAVeaqKhzfORVnfsjDjbhN1cGbOjo52q0hZhu5oDyK', 'wiktoria.wa2005.jw@gmail.com', 1, 0, 'Pink_Monster', '2020-11-26 20:59:22', ''),
-(23, 'mewa', '$2y$10$0d4hVDn4wG0KqdrfopLKc.B3b2tiS8.NNnB1EtT.F7v0jhKnBI3G2', 'ewasanocka3@gmail.com', 1, 0, 'Pink_Monster', '2020-11-26 21:01:30', ''),
-(24, 'mewcia', '$2y$10$Z0Pa9AvrHHrZFdktnKjik.IL53BC2JFGskp2eZwaoz5DtFpapuIQK', 'anejekotleta@obiad.com', 1, 0, 'Pink_Monster', '2020-11-26 21:03:57', ''),
-(25, 'm3wcia', '$2y$10$qHFOjFC/wCknybMzgaq5guNHPDsduhfYoAli51ytCFx2FPurzgsmC', 'okej@gmail.com', 1, 0, 'Pink_Monster', '2020-11-26 21:05:54', ''),
-(26, 'olaola', '$2y$10$TTXZt.Mbg9Ibevk9StxyROE6pqBZNcBi41Leelqy6f83zuOI8nPqW', 'anetajekotleta@gmail.com', 1, 0, 'Pink_Monster', '2020-11-26 21:09:13', ''),
-(27, 'Gracek', '$2y$10$24IVExUVwueJFlURo3UKIO9ZaNaFPlfn8q4GurywJb7BmXExnEkvq', 'antonowiczcz@gmail.com', 4, 0, 'Pink_Monster', '2020-11-26 21:21:01', ''),
-(28, 'IwkoSmok', '$2y$10$VF0NlMzS9BLWAAgytbkzfe6TZ7uP8SYI2iaaIILaadPfnwqq9MtWa', 'albertpieczara@wp.pl', 1, 0, 'Pink_Monster', '2020-11-28 21:01:45', ''),
-(29, 'Dixelek', '$2y$10$pP6ayFVC5vDYwyCV6g3TjOeFwLwVutTnykfr2m3ZpnPaOz/V8Jgue', 'drkrawcik@gmail.com', 4, 0, 'Pink_Monster', '2020-11-29 00:09:45', ''),
-(30, 'furtive', '$2y$10$6vWX34pmRG2kfMiLHDoKgeUEtiKoUbLJp5BoOdt4TfLIA9HzkHlzm', 'furtiveplanet@gmail.com', 4, 0, 'Pink_Monster', '2020-11-29 00:13:22', ''),
-(31, 'xband', '$2y$10$j1XUvcmoH3iEClJOhW.DEuhb6ahko8sbQAzrDlnxpjA5FHHsntE/a', 'janwirkus2004@gmail.com', 2, 0, 'Pink_Monster', '2020-11-29 00:14:21', ''),
-(32, 'Jaifurtive', '$2y$10$R/GU6T/POuRxgw3DTodkz..h8ACBB6tbjtT6d2bJzksrd1FDZlwq.', 'tomeklipowski000@gmail.com', 2, 0, 'Pink_Monster', '2020-11-29 00:19:31', ''),
-(33, 'Kozak', '$2y$10$N.3zLjoP/Fj/i9kr2LydAuqMGBpGEgQjJ5XgXXr.ZwlEPRXzkANXm', 'martyneq.1@wp.pl', 4, 0, 'Pink_Monster', '2020-11-29 02:51:13', ''),
-(34, 'Hajdunia', '$2y$10$4tiK7JyVculVPHf.4xttjuZr9iaDCV24U3N28reY1UOd4MzZDYXLK', 'julcia.hajduk@gmail.com', 10, 0, 'Pink_Monster', '2020-11-29 02:55:19', ''),
-(35, 'samolot', '$2y$10$UNEPUAe0xNC8hOhUxvqdZejvnIuTqVyH8QfHHxBkqzdpQjXBpkS2e', 'Antosiaantosia0@gmail.pl', 3, 0, 'Pink_Monster', '2020-11-29 03:24:35', ''),
-(36, 'TEST', '$2y$10$HAkMgEInqnKEXBEl4XSCHO/mPo71xbHoiERKj.08WB.bZeDdTKH66', 'kubakubis01@gmail.com', 1, 0, 'Pink_Monster', '2020-11-29 22:23:21', 'f87a9ba2-5ab7-4060-aab0-10e6a64ec84a');
+(1, 'Kubis10', '$2y$10$NTVDURAHXiFF/NFuudDXh.xbi6PqVjr7ROPXtwOFWhTKJ0pwBb8/u', 'kuba.kubis@interia.pl', 9, 0, 'Hulk', '2020-12-29 12:57:45', ''),
+(2, 'jacek', '$2y$10$520GfTiKYdom8bBmFmnhc.dlePjIzHGyBGK7eX4xQe2eP9jo/ge.e', 'jacek@omega.pl', 1, 0, 'Pink_Monster', '2020-12-29 12:57:45', '30240c13-dc74-4324-9f89-b5463e1b08f2'),
+(15, 'Pawel', '$2y$10$6/1GtpnJjyiOkxYdaFxdnOq88Jwtb1BqJL4SJ3YpRFSfuKvoJkAH6', 'pawcio.fapcio2@gmail.com', 2, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(16, 'Kuba', '$2y$10$1lKoUo2gbsuBOO5EOoiHtegZlZa2un8YyF9jTN9Cat4ZsGVWbA9Zq', 'Kubozo27@interia.pl', 1, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(17, 'Ueloo', '$2y$10$5bSeaOJLYVwojrDq6dhqyeqUJj19i1Ys/.CaxIE4XEXTrrzfhxAtm', 'Jmiczek2005@gmail.com', 4, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(18, 'Callum', '$2y$10$9C7CcnRpxiNieAbfbvR0v.Jc.LoYZuf/1tANwKFj/asn1DxFcNyhm', 'adrian.goral@gmail.com', 9, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(19, 'cebyiul', '$2y$10$/Qx9OYqcCt/ENDEFZR3ADu6Bj7fqtN9dBMySYJElKGe8klzJAVypy', 'kuba.cybulski@puszkun.eu', 9, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(20, 'GIGADYNIA', '$2y$10$0yXKhwXJUyHJy0HE8hbIY.2R7rMoZd9CSDCD5bKoyekXw8g1N8PyW', 'franciszeksuchora@gmail.com', 4, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(21, 'PATTAL', '$2y$10$7n9H/noEtlyW2TjG2cXDouz4uLsJP8wlKdrnd4nD3RyAtfRLsuXCS', 'zikubaak@gmail.com', 1, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(22, 'dzulia', '$2y$10$l8tZwaaufjQRAVeaqKhzfORVnfsjDjbhN1cGbOjo52q0hZhu5oDyK', 'wiktoria.wa2005.jw@gmail.com', 1, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(23, 'mewa', '$2y$10$0d4hVDn4wG0KqdrfopLKc.B3b2tiS8.NNnB1EtT.F7v0jhKnBI3G2', 'ewasanocka3@gmail.com', 1, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(24, 'mewcia', '$2y$10$Z0Pa9AvrHHrZFdktnKjik.IL53BC2JFGskp2eZwaoz5DtFpapuIQK', 'anejekotleta@obiad.com', 1, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(25, 'm3wcia', '$2y$10$qHFOjFC/wCknybMzgaq5guNHPDsduhfYoAli51ytCFx2FPurzgsmC', 'okej@gmail.com', 1, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(26, 'olaola', '$2y$10$TTXZt.Mbg9Ibevk9StxyROE6pqBZNcBi41Leelqy6f83zuOI8nPqW', 'anetajekotleta@gmail.com', 1, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(27, 'Gracek', '$2y$10$24IVExUVwueJFlURo3UKIO9ZaNaFPlfn8q4GurywJb7BmXExnEkvq', 'antonowiczcz@gmail.com', 4, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(28, 'IwkoSmok', '$2y$10$VF0NlMzS9BLWAAgytbkzfe6TZ7uP8SYI2iaaIILaadPfnwqq9MtWa', 'albertpieczara@wp.pl', 1, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(29, 'Dixelek', '$2y$10$pP6ayFVC5vDYwyCV6g3TjOeFwLwVutTnykfr2m3ZpnPaOz/V8Jgue', 'drkrawcik@gmail.com', 4, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(30, 'furtive', '$2y$10$6vWX34pmRG2kfMiLHDoKgeUEtiKoUbLJp5BoOdt4TfLIA9HzkHlzm', 'furtiveplanet@gmail.com', 4, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(31, 'xband', '$2y$10$j1XUvcmoH3iEClJOhW.DEuhb6ahko8sbQAzrDlnxpjA5FHHsntE/a', 'janwirkus2004@gmail.com', 2, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(32, 'Jaifurtive', '$2y$10$R/GU6T/POuRxgw3DTodkz..h8ACBB6tbjtT6d2bJzksrd1FDZlwq.', 'tomeklipowski000@gmail.com', 2, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(33, 'Kozak', '$2y$10$N.3zLjoP/Fj/i9kr2LydAuqMGBpGEgQjJ5XgXXr.ZwlEPRXzkANXm', 'martyneq.1@wp.pl', 4, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(34, 'Hajdunia', '$2y$10$4tiK7JyVculVPHf.4xttjuZr9iaDCV24U3N28reY1UOd4MzZDYXLK', 'julcia.hajduk@gmail.com', 10, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(35, 'samolot', '$2y$10$UNEPUAe0xNC8hOhUxvqdZejvnIuTqVyH8QfHHxBkqzdpQjXBpkS2e', 'Antosiaantosia0@gmail.pl', 3, 0, 'Pink_Monster', '2020-12-29 12:57:45', ''),
+(36, 'TEST', '$2y$10$HAkMgEInqnKEXBEl4XSCHO/mPo71xbHoiERKj.08WB.bZeDdTKH66', 'kubakubis01@gmail.com', 1, 0, 'Pink_Monster', '2020-12-29 12:57:45', 'f87a9ba2-5ab7-4060-aab0-10e6a64ec84a');
 
 --
 -- Indeksy dla zrzutów tabel
@@ -312,7 +317,7 @@ ALTER TABLE `items`
 -- AUTO_INCREMENT dla tabeli `logs`
 --
 ALTER TABLE `logs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT dla tabeli `payment`
