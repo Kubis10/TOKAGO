@@ -32,7 +32,8 @@ if ($polaczenie->connect_errno!=0)
     <div class="container">
         <form class="items" method="post" action="writeq.php">
             <?php
-            $query = $polaczenie->query("SELECT items.name FROM eq, items where items.item_id = eq.item_id AND eq.user_id = ".$user);
+            $query = $polaczenie->query("SELECT items.name,eq.1,eq.2,eq.3,eq.4,eq.5,eq.6,eq.7,eq.8 FROM eq, items where eq.user_id = ".$user);
+            $i=1;
             while($row = $query->fetch_assoc()){
                 if($row['name']==="Pink_Monster") {
                     echo '  <label class="skin">
@@ -41,11 +42,14 @@ if ($polaczenie->connect_errno!=0)
                         </label>';
                 }
                 else {
-                    echo '  <label class="skin">
-                            <input type="radio" name="skin" value="' . $row['name'] . '" onclick="display()">
-                            <img src="shop/img/' . $row['name'] . '.png" alt="skin">
-                        </label>';
+                    if($row[$i]==1){
+                        echo '  <label class="skin">
+                        <input type="radio" name="skin" value="' . $row['name'] . '" onclick="display()">
+                        <img src="shop/img/' . $row['name'] . '.png" alt="skin">
+                    </label>';
+                    }
                 }
+                $i++;
             }
             ?>
              <input type="submit" class="okey" value="Zatwierdź">
