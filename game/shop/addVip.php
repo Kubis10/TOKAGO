@@ -13,11 +13,11 @@
 		echo "Error: ".$polaczenie->connect_errno;
     }
     
-    //if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $user_id = $_SESSION['id'];
-        $ile = $polaczenie->real_escape_string($_GET['ile']);
-        $money = $polaczenie->real_escape_string($_GET['money']);
+        $ile = $polaczenie->real_escape_string($_POST['ile']);
+        $money = $polaczenie->real_escape_string($_POST['money']);
 
         if($ile == "miesiac"){
             $czas = "1 MONTH";
@@ -26,42 +26,50 @@
             $czas = "1 YEAR";
         }
         $vip = $_SESSION['vip'];
+
         $dataczas = new DateTime();
         $koniec = DateTime::createFromFormat('Y-m-d H:i:s', $vip);
+        $koniecStr =  $koniec->format("Y-m-d H:i:s");
     
         $roznica = $dataczas->diff($koniec);
 
-        if($roznica<0){
-            $time ="now() + INTERVAL ".$czas;
+        $roznica = $roznica->format('%R%a');
+
+        $difference = intval($roznica);
+
+
+        if($difference<0){
+            $time ="(now() + INTERVAL ".$czas.")";
         }
         else{
-            $time =$vip." + INTERVAL ".$czas;
+            $time = "ADDDATE('$vip', INTERVAL ".$czas .")";
         }
+
         $query = $polaczenie->query("SELECT balance FROM uzytkownicy WHERE id = '$user_id'");
-        while ($row = $query->fetch_assoc()) {
+
+        while ($row = $query->fetch_assoc()){
             $monety =  $row['balance'];
         }
+        
         if($monety<$money){
             die();
-        }
-        echo "UPDATE uzytkownicy SET vip = '$time' WHERE id = '$user_id'";
-        if ($polaczenie->query("UPDATE uzytkownicy SET vip = '$time' WHERE id = '$user_id'")){
-            if ($polaczenie->query("UPDATE uzytkownicy SET balance = balance - '$money' WHERE id = '$user_id'")){
-                if($polaczenie->query("INSERT INTO logs VALUES (NULL, 'Gracz o id = ".$user_id." przedłużył vipa o ".$ile."!', now())")){
-                    echo "tak";
+        } else {
+            if ($polaczenie->query("UPDATE uzytkownicy SET vip = $time WHERE id = '$user_id'")){
+                if ($polaczenie->query("UPDATE uzytkownicy SET balance = balance - '$money' WHERE id = '$user_id'")){
+                    if($polaczenie->query("INSERT INTO logs VALUES (NULL, 'Gracz o id = ".$user_id." przedłużył vipa o ".$czas."!', now())")){
+                        echo "tak";
+                    } else {
+                        echo "nie 3";
+                    }
+                } else {
+                     echo "nie 2";
                 }
-            }
-            else {
-                echo "nie";
+            } else {
+                echo "nie 1";
             }
         }
-        else {
-            echo "nie";
-        }
-        
-
-    //} else {
-    //    echo "No data";
-    //}
+    } else {
+        echo "No data";
+    }
     
 ?>
