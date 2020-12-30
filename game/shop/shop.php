@@ -7,7 +7,6 @@ if ((!isset($_SESSION['zalogowany'])) || (!isset($_SESSION['id']))) {
 	header('Location: ../../index.html');
 	exit();
 }
-$sesid = $_SESSION['id'];
 
 ?>
 
@@ -62,17 +61,18 @@ $sesid = $_SESSION['id'];
 		<ul id="autoWidth" class="cs-hidden">
 		<?php
             $user = $_SESSION['id'];
-			$query = $polaczenie->query("SELECT items.name, items.item_id, items.s_nick, items.klasa, items.cost, items.about, (
-				SELECT eq.item_id from uzytkownicy join eq on uzytkownicy.id = eq.user_id
-			) AS czyObecny FROM items where items.czy_sklep = '1'");
-
-			//join (
-			//SELECT items.item_id from użytkownicy join itemy on uż.id = itemy.uż_id;)
+			$query = $polaczenie->query("SELECT * from items WHERE items.czy_sklep = '1'");
 
             while($row = $query->fetch_assoc()) {
+				$czy_eq = false;
+				$query2 = $polaczenie->query("SELECT item_id from eq WHERE user_id = '$user'");
+				while($row2 = $query2->fetch_assoc()){
+					if($row2["item_id"]==$row["item_id"]){
+						$czy_eq=true;
+					}
+				}
 
-				//przyrownanie $query i $itemy aby sprawdzić czy user ma juz taki item
-
+				if($czy_eq==false){
                 echo '
                 <li class="item-a" onclick="zakup('. $row["cost"] .', '. $row["item_id"] .')">
 				<!--slider-box-->
@@ -90,8 +90,29 @@ $sesid = $_SESSION['id'];
 
 				</div>
 				</li>';
+				}
+				else{
+					echo '
+					<li class="item-a bought")">
+					<!--slider-box-->
+					<div class="box">
+						<p class="marvel '. $row["klasa"] .'">'. $row["s_nick"] .'</p>
+						<!--model-->
+						<img src="img/'. $row["name"] .'.png" class="model" alt="skin">
+						<!--details-->
+						<div class="details">
+							<!--logo-character-->
+							<img src="img/'. $row["cost"] .'_money.png" class="logo" alt="money">
+							<!--character-details-->
+							<p>'. $row["about"] .'</p>
+						</div>
+	
+					</div>
+					</li>';
+				}
 			}
             ?>
+		</ul>
 		</ul>
 
 	</div>

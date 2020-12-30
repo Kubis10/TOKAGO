@@ -104,7 +104,7 @@ if (isset($_POST['email'])) {
 					$tmp = $polaczenie->query("SELECT id FROM uzytkownicy WHERE user='$nick'");
 					$row = $tmp->fetch_assoc();
 					if ($polaczenie->query("INSERT INTO logs VALUES (NULL, 'Gracz o id = " . $row['id'] . " zarejestrowal sie', now())")) {
-						if ($polaczenie->query("INSERT INTO eq ('user_id', '1') VALUES ('".$row['id']."', 1)")) {
+						if ($polaczenie->query("INSERT INTO eq VALUES ('".$row['id']."', 1)")) {
 							$_SESSION['udanarejestracja'] = true;
 							header('Location: witamy.php');
 						}

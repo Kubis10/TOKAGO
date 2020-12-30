@@ -19,13 +19,13 @@
                 $check = $polaczenie->query("SELECT hash FROM uzytkownicy WHERE hash='$hash'");
 
                 if ($check->num_rows > 0) {
-                    echo '<form class="box" method="post">
+                    echo '<form class="box" method="post" id="form">
                     <h1>Reset hasła</h1>
-                    <input type="text" id="user" name="uname" placeholder="Podaj nazwę użytkownika" required>
+                    <input type="text" id="user" name="email" placeholder="Podaj adres email" required>
                     <input type="password" id="pass1" name="pass1" placeholder="Podaj nowe hasło" required>
                     <input type="password" id="pass2" name="pass2" placeholder="Powtórz nowe hasło" required>
                     <div id="error"></div>
-                    <input type="submit" id="submit" onclick="chPass()" value="Zmień hasło"></input>
+                    <input type="submit" id="submit" value="Zmień hasło"></input>
                     </form>';
                 } else {
                     echo 'Adres URL jest nie poprawny';
@@ -38,6 +38,14 @@
         ?>
 
         <script type="text/javascript">
+
+            let form;
+            form = document.getElementById("form");
+            form.addEventListener("submit", function (e){
+                e.preventDefault();
+                chPass();
+            });
+
             function chPass(){
                 let user = document.getElementById("user").value;
                 let p1 = document.getElementById("pass1").value;
@@ -46,15 +54,15 @@
 
                 let xhttp = new XMLHttpRequest();
                 xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4 && this.status == 200) {
-                    msg.innerHTML = this.responseText;
-                    window.location.href = "zalform.php";
+                        if (this.readyState == 4 && this.status == 200) {
+                            let respond = JSON.parse(this.responseText);
+                            msg.innerHTML = respond.text;
+                        }                      
                     }
                     xhttp.open("POST", "passRenewXO.php", true);
                     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                    xhttp.send(`uname=${user}&pass1=${p1}&pass2=${p2}`);
+                    xhttp.send(`email=${user}&pass1=${p1}&pass2=${p2}`);
                 }
-            }
         </script>
     </body>
 </html>

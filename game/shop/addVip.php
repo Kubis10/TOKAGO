@@ -57,7 +57,12 @@
             if ($polaczenie->query("UPDATE uzytkownicy SET vip = $time WHERE id = '$user_id'")){
                 if ($polaczenie->query("UPDATE uzytkownicy SET balance = balance - '$money' WHERE id = '$user_id'")){
                     if($polaczenie->query("INSERT INTO logs VALUES (NULL, 'Gracz o id = ".$user_id." przedłużył vipa o ".$czas."!', now())")){
-                        echo "tak";
+                        if($polaczenie->query("INSERT INTO eq VALUES ('$user_id','8')")){
+
+                        }
+                        else{
+                            echo "nie 4";
+                        } 
                     } else {
                         echo "nie 3";
                     }

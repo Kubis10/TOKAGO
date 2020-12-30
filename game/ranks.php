@@ -31,7 +31,7 @@ if ($polaczenie->connect_errno != 0) {
     <label for="lvl-select">Wybierz poziom:</label>
     <select id="lvl-select" class="lvl-select">
       <optgroup label="Rozdział 1">
-        <option value="1">Level 1</option>
+        <option value="1" selected="selected">Level 1</option>
         <option value="2">Level 2</option>
         <option value="3">Level 3</option>
       </optgroup>
@@ -52,16 +52,29 @@ if ($polaczenie->connect_errno != 0) {
   </article>
   <a href="gra.php" class="back">Powrót</a>
   <script>
+    window.addEventListener("load", function () {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("ranking").innerHTML =
+          this.responseText;
+        }
+      };
+      xhttp.open("POST", "readRanks.php", true);
+      xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhttp.send(`level=1`);
+    });
+    //=======================================
     const selectElement = document.querySelector('.lvl-select');
 
     selectElement.addEventListener('change', (event) => {
       var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("ranking").innerHTML =
-      this.responseText;
-    }
-  };
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("ranking").innerHTML =
+          this.responseText;
+        }
+      };
       xhttp.open("POST", "readRanks.php", true);
       xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
       xhttp.send(`level=${event.target.value}`);
