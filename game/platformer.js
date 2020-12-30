@@ -28,7 +28,7 @@ window.addEventListener("load", function () {
     ['up', '/\\']]
   });
   let lava = true;
-  let gravity = true;
+  let gravity = false;
   // ## Player Sprite
   Q.Sprite.extend("Player", {
 
