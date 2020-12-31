@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="166">
- <tileset firstgid="1" name="Tiles" tilewidth="32" tileheight="32" tilecount="3" columns="3">
-  <image source="../images/tiles.png" width="96" height="32"/>
+ <tileset firstgid="1" name="Tiles" tilewidth="32" tileheight="32" tilecount="4" columns="4">
+  <image source="../images/tiles.png" width="128" height="32"/>
   <tile id="2">
    <properties>
     <property name="Class" value="Lava"/>
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="4" name="sprites" tilewidth="30" tileheight="30" tilecount="3" columns="1">
+ <tileset firstgid="5" name="sprites" tilewidth="30" tileheight="30" tilecount="3" columns="1">
   <image source="../images/sprites.png" width="30" height="56"/>
   <tile id="0">
    <properties>
@@ -26,7 +26,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="7" name="newMobs" tilewidth="30" tileheight="30" tilecount="3" columns="1">
+ <tileset firstgid="8" name="newMobs" tilewidth="30" tileheight="30" tilecount="3" columns="1">
   <image source="../images/newMobs.png" width="30" height="90"/>
   <tile id="0">
    <properties>
@@ -5668,7 +5668,7 @@
    <tile gid="2"/>
    <tile gid="2"/>
    <tile gid="2"/>
-   <tile gid="2"/>
+   <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="1"/>
    <tile gid="1"/>
@@ -10059,11 +10059,11 @@
   </data>
  </layer>
  <objectgroup id="3" name="Object Layer 1">
-  <object id="118" gid="4" x="1222" y="2492" width="30" height="30"/>
-  <object id="119" gid="4" x="1619" y="2493" width="30" height="30"/>
-  <object id="120" gid="7" x="1333" y="2876.33" width="30" height="30"/>
-  <object id="121" gid="7" x="1131.67" y="2880.33" width="30" height="30"/>
-  <object id="122" gid="7" x="951.667" y="2877.67" width="30" height="30"/>
+  <object id="118" gid="5" x="1222" y="2492" width="30" height="30"/>
+  <object id="119" gid="5" x="1619" y="2493" width="30" height="30"/>
+  <object id="120" gid="8" x="1333" y="2876.33" width="30" height="30"/>
+  <object id="121" gid="8" x="1131.67" y="2880.33" width="30" height="30"/>
+  <object id="122" gid="8" x="951.667" y="2877.67" width="30" height="30"/>
   <object id="123" gid="3" x="1472" y="2880" width="32" height="32"/>
   <object id="124" gid="3" x="1504" y="2880" width="32" height="32"/>
   <object id="125" gid="3" x="1568" y="2880" width="32" height="32"/>
@@ -10097,18 +10097,18 @@
   <object id="153" gid="3" x="768" y="2208" width="32" height="32"/>
   <object id="154" gid="3" x="736" y="2208" width="32" height="32"/>
   <object id="155" gid="3" x="704" y="2208" width="32" height="32"/>
-  <object id="156" gid="8" x="757" y="2876.33" width="30" height="30"/>
-  <object id="157" gid="8" x="474.333" y="2873.67" width="30" height="30"/>
-  <object id="158" gid="9" x="1621" y="1963" width="30" height="30"/>
-  <object id="160" gid="5" x="1409.33" y="1971" width="30" height="30">
+  <object id="156" gid="9" x="757" y="2876.33" width="30" height="30"/>
+  <object id="157" gid="9" x="474.333" y="2873.67" width="30" height="30"/>
+  <object id="158" gid="10" x="1621" y="1963" width="30" height="30"/>
+  <object id="160" gid="6" x="1409.33" y="1971" width="30" height="30">
    <properties>
     <property name="scale" type="float" value="3"/>
    </properties>
   </object>
-  <object id="161" gid="6" x="352" y="1792" width="30" height="30"/>
-  <object id="162" gid="7" x="1199.67" y="1979" width="30" height="30"/>
-  <object id="163" gid="7" x="921" y="1981.67" width="30" height="30"/>
-  <object id="164" gid="7" x="639.667" y="1983" width="30" height="30"/>
-  <object id="165" gid="7" x="797" y="1977.67" width="30" height="30"/>
+  <object id="161" gid="7" x="352" y="1792" width="30" height="30"/>
+  <object id="162" gid="8" x="1199.67" y="1979" width="30" height="30"/>
+  <object id="163" gid="8" x="921" y="1981.67" width="30" height="30"/>
+  <object id="164" gid="8" x="639.667" y="1983" width="30" height="30"/>
+  <object id="165" gid="8" x="797" y="1977.67" width="30" height="30"/>
  </objectgroup>
 </map>

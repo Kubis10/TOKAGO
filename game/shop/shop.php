@@ -7,7 +7,6 @@ if ((!isset($_SESSION['zalogowany'])) || (!isset($_SESSION['id']))) {
 	header('Location: ../../index.html');
 	exit();
 }
-
 ?>
 
 <!doctype html>
