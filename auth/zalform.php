@@ -26,7 +26,7 @@
 	<form class="box" action="zaloguj.php" method="post">
 
 	    <h1>Login</h1>
-		<input type="text" name="login" placeholder="Nick"/>
+		<input type="text" name="login" placeholder="Nickname"/>
 		<input type="password" name="haslo" placeholder="Hasło"/>
 		<input type="submit" value="Zaloguj się" />
 		<a href="rejestracja.php">Rejestracja - załóż darmowe konto!</a><br><br>
