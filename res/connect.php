@@ -35,7 +35,7 @@
         $difference = intval($roznica);
   
   
-        if($difference<0){
+        if($difference <= 0){
           return false;
         }
         else{
