@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: /res/
 
 Sitemap: https://tokago.pl/sitemap.xml 
