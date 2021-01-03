@@ -94,6 +94,12 @@ body {
     z-index: 5;
     text-decoration: none;
   }
+  .lot{
+    border: 2px solid white;
+  }
+  hr{
+    border: 1px dashed white;
+  }
   /* Some media queries for responsiveness */
   @media screen and (max-width: 450px)  {
     .sidenav {
