@@ -320,6 +320,9 @@ body {
 .row .col-1-of-3 {
     width: calc((100% - 6rem) / 2);
 }
+.swal2-popup {
+    font-size: 1.5rem !important;
+}
 @media screen and (max-width: 570px) {
     .row .col-1-of-3{
         width: 100%;

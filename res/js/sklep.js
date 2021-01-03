@@ -43,7 +43,7 @@ function vip_m() {
         cancelButtonText: 'Anuluj',
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Tak!'
+        confirmButtonText: 'Tak!',
     }).then((result) => {
             if (result.isConfirmed) {
                 if (stan >= 20) {
