@@ -3,6 +3,10 @@ require_once("../../res/connect.php");
 
 session_start();
 
+$polaczenie->query("SET CHARACTER SET utf8mb4");
+
+$polaczenie->set_charset('UTF-8');
+
 if ((!isset($_SESSION['zalogowany'])) || (!isset($_SESSION['id']))) {
 	header('Location: ../../index.html');
 	exit();
