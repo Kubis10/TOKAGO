@@ -22,4 +22,24 @@
             mt_rand(0, 0xffff)
         );
     }
+
+    function ifVIP($vip){
+        $dataczas = new DateTime();
+        $koniec = DateTime::createFromFormat('Y-m-d H:i:s', $vip);
+        $koniecStr =  $koniec->format("Y-m-d H:i:s");
+      
+        $roznica = $dataczas->diff($koniec);
+  
+        $roznica = $roznica->format('%R%a');
+  
+        $difference = intval($roznica);
+  
+  
+        if($difference<0){
+          return false;
+        }
+        else{
+          return true;
+        }
+      }
 ?>

@@ -55,7 +55,7 @@ if ($checkBalance->num_rows > 0) {
                     <div class="card__details">
                         <ul>
                             <li>1 Miesiąc premium</li>
-                            <li>3 tokelony co tydzień</li>
+                            <li>4 tokelony co tydzień</li>
                             <li>10 tokelonów na start</li>
                             <li>Specjalny skin</li>
                             <li>Specjalne wyróżnienie w rankingu</li>
@@ -86,7 +86,7 @@ if ($checkBalance->num_rows > 0) {
                     <div class="card__details">
                         <ul>
                             <li>1 Rok premium</li>
-                            <li>3 tokelonów co tydzień</li>
+                            <li>4 tokelony co tydzień</li>
                             <li>20 tokelonów na start</li>
                             <li>Specjalny skin</li>
                             <li>Specjalne wyróżnienie w rankingu</li>

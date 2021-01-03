@@ -25,24 +25,13 @@
         else {
             $czas = "1 YEAR";
         }
+
         $vip = $_SESSION['vip'];
 
-        $dataczas = new DateTime();
-        $koniec = DateTime::createFromFormat('Y-m-d H:i:s', $vip);
-        $koniecStr =  $koniec->format("Y-m-d H:i:s");
-    
-        $roznica = $dataczas->diff($koniec);
-
-        $roznica = $roznica->format('%R%a');
-
-        $difference = intval($roznica);
-
-
-        if($difference<0){
-            $time ="(now() + INTERVAL ".$czas.")";
-        }
-        else{
+        if(ifVIP($vip)){
             $time = "ADDDATE('$vip', INTERVAL ".$czas .")";
+        } else {
+            $time ="(now() + INTERVAL ".$czas.")";
         }
 
         $query = $polaczenie->query("SELECT balance FROM uzytkownicy WHERE id = '$user_id'");

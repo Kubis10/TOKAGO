@@ -48,9 +48,9 @@ tr{
     text-align: center;
 }
 .my_score{
-    color: gold;
+    color: rgb(89, 157, 247);
     position: relative;
-    font-size: 15px;
+    font-size: 20px;
 }
 .flex-container {
     display: flex;

@@ -23,6 +23,7 @@ if ($polaczenie->connect_errno != 0) {
   <title>TOKAGO | Ranking</title>
   <link rel="icon" type="image/png" href="../res/photo/logo.png">
   <link rel="stylesheet" href="../res/css/ranking.css">
+  <script src="https://kit.fontawesome.com/0ed3b8ed5d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
