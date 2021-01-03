@@ -26,7 +26,10 @@
           $nums = 1;
           while ($row = $query->fetch_assoc()) {
             if ($row[$lvl] != "0") {
-
+              //badge
+                //<i class="fab fa-dev"></i> - dev
+                //<i class="fas fa-gamepad"></i> - beta
+                //<i class="fas fa-biohazard"></i> - hardcore
               if (ifVIP($row['vip'])){
                 echo '<tr>';
                 echo '<th>' . $nums . '</th>';
