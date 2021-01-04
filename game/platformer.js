@@ -21,11 +21,11 @@ window.addEventListener("load", function () {
     SPACE: "up"
   })
   Q.input.touchControls({
-    controls: [['left', '<'],
-    ['right', '>'],
+    controls: [['left', '\u2190'],
+    ['right', '\u2192'],
     [],
     [],
-    ['up', '/\\']]
+    ['up', '\u2191']]
   });
   let lava = true;
   let gravity = false;
@@ -254,6 +254,7 @@ window.addEventListener("load", function () {
     Q.stageTMX("level9.tmx", stage);
     stage.add("viewport").follow(Q("Player").first());
   });
+
   //##FUNCTIONS
   //ajax save level
   function saveUserLevel() {
@@ -310,7 +311,7 @@ window.addEventListener("load", function () {
     if (cheat != null) {
       if (cheat === "lvl") {
         level = prompt("Level:");
-        if (level >= 0 && level < 10) {
+        if (level >= 0 && level <= 10) {
           saveUserLevel();
           saveUserLevel();
           location.reload();
