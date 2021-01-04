@@ -275,6 +275,7 @@ window.addEventListener("load", function () {
   let timesample = 0;
   let run = false;
   let gui = false;
+  let action = false;
   let client;
   var stopper = setInterval(myTimer, 10);
   function myTimer() {
@@ -455,6 +456,9 @@ window.addEventListener("load", function () {
   });
   //die event
   Q.scene('endGame', function (stage) {
+
+    action = true;
+
     var container = stage.insert(new Q.UI.Container({
       x: Q.width / 2, y: Q.height / 2, fill: "rgba(0,0,0,0.7)"
     }));
@@ -467,6 +471,20 @@ window.addEventListener("load", function () {
       x: 0, y: -10 - button.p.h, color: "#FFFFFF",
       label: stage.options.label
     }));
+
+    document.onkeyup = function (e) {
+    if ((e.key === 'Enter' || e.key === 'Spacebar' || e.key == ' ') && action) {
+      Q.clearStages();
+      reset();
+      gui = false;
+      timesample = 0;
+      wartosc = 0;
+      Q.stageScene('level' + level);
+      Q.stageScene('pause', 1);
+      action = false;
+    }
+  }
+    
     button.on("click", function () {
       Q.clearStages();
       reset();
@@ -475,12 +493,16 @@ window.addEventListener("load", function () {
       wartosc = 0;
       Q.stageScene('level' + level);
       Q.stageScene('pause', 1);
+      action = false;
     });
-
     container.fit(20);
   });
+
   //go to next level
   Q.scene('nextLevel', function (stage) {
+
+    action = true;
+
     var container = stage.insert(new Q.UI.Container({
       x: Q.width / 2, y: Q.height / 2, fill: "rgba(0,0,0,0.7)"
     }));
@@ -503,8 +525,24 @@ window.addEventListener("load", function () {
       wartosc = 0;
       Q.stageScene('level' + level, 0);
       Q.stageScene('pause', 1);
+      action = false;
     });
 
+    document.onkeyup = function (e) {
+      if ((e.key === 'Enter' || e.key === 'Spacebar' || e.key == ' ') && action) {
+        level = parseInt(level) + 1;
+        saveUserLevel();
+        Q.clearStages();
+        reset();
+        gui = false;
+        timesample = 0;
+        wartosc = 0;
+        Q.stageScene('level' + level, 0);
+        Q.stageScene('pause', 1);
+        action = false;
+      }
+    };
+    
     container.fit(20);
   });
   //koniec gry
