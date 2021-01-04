@@ -472,19 +472,21 @@ window.addEventListener("load", function () {
       label: stage.options.label
     }));
 
-    document.onkeyup = function (e) {
-    if ((e.key === 'Enter' || e.key === 'Spacebar' || e.key == ' ') && action) {
-      Q.clearStages();
-      reset();
-      gui = false;
-      timesample = 0;
-      wartosc = 0;
-      Q.stageScene('level' + level);
-      Q.stageScene('pause', 1);
-      action = false;
+    if (action) {
+        window.onkeyup = function (e) {
+          if ((e.key === 'Enter' || e.key === 'Spacebar' || e.key == ' ') && action) {
+            Q.clearStages();
+            reset();
+            gui = false;
+            timesample = 0;
+            wartosc = 0;
+            Q.stageScene('level' + level);
+            Q.stageScene('pause', 1);
+            action = false;
+          }
+        }
     }
-  }
-    
+
     button.on("click", function () {
       Q.clearStages();
       reset();
@@ -528,21 +530,22 @@ window.addEventListener("load", function () {
       action = false;
     });
 
-    document.onkeyup = function (e) {
-      if ((e.key === 'Enter' || e.key === 'Spacebar' || e.key == ' ') && action) {
-        level = parseInt(level) + 1;
-        saveUserLevel();
-        Q.clearStages();
-        reset();
-        gui = false;
-        timesample = 0;
-        wartosc = 0;
-        Q.stageScene('level' + level, 0);
-        Q.stageScene('pause', 1);
-        action = false;
-      }
-    };
-    
+    if (action) {
+      window.onkeyup = function (e) {
+        if ((e.key === 'Enter' || e.key === 'Spacebar' || e.key == ' ') && action) {
+          level = parseInt(level) + 1;
+          saveUserLevel();
+          Q.clearStages();
+          reset();
+          gui = false;
+          timesample = 0;
+          wartosc = 0;
+          Q.stageScene('level' + level, 0);
+          Q.stageScene('pause', 1);
+          action = false;
+        }
+      };
+    }
     container.fit(20);
   });
   //koniec gry
