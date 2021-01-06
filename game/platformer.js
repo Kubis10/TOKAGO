@@ -272,18 +272,17 @@ window.addEventListener("load", function () {
   }
   //ajax get max level
   let maxLvl;
-  function getMaxLevel(){
+  function getMaxLevel() {
     var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-       if (this.readyState == 4 && this.status == 200) {
-          let respond = JSON(this.responseText);
-          maxLvl = respond.max_lvl;
-          //tu zamień maxLvl na inta i masz zmienną
-       }                      
-     }
-     xhttp.open("POST", "selectMaxLvl.php", true);
-     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-     xhttp.send(`userid=${id}`);
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        let respond = JSON.parse(this.responseText);
+        maxLvl = parseInt(respond.max_lvl);
+      }
+    }
+    xhttp.open("POST", "selectMaxLvl.php", true);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp.send(`id=${id}`);
   }
   //js stopper
   let time = 0;
@@ -339,6 +338,7 @@ window.addEventListener("load", function () {
         if (level >= 0 && level <= 10) {
           saveUserLevel();
           saveUserLevel();
+          location.reload();
           location.reload();
         }
       }
@@ -435,7 +435,6 @@ window.addEventListener("load", function () {
     }, function () {
       Q.stageScene('levels', 2);
       getMaxLevel();
-
     }), container);
     stage.insert(new Q.UI.Button({
       label: "  Ranking  ",
@@ -502,53 +501,58 @@ window.addEventListener("load", function () {
       x: 0,
       y: 0
     }), container);
+
+    var num = 1;
     for (var i = 1; i <= 3; i++) {
       for (var j = 1; j <= 3; j++) {
-        if(i*j<=maxLvl){
-        if (Q.width >= 530) {
-          stage.insert(new Q.UI.Button({
-            label: "Poziom " + i * j,
-            y: i * 150 - 20,
-            x: j * 150 - 300,
-            w: 120,
-            h: 120,
-            fill: "#f28400"
-          }, function () {
-            level = i * j;
-            saveUserLevel();
-            location.reload();
-          }), container);
+        if (num <= maxLvl) {
+          if (Q.width >= 530) {
+            window['value' + num] = stage.insert(new Q.UI.Button({
+              label: "Poziom " + num,
+              y: i * 150 - 20,
+              x: j * 150 - 300,
+              w: 120,
+              h: 120,
+              fill: "#f28400"
+            }, function () {
+              level = num;
+              saveUserLevel();
+              location.reload();
+              location.reload();
+            }), container);
+          }
+          else {
+            window['value' + num] = stage.insert(new Q.UI.Button({
+              label: "Poziom " + num,
+              y: i * 100 - 20,
+              x: j * 100 - 200,
+              w: 120,
+              h: 120,
+              scale: 0.5,
+              fill: "#f28400"
+            }, function () {
+              level = num;
+              saveUserLevel();
+              location.reload();
+              location.reload();
+            }), container);
+          }
+          /* stage.insert(new Q.UI.Button({
+             label: ">",
+             fill: "white",
+             x: 300,
+             y: 260
+           }), container);
+           stage.insert(new Q.UI.Button({
+             label: "<",
+             fill: "white",
+             x: -300,
+             y: 260
+           }), container);*/
         }
-        else {
-          stage.insert(new Q.UI.Button({
-            label: "Poziom " + i * j,
-            y: i * 100 - 20,
-            x: j * 100 - 200,
-            w: 120,
-            h: 120,
-            scale: 0.5,
-            fill: "#f28400"
-          }, function () {
-            level = i * j;
-            saveUserLevel();
-            location.reload();
-          }), container);
-        }
-        /* stage.insert(new Q.UI.Button({
-           label: ">",
-           fill: "white",
-           x: 300,
-           y: 260
-         }), container);
-         stage.insert(new Q.UI.Button({
-           label: "<",
-           fill: "white",
-           x: -300,
-           y: 260
-         }), container);*/
+        num++;
       }
     }
-  }
 
     container.fit(50, 50);
   });
