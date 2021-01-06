@@ -21,7 +21,7 @@
                 if ($check->num_rows > 0) {
                     echo '<form class="box" method="post" id="form">
                     <h1>Reset hasła</h1>
-                    <input type="text" id="user" name="email" placeholder="Podaj adres email" required>
+                    <input type="text" id="email" name="email" placeholder="Podaj adres email" required>
                     <input type="password" id="pass1" name="pass1" placeholder="Podaj nowe hasło" required>
                     <input type="password" id="pass2" name="pass2" placeholder="Powtórz nowe hasło" required>
                     <div id="error"></div>
@@ -47,7 +47,7 @@
             });
 
             function chPass(){
-                let user = document.getElementById("user").value;
+                let email = document.getElementById("email").value;
                 let p1 = document.getElementById("pass1").value;
                 let p2 = document.getElementById("pass2").value;
                 let msg = document.getElementById("error");
@@ -61,7 +61,7 @@
                     }
                     xhttp.open("POST", "passRenewXO.php", true);
                     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                    xhttp.send(`email=${user}&pass1=${p1}&pass2=${p2}`);
+                    xhttp.send(`email=${email}&pass1=${p1}&pass2=${p2}`);
                 }
         </script>
     </body>
