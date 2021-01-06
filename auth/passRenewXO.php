@@ -23,7 +23,7 @@
             }
 
         } else {
-            $response = ["success"=>"nie", "text"=>"Wystąpił problem, skontaktuj się z adminem w celu ręcznej zmiany hasła."];
+            $response = ["success"=>"nie", "text"=>"Hasła nie są takie same."];
         }
 
         ob_end_clean();
