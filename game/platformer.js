@@ -305,6 +305,7 @@ window.addEventListener("load", function () {
       cheatCode();
     }
     if(e.which == 82){
+      run = false;
       Q.clearStages();
       reset();
       gui = false;
