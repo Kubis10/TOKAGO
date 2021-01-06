@@ -86,5 +86,6 @@ $result = $polaczenie->query("SELECT id, lvl, avatar FROM uzytkownicy WHERE id='
     updateClocks();
     setInterval(updateClocks, 10);
     </script>
+    <script>//document.addEventListener('contextmenu', event => event.preventDefault());</script>
 </body>
 </html>

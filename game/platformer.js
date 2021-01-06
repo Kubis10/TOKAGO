@@ -43,7 +43,7 @@ window.addEventListener("load", function () {
       });
 
       this.add('2d, platformerControls, animation, tween');
-      if(gravity==true){
+      if (gravity == true) {
         this.p.gravity = 0.2;
       }
 
@@ -61,12 +61,12 @@ window.addEventListener("load", function () {
           }
           this.destroy();
         }
-        if(lava == true){
-        if (collision.obj.isA("Lava")) {
-          run = false;
-          Q.stage().pause();
-          Q.stageScene("endGame", 1, { label: "Umarłeś" });
-        }
+        if (lava == true) {
+          if (collision.obj.isA("Lava")) {
+            run = false;
+            Q.stage().pause();
+            Q.stageScene("endGame", 1, { label: "Umarłeś" });
+          }
         }
         if (collision.obj.isA("Boost")) {
           if (this.p.gravity == 1) {
@@ -304,6 +304,15 @@ window.addEventListener("load", function () {
     if (e.ctrlKey && e.altKey && e.shiftKey && e.which == 85) {
       cheatCode();
     }
+    if(e.which == 82){
+      Q.clearStages();
+      reset();
+      gui = false;
+      timesample = 0;
+      wartosc = 0;
+      Q.stageScene('level' + level);
+      Q.stageScene('pause', 1);
+    }
   }
   //dev shortcut or.. cheats?
   function cheatCode() {
@@ -317,12 +326,12 @@ window.addEventListener("load", function () {
           location.reload();
         }
       }
-      if(cheat === "lava"){
-        lava =! lava;
+      if (cheat === "lava") {
+        lava = !lava;
         alert("Jestes odporny na lave");
       }
-      if(cheat === "gravity"){
-        gravity =! gravity;
+      if (cheat === "gravity") {
+        gravity = !gravity;
         alert("Zmiejszona grawitacja!");
       }
     }
@@ -387,9 +396,9 @@ window.addEventListener("load", function () {
       y: 0
     }), container);
     stage.insert(new Q.UI.Button({
-      label: "Restart",
-      y: 60,
-      x: 0,
+      label: "   Restart   ",
+      y: 70,
+      x: -90,
       fill: "#f28400",
       border: 2,
     }, function () {
@@ -402,8 +411,18 @@ window.addEventListener("load", function () {
       Q.stageScene('pause', 1);
     }), container);
     stage.insert(new Q.UI.Button({
+      label: "  Poziomy  ",
+      y: 70,
+      x: 90,
+      fill: "#f28400",
+      border: 2,
+    }, function () {
+      Q.stageScene('levels', 2);
+
+    }), container);
+    stage.insert(new Q.UI.Button({
       label: "  Ranking  ",
-      y: 120,
+      y: 130,
       x: -90,
       fill: "#f28400",
       border: 2,
@@ -412,7 +431,7 @@ window.addEventListener("load", function () {
     }), container);
     stage.insert(new Q.UI.Button({
       label: "  Muzyka   ",
-      y: 120,
+      y: 130,
       x: 90,
       fill: "#f28400",
       border: 2,
@@ -427,7 +446,7 @@ window.addEventListener("load", function () {
     }), container);
     stage.insert(new Q.UI.Button({
       label: "    Sklep    ",
-      y: 180,
+      y: 190,
       x: -90,
       fill: "#f28400",
       border: 2,
@@ -436,7 +455,7 @@ window.addEventListener("load", function () {
     }), container);
     stage.insert(new Q.UI.Button({
       label: "Ekwipunek",
-      y: 180,
+      y: 190,
       x: 90,
       fill: "#f28400",
       border: 2,
@@ -445,7 +464,7 @@ window.addEventListener("load", function () {
     }), container);
     stage.insert(new Q.UI.Button({
       label: "Wyloguj się",
-      y: 250,
+      y: 260,
       x: 0,
       fill: "#990000",
       border: 2,
@@ -454,6 +473,65 @@ window.addEventListener("load", function () {
     }), container);
 
     container.fit(20, 50);
+  });
+  //select level menu
+  Q.scene('levels', function (stage) {
+    var container = stage.insert(new Q.UI.Container({
+      x: Q.width / 2, y: 150, fill: "rgba(0,0,0,0.9)"
+    }));
+    stage.insert(new Q.UI.Text({
+      label: "Wybór poziomów",
+      color: "white",
+      x: 0,
+      y: 0
+    }), container);
+    for (var i = 1; i <= 3; i++) {
+      for (var j = 1; j <= 3; j++) {
+        if(Q.width >= 530){
+        stage.insert(new Q.UI.Button({
+          label: "Poziom " + i*j,
+          y: i*150-20,
+          x: j*150-300,
+          w: 120,
+          h: 120,
+          fill: "#f28400"
+        }, function () {
+          level = i*j;
+          saveUserLevel();
+          location.reload();
+        }), container);
+      }
+      else{
+        stage.insert(new Q.UI.Button({
+          label: "Poziom " + i*j,
+          y: i*100-20,
+          x: j*100-200,
+          w: 120,
+          h: 120,
+          scale: 0.5,
+          fill: "#f28400"
+        }, function () {
+          level = i*j;
+          saveUserLevel();
+          location.reload();
+        }), container);
+      }
+       /* stage.insert(new Q.UI.Button({
+          label: ">",
+          fill: "white",
+          x: 300,
+          y: 260
+        }), container);
+        stage.insert(new Q.UI.Button({
+          label: "<",
+          fill: "white",
+          x: -300,
+          y: 260
+        }), container);*/
+      }
+    }
+
+    container.fit(50, 50);
   });
   //die event
   Q.scene('endGame', function (stage) {
@@ -474,18 +552,18 @@ window.addEventListener("load", function () {
     }));
 
     if (action) {
-        window.onkeyup = function (e) {
-          if ((e.key === 'Enter' || e.key === 'Spacebar' || e.key == ' ') && action) {
-            Q.clearStages();
-            reset();
-            gui = false;
-            timesample = 0;
-            wartosc = 0;
-            Q.stageScene('level' + level);
-            Q.stageScene('pause', 1);
-            action = false;
-          }
+      window.onkeyup = function (e) {
+        if ((e.key === 'Enter' || e.key === 'Spacebar' || e.key == ' ') && action) {
+          Q.clearStages();
+          reset();
+          gui = false;
+          timesample = 0;
+          wartosc = 0;
+          Q.stageScene('level' + level);
+          Q.stageScene('pause', 1);
+          action = false;
         }
+      }
     }
 
     button.on("click", function () {
