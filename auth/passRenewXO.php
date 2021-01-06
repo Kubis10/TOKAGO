@@ -8,12 +8,16 @@
         $pass1 = $polaczenie->real_escape_string($_POST['pass1']);
         $pass2 = $polaczenie->real_escape_string($_POST['pass2']);
 
-        if ($pass1 === $pass2){
+        $hashedPassword = password_hash($pass1, PASSWORD_DEFAULT);
 
-            $hashedPassword = password_hash($pass1, PASSWORD_DEFAULT);
+        if ($pass1 === $pass2){
             if(password_verify($pass1, $hashedPassword)){
-                $update = $polaczenie->query("UPDATE uzytkownicy SET pass='$hashedPassword' WHERE user='$email'");
-                $response = ["success"=>"tak", "text"=>"Hasło zostało zmienione pomyślnie"];
+                if( $polaczenie->query("UPDATE uzytkownicy SET pass='$hashedPassword' WHERE email='$email'")){
+                    $response = ["success"=>"tak", "text"=>"Hasło zostało zmienione pomyślnie"];
+                } else {
+                    $response = ["success"=>"nie", "text"=>"Wystąpił problem, skontaktuj się z adminem w celu ręcznej zmiany hasła."];
+                }
+                
             } else {
                 $response = ["success"=>"nie", "text"=>"Wystąpił problem, skontaktuj się z adminem w celu ręcznej zmiany hasła."];
             }
