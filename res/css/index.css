@@ -9,6 +9,18 @@ body{
 body::-webkit-scrollbar {
     display: none;
 }
+.creds{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 4px;
+    border-radius: 10px;
+    border: 1px solid white;
+
+}
+.creds:hover{
+    background-color: rgb(105, 30, 30);
+}
 ul {
     list-style-type: none;
     margin: 0;
