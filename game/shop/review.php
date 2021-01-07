@@ -51,6 +51,8 @@ require_once "../../res/connect.php";
 	email.innerHTML += email_txt;
 	monety.innerHTML += moneyAmount;
 
+	window.localStorage.clear();
+
 	var xhttp = new XMLHttpRequest();
     xhttp.open("POST", "addBuyerDB.php", true);
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");

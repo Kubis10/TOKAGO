@@ -271,13 +271,12 @@ window.addEventListener("load", function () {
     xhttp.send(`id=${id}&level=${level}&time=${time}`);
   }
   //ajax get max level
-  let maxLvl;
   function getMaxLevel() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
         let respond = JSON.parse(this.responseText);
-        maxLvl = parseInt(respond.max_lvl);
+        localStorage.setItem("max", parseInt(respond.max_lvl));
       }
     }
     xhttp.open("POST", "selectMaxLvl.php", true);
@@ -402,6 +401,7 @@ window.addEventListener("load", function () {
   let muzyka = false;
   //menu section
   Q.scene('menu', function (stage) {
+    getMaxLevel();
     var container = stage.insert(new Q.UI.Container({
       x: Q.width / 2, y: Q.height / 2 - 100, fill: "rgba(0,0,0,0.9)"
     }));
@@ -434,7 +434,7 @@ window.addEventListener("load", function () {
       border: 2,
     }, function () {
       Q.stageScene('levels', 2);
-      getMaxLevel();
+      //getMaxLevel();
     }), container);
     stage.insert(new Q.UI.Button({
       label: "  Ranking  ",
@@ -492,6 +492,8 @@ window.addEventListener("load", function () {
   });
   //select level menu
   Q.scene('levels', function (stage) {
+    var maxLvl = localStorage.getItem("max");
+    window.localStorage.removeItem('max');
     var container = stage.insert(new Q.UI.Container({
       x: Q.width / 2, y: 150, fill: "rgba(0,0,0,0.9)"
     }));
@@ -501,28 +503,29 @@ window.addEventListener("load", function () {
       x: 0,
       y: 0
     }), container);
-
+    
     var num = 1;
     for (var i = 1; i <= 3; i++) {
       for (var j = 1; j <= 3; j++) {
         if (num <= maxLvl) {
           if (Q.width >= 530) {
-            window['value' + num] = stage.insert(new Q.UI.Button({
+            window['btn' + num] = stage.insert(new Q.UI.Button({
               label: "Poziom " + num,
               y: i * 150 - 20,
               x: j * 150 - 300,
               w: 120,
               h: 120,
-              fill: "#f28400"
+              fill: "#f28400",
+              tmp: num
             }, function () {
-              level = num;
+              level = this.p.tmp;
               saveUserLevel();
               location.reload();
               location.reload();
             }), container);
           }
           else {
-            window['value' + num] = stage.insert(new Q.UI.Button({
+            window['btn' + num] = stage.insert(new Q.UI.Button({
               label: "Poziom " + num,
               y: i * 100 - 20,
               x: j * 100 - 200,
@@ -530,11 +533,6 @@ window.addEventListener("load", function () {
               h: 120,
               scale: 0.5,
               fill: "#f28400"
-            }, function () {
-              level = num;
-              saveUserLevel();
-              location.reload();
-              location.reload();
             }), container);
           }
           /* stage.insert(new Q.UI.Button({
@@ -549,6 +547,7 @@ window.addEventListener("load", function () {
              x: -300,
              y: 260
            }), container);*/
+
         }
         num++;
       }
