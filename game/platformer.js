@@ -532,7 +532,13 @@ window.addEventListener("load", function () {
               w: 120,
               h: 120,
               scale: 0.5,
-              fill: "#f28400"
+              fill: "#f28400",
+              tmp: num
+            }, function () {
+              level = this.p.tmp;
+              saveUserLevel();
+              location.reload();
+              location.reload();
             }), container);
           }
           /* stage.insert(new Q.UI.Button({
